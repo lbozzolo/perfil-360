@@ -41,7 +41,7 @@ export default function EcosystemSection() {
           </svg>
 
           {/* Central Phone Mockup - Faded Bottom */}
-          <div className="relative z-10 w-[240px] h-[480px] bg-white rounded-[2rem] border-[6px] border-white shadow-2xl overflow-hidden ring-1 ring-gray-200/50 mx-auto lg:absolute lg:left-1/2 lg:top-[120px] lg:-translate-x-1/2 [mask-image:linear-gradient(to_bottom,black_40%,transparent_100%)]">
+          <div className="relative z-10 w-[240px] h-[480px] bg-white rounded-[2rem] border-[6px] border-white shadow-2xl overflow-hidden ring-1 ring-gray-200/50 mx-auto lg:absolute lg:left-1/2 lg:top-[160px] lg:-translate-x-1/2 [mask-image:linear-gradient(to_bottom,black_40%,transparent_100%)]">
               {/* Notch */}
               <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-5 bg-white rounded-b-lg z-20 shadow-sm" />
               
@@ -102,11 +102,11 @@ export default function EcosystemSection() {
           {/* Item 1: Capacitaciones (Top Center) */}
           <div className="mt-12 lg:mt-0 lg:absolute lg:top-0 lg:left-1/2 lg:-translate-x-1/2 max-w-[320px] z-20">
             <div className="bg-white p-6 rounded-3xl shadow-xl border border-gray-100 text-center relative">
-              <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 w-12 h-12 bg-360-yellow rounded-full flex items-center justify-center text-perfil-blue shadow-lg border-4 border-white">
-                <GraduationCap size={24} />
+              <div className="absolute -top-8 left-1/2 -translate-x-1/2 w-16 h-16 bg-360-yellow rounded-full flex items-center justify-center text-perfil-blue shadow-lg border-4 border-white">
+                <GraduationCap size={32} />
               </div>
-              <h3 className="text-lg font-bold text-deep-blue mb-2">Capacitaciones</h3>
-              <p className="text-sm text-text-gray leading-relaxed mb-2">
+              <h3 className="text-xl font-bold text-deep-blue mb-2 mt-4">Capacitaciones</h3>
+              <p className="text-base text-text-gray leading-relaxed mb-2">
                 Los centros de capacitación registran cursos, resultados y certificados.
               </p>
             </div>
@@ -114,13 +114,13 @@ export default function EcosystemSection() {
 
           {/* Item 2: Supervisiones (Bottom Right) */}
           <div className="mt-8 lg:mt-0 lg:absolute lg:top-[220px] lg:right-[5%] max-w-[320px] z-20">
-            <div className="bg-white p-6 rounded-3xl shadow-xl border border-gray-100 text-left relative">
-              <div className="absolute -left-6 top-1/2 -translate-y-1/2 w-12 h-12 bg-connection-teal rounded-full flex items-center justify-center text-white shadow-lg border-4 border-white">
-                <Eye size={24} />
+            <div className="bg-white p-6 rounded-3xl shadow-xl border border-gray-100 text-right relative">
+              <div className="absolute -top-8 right-6 w-16 h-16 bg-connection-teal rounded-full flex items-center justify-center text-white shadow-lg border-4 border-white">
+                <Eye size={32} />
               </div>
-              <div className="pl-4">
-                <h3 className="text-lg font-bold text-deep-blue mb-2">Supervisiones</h3>
-                <p className="text-sm text-text-gray leading-relaxed">
+              <div className="mt-4">
+                <h3 className="text-xl font-bold text-deep-blue mb-2">Supervisiones</h3>
+                <p className="text-base text-text-gray leading-relaxed">
                   Supervisores internos y externos documentan observaciones y vigencias.
                 </p>
               </div>
@@ -129,13 +129,13 @@ export default function EcosystemSection() {
 
           {/* Item 3: Empresa y puesto (Bottom Left) */}
           <div className="mt-8 lg:mt-0 lg:absolute lg:top-[220px] lg:left-[5%] max-w-[320px] z-20">
-            <div className="bg-white p-6 rounded-3xl shadow-xl border border-gray-100 text-right relative">
-              <div className="absolute -right-6 top-1/2 -translate-y-1/2 w-12 h-12 bg-perfil-blue rounded-full flex items-center justify-center text-white shadow-lg border-4 border-white">
-                <Building2 size={24} />
+            <div className="bg-white p-6 rounded-3xl shadow-xl border border-gray-100 text-left relative">
+              <div className="absolute -top-8 left-6 w-16 h-16 bg-perfil-blue rounded-full flex items-center justify-center text-white shadow-lg border-4 border-white">
+                <Building2 size={32} />
               </div>
-              <div className="pr-4">
-                <h3 className="text-lg font-bold text-deep-blue mb-2">Empresa y puesto</h3>
-                <p className="text-sm text-text-gray leading-relaxed">
+              <div className="mt-4">
+                <h3 className="text-xl font-bold text-deep-blue mb-2">Empresa y puesto</h3>
+                <p className="text-base text-text-gray leading-relaxed">
                   Las empresas vinculan al trabajador a sucursales, puestos y áreas.
                 </p>
               </div>

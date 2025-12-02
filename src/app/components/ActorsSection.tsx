@@ -3,7 +3,7 @@ import { Building2, GraduationCap, ShieldCheck, UserCheck, CheckCircle2, ArrowRi
 const actors = [
   {
     title: "Empresas",
-    icon: <Building2 size={28} />,
+    icon: <Building2 size={56} />,
     color: "text-perfil-blue",
     bg: "bg-blue-50",
     bullets: [
@@ -15,7 +15,7 @@ const actors = [
   },
   {
     title: "Centros de capacitación",
-    icon: <GraduationCap size={28} />,
+    icon: <GraduationCap size={56} />,
     color: "text-360-yellow",
     bg: "bg-yellow-50",
     bullets: [
@@ -27,7 +27,7 @@ const actors = [
   },
   {
     title: "ART",
-    icon: <ShieldCheck size={28} />,
+    icon: <ShieldCheck size={56} />,
     color: "text-connection-teal",
     bg: "bg-teal-50",
     bullets: [
@@ -39,7 +39,7 @@ const actors = [
   },
   {
     title: "Trabajadores",
-    icon: <UserCheck size={28} />,
+    icon: <UserCheck size={56} />,
     color: "text-perfil-blue",
     bg: "bg-gray-100",
     bullets: [
@@ -66,8 +66,8 @@ export default function ActorsSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {actors.map((actor, index) => (
-            <div key={index} className="group bg-white rounded-3xl border border-border-gray p-6 flex flex-col h-full hover:shadow-soft hover:-translate-y-1 transition-all duration-300">
-              <div className={`w-14 h-14 rounded-full ${actor.bg} ${actor.color} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
+            <div key={index} className={`group ${actor.bg} rounded-3xl border border-transparent p-6 flex flex-col h-full hover:shadow-soft hover:-translate-y-1 transition-all duration-300`}>
+              <div className={`w-24 h-24 rounded-full bg-white ${actor.color} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-sm`}>
                 {actor.icon}
               </div>
               <h3 className="text-xl font-bold text-deep-blue mb-4">{actor.title}</h3>
@@ -79,7 +79,7 @@ export default function ActorsSection() {
                   </li>
                 ))}
               </ul>
-              <div className="pt-6 border-t border-border-gray mt-auto">
+              <div className="pt-6 border-t border-black/5 mt-auto">
                 <button className="text-sm font-bold text-perfil-blue flex items-center gap-2 group-hover:gap-3 transition-all">
                   Ver más <ArrowRight size={16} />
                 </button>

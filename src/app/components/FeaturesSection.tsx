@@ -59,6 +59,20 @@ export default function FeaturesSection() {
               </p>
             </div>
           ))}
+
+          {/* Image Card */}
+          <div className="relative h-full min-h-[300px] rounded-3xl overflow-hidden group shadow-lg border border-white/10">
+            <img 
+              src="/images/4.1.webp" 
+              alt="Seguridad laboral" 
+              className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-deep-blue/90 via-deep-blue/20 to-transparent flex items-end p-8">
+               <p className="text-white font-bold text-xl leading-tight">
+                 Construyendo un futuro más seguro
+               </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
