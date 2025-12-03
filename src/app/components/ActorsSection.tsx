@@ -53,7 +53,7 @@ const actors = [
 
 export default function ActorsSection() {
   return (
-    <section className="py-24 bg-white">
+    <section id="casos-de-uso" className="py-24 bg-white scroll-mt-28">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <div className="text-center mb-16 max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-deep-blue mb-4 tracking-tight">
