@@ -14,7 +14,7 @@ export default function Header() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 group">
           <Image
-            src="/images/logo_perfil_360_02.webp?v=2"
+            src="/images/logo_perfil_360_04.webp?v=2"
             alt="Perfil 360"
             width={240}
             height={80}

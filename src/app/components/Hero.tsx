@@ -96,74 +96,12 @@ export default function Hero() {
               <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-7 bg-white rounded-b-2xl z-20 shadow-sm" />
               
               {/* Screen Content */}
-              <div className="w-full h-full bg-bg-light overflow-y-auto pt-12 pb-6 px-5 scrollbar-hide">
-                {/* Profile Header */}
-                <div className="flex flex-col items-center mb-8">
-                  <div className="w-24 h-24 bg-gray-100 rounded-full mb-4 border-4 border-white shadow-card overflow-hidden relative">
-                    <div className="absolute inset-0 flex items-center justify-center text-gray-300">
-                      <User size={40} />
-                    </div>
-                    <div className="absolute bottom-0 right-0 w-6 h-6 bg-green-500 border-2 border-white rounded-full"></div>
-                  </div>
-                  <h3 className="text-perfil-blue font-bold text-xl mb-1">Juan Pérez</h3>
-                  <p className="text-text-gray text-sm font-medium">Operario de Montaje</p>
-                  <div className="mt-3 px-4 py-1.5 bg-green-100 text-green-700 text-xs font-bold rounded-full uppercase tracking-wide flex items-center gap-1">
-                    <Award size={12} /> Habilitado
-                  </div>
-                </div>
-
-                {/* Stats/Info */}
-                <div className="grid grid-cols-2 gap-3 mb-6">
-                  <div className="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 text-center hover:shadow-md transition-shadow">
-                    <Briefcase size={20} className="mx-auto text-connection-teal mb-2" />
-                    <span className="block text-xs text-gray-400 font-medium uppercase">Experiencia</span>
-                    <span className="block text-lg font-bold text-perfil-blue">8 años</span>
-                  </div>
-                  <div className="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 text-center hover:shadow-md transition-shadow">
-                    <Award size={20} className="mx-auto text-360-yellow mb-2" />
-                    <span className="block text-xs text-gray-400 font-medium uppercase">Cursos</span>
-                    <span className="block text-lg font-bold text-perfil-blue">12 cert.</span>
-                  </div>
-                </div>
-
-                {/* List Items */}
-                <div className="space-y-3">
-                  <div className="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center text-perfil-blue shrink-0">
-                      <Award size={18} />
-                    </div>
-                    <div>
-                      <p className="text-xs text-gray-400 font-medium">Última capacitación</p>
-                      <p className="text-sm font-bold text-perfil-blue">Seguridad en Altura</p>
-                    </div>
-                  </div>
-                  
-                  <div className="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-full bg-yellow-50 flex items-center justify-center text-360-yellow shrink-0">
-                      <Award size={18} />
-                    </div>
-                    <div>
-                      <p className="text-xs text-gray-400 font-medium">Vigencia</p>
-                      <p className="text-sm font-bold text-perfil-blue">Manejo Defensivo</p>
-                    </div>
-                  </div>
-
-                  <div className="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-full bg-teal-50 flex items-center justify-center text-connection-teal shrink-0">
-                      <Briefcase size={18} />
-                    </div>
-                    <div>
-                      <p className="text-xs text-gray-400 font-medium">Empleo Actual</p>
-                      <p className="text-sm font-bold text-perfil-blue">Constructora Andina</p>
-                    </div>
-                  </div>
-                </div>
-                
-                <div className="mt-6 text-center">
-                  <button className="text-xs font-bold text-perfil-blue flex items-center justify-center gap-1 mx-auto hover:underline">
-                    Ver perfil completo <ArrowRight size={12} />
-                  </button>
-                </div>
+              <div className="w-full h-full bg-bg-light overflow-y-auto relative">
+                <img 
+                  src="/images/scroll_celular.webp" 
+                  alt="Perfil 360 App" 
+                  className="w-full h-auto block"
+                />
               </div>
             </div>
           </div>

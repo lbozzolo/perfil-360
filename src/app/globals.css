@@ -17,6 +17,28 @@
   --radius-xl: 1rem;
   --radius-2xl: 1.5rem;
   --radius-3xl: 2rem;
+
+  --animate-scroll-vertical: scroll-vertical 20s linear infinite;
+
+  @keyframes scroll-vertical {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-50%); }
+  }
+
+  --animate-fade-in-up: fade-in-up 0.8s ease-out forwards;
+
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  --animate-spin-slow: spin 60s linear infinite;
 }
 
 body {
