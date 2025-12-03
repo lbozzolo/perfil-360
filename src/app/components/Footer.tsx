@@ -84,9 +84,8 @@ export default function Footer() {
             © {new Date().getFullYear()} Perfil 360. Todos los derechos reservados.
           </p>
           <div className="flex items-center gap-2 text-xs text-gray-500">
-            <span>Hecho con</span>
-            <span className="text-red-500">❤</span>
-            <span>en Argentina</span>
+            <span>Desarrollado por</span>
+            <span><a href="https://verticedigital.com.ar" target="_blank" rel="noopener noreferrer">Vértice Digital</a></span>
           </div>
         </div>
       </div>
