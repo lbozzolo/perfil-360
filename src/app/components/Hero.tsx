@@ -91,12 +91,12 @@ export default function Hero() {
           <div className="w-full lg:w-auto lg:flex-none flex justify-center lg:justify-end relative z-10 lg:mb-[-140px]">
             
             {/* Phone Mockup */}
-            <div className="relative w-[300px] md:w-[340px] h-[640px] bg-white rounded-[3rem] border-[8px] border-white shadow-2xl overflow-hidden ring-1 ring-gray-200/50 transform rotate-[-5deg] hover:rotate-0 transition-transform duration-500">
+            <div className="relative w-[300px] md:w-[340px] h-[640px] bg-gray-900 rounded-[3rem] border-[14px] border-gray-900 shadow-2xl overflow-hidden ring-1 ring-white/10 transform rotate-[-5deg] hover:rotate-0 transition-transform duration-500">
               {/* Notch */}
-              <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-7 bg-white rounded-b-2xl z-20 shadow-sm" />
+              <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-7 bg-gray-900 rounded-b-2xl z-20" />
               
               {/* Screen Content */}
-              <div className="w-full h-full bg-bg-light overflow-y-auto relative">
+              <div className="w-full h-full bg-bg-light overflow-y-auto relative rounded-[2.2rem] scrollbar-hide">
                 <img 
                   src="/images/scroll_celular.webp" 
                   alt="Perfil 360 App" 

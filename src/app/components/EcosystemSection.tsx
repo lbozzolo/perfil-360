@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
 import { GraduationCap, Building2, ClipboardCheck, User, Eye, Award, Briefcase, ArrowRight } from 'lucide-react';
 
@@ -65,62 +66,15 @@ export default function EcosystemSection() {
           </svg>
 
           {/* Central Phone Mockup - Faded Bottom */}
-          <div className={`relative z-10 w-[240px] h-[480px] bg-white rounded-[2rem] border-[6px] border-white shadow-2xl overflow-hidden ring-1 ring-gray-200/50 mx-auto lg:absolute lg:left-1/2 lg:top-[160px] lg:-translate-x-1/2 [mask-image:linear-gradient(to_bottom,black_40%,transparent_100%)] ${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`}>
-              {/* Notch */}
-              <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-5 bg-white rounded-b-lg z-20 shadow-sm" />
-              
-              {/* Screen Content */}
-              <div className="w-full h-full bg-bg-light pt-8 pb-4 px-3 flex flex-col">
-                {/* Profile Header */}
-                <div className="flex flex-col items-center mb-4">
-                  <div className="w-16 h-16 bg-gray-100 rounded-full mb-2 border-4 border-white shadow-card overflow-hidden relative">
-                    <div className="absolute inset-0 flex items-center justify-center text-gray-300">
-                      <User size={28} />
-                    </div>
-                    <div className="absolute bottom-0 right-0 w-4 h-4 bg-green-500 border-2 border-white rounded-full"></div>
-                  </div>
-                  <h3 className="text-perfil-blue font-bold text-base leading-tight">Juan Pérez</h3>
-                  <p className="text-text-gray text-[10px] font-medium">Operario de Montaje</p>
-                  <div className="mt-2 px-2 py-1 bg-green-100 text-green-700 text-[9px] font-bold rounded-full uppercase tracking-wide flex items-center gap-1">
-                    <Award size={10} /> Habilitado
-                  </div>
-                </div>
-
-                {/* Stats */}
-                <div className="grid grid-cols-2 gap-2 mb-4">
-                  <div className="bg-white p-2 rounded-lg shadow-sm border border-gray-100 text-center">
-                    <span className="block text-[9px] text-gray-400 font-bold uppercase">Experiencia</span>
-                    <span className="block text-xs font-bold text-perfil-blue">8 años</span>
-                  </div>
-                  <div className="bg-white p-2 rounded-lg shadow-sm border border-gray-100 text-center">
-                    <span className="block text-[9px] text-gray-400 font-bold uppercase">Cursos</span>
-                    <span className="block text-xs font-bold text-perfil-blue">12</span>
-                  </div>
-                </div>
-
-                {/* List Items */}
-                <div className="space-y-2 flex-1">
-                  <div className="bg-white p-2.5 rounded-lg shadow-sm border border-gray-100 flex items-center gap-2">
-                    <div className="w-7 h-7 rounded-full bg-blue-50 flex items-center justify-center text-perfil-blue shrink-0">
-                      <Award size={12} />
-                    </div>
-                    <div className="min-w-0">
-                      <p className="text-[9px] text-gray-400 font-medium truncate">Última capacitación</p>
-                      <p className="text-[10px] font-bold text-perfil-blue truncate">Seguridad en Altura</p>
-                    </div>
-                  </div>
-                  
-                  <div className="bg-white p-2.5 rounded-lg shadow-sm border border-gray-100 flex items-center gap-2">
-                    <div className="w-7 h-7 rounded-full bg-teal-50 flex items-center justify-center text-connection-teal shrink-0">
-                      <Briefcase size={12} />
-                    </div>
-                    <div className="min-w-0">
-                      <p className="text-[9px] text-gray-400 font-medium truncate">Empleo Actual</p>
-                      <p className="text-[10px] font-bold text-perfil-blue truncate">Constructora Andina</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          <div className={`relative z-10 w-[280px] h-[560px] mx-auto lg:absolute lg:left-1/2 lg:top-[200px] lg:-translate-x-1/2 [mask-image:linear-gradient(to_bottom,black_50%,transparent_100%)] ${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`}>
+            <div className="absolute inset-0 border-[12px] border-gray-900 rounded-[2.5rem] z-20 pointer-events-none shadow-2xl"></div>
+            <Image
+              src="/images/celular.webp"
+              alt="Perfil 360 App"
+              fill
+              className="object-cover rounded-[2rem]"
+              priority
+            />
           </div>
 
           {/* Item 1: Capacitaciones (Top Center) */}
