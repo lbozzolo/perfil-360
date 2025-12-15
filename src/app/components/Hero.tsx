@@ -48,7 +48,7 @@ export default function Hero() {
             </div>
             
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.1] mb-6 tracking-tight">
-              El registro digital de la <span className="text-transparent bg-clip-text bg-gradient-to-r from-360-yellow to-connection-teal">capacitación y el trabajo.</span>
+              El <span className="text-360-yellow">registro digital</span> de la capacitación y el trabajo.
             </h1>
             
             <p className="text-lg md:text-xl text-gray-300 mb-10 max-w-xl mx-auto lg:mx-0 font-medium leading-relaxed">
