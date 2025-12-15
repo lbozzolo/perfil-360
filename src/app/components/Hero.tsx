@@ -61,7 +61,7 @@ export default function Hero() {
                 className="w-full sm:w-auto px-8 py-4 bg-360-yellow text-deep-blue font-bold rounded-full hover:bg-white transition-all flex items-center justify-center gap-2 shadow-lg shadow-360-yellow/20 hover:-translate-y-1"
               >
                 <Play size={20} fill="currentColor" />
-                Ver video: qué es Perfil 360
+                ¿Qué es Perfil 360?
               </button>
               
               <Link 
