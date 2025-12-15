@@ -31,7 +31,7 @@ export default function EcosystemSection() {
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <div className={`text-center mb-20 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <h2 className="text-3xl md:text-4xl font-bold text-perfil-blue mb-4">
-            Cada actor carga datos.<br/> El trabajador conserva su historial.
+            Cada organización carga datos.<br/> El trabajador conserva su historial.
           </h2>
           <p className="text-lg text-text-gray max-w-2xl mx-auto">
             Un solo Perfil 360 se alimenta con información de empresas, CECAP y ART.

@@ -48,11 +48,11 @@ export default function Hero() {
             </div>
             
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.1] mb-6 tracking-tight">
-              Un perfil único. <span className="text-transparent bg-clip-text bg-gradient-to-r from-360-yellow to-connection-teal">Toda la información laboral.</span>
+              El registro digital de la <span className="text-transparent bg-clip-text bg-gradient-to-r from-360-yellow to-connection-teal">capacitación y el trabajo.</span>
             </h1>
             
             <p className="text-lg md:text-xl text-gray-300 mb-10 max-w-xl mx-auto lg:mx-0 font-medium leading-relaxed">
-              Plataforma digital que conecta trabajadores, empresas, centros de capacitación y ART en una sola red de información verificada.
+              Un perfil único donde se registra y verifica la información laboral de cada persona, gestionada por empresas, centros de capacitación y ART en una sola red.
             </p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-12">

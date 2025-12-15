@@ -5,6 +5,7 @@ import ActorsSection from "./components/ActorsSection";
 import FeaturesSection from "./components/FeaturesSection";
 import PlansSection from "./components/PlansSection";
 import DirectoryBanner from "./components/DirectoryBanner";
+import TestimonialsSection from "./components/TestimonialsSection";
 import CTASection from "./components/CTASection";
 import Footer from "./components/Footer";
 
@@ -20,6 +21,7 @@ export default function Home() {
         <FeaturesSection />
         <PlansSection />
         <DirectoryBanner />
+        <TestimonialsSection />
         <CTASection />
       </main>
 
