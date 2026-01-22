@@ -32,6 +32,9 @@ export default function Header() {
           <Link href="/empresas" className="px-4 py-2 text-sm font-bold text-text-gray hover:text-perfil-blue transition-colors rounded-lg hover:bg-bg-light">
             Empresas
           </Link>
+          <Link href="/centros" className="px-4 py-2 text-sm font-bold text-text-gray hover:text-perfil-blue transition-colors rounded-lg hover:bg-bg-light">
+            Centros
+          </Link>
           <Link href="/#casos-de-uso" className="px-4 py-2 text-sm font-bold text-text-gray hover:text-perfil-blue transition-colors rounded-lg hover:bg-bg-light">
             Casos de uso
           </Link>
@@ -75,6 +78,9 @@ export default function Header() {
           <nav className="flex flex-col gap-4">
             <Link href="/personas" className="text-lg font-bold text-text-gray hover:text-perfil-blue" onClick={() => setIsMenuOpen(false)}>
               Personas
+            </Link>
+            <Link href="/centros" className="text-lg font-bold text-text-gray hover:text-perfil-blue" onClick={() => setIsMenuOpen(false)}>
+              Centros
             </Link>
             <Link href="/empresas" className="text-lg font-bold text-text-gray hover:text-perfil-blue" onClick={() => setIsMenuOpen(false)}>
               Empresas
