@@ -29,8 +29,8 @@ export default function Header() {
           <Link href="/personas" className="px-4 py-2 text-sm font-bold text-text-gray hover:text-perfil-blue transition-colors rounded-lg hover:bg-bg-light">
             Personas
           </Link>
-          <Link href="/#como-funciona" className="px-4 py-2 text-sm font-bold text-text-gray hover:text-perfil-blue transition-colors rounded-lg hover:bg-bg-light">
-            Cómo funciona
+          <Link href="/empresas" className="px-4 py-2 text-sm font-bold text-text-gray hover:text-perfil-blue transition-colors rounded-lg hover:bg-bg-light">
+            Empresas
           </Link>
           <Link href="/#casos-de-uso" className="px-4 py-2 text-sm font-bold text-text-gray hover:text-perfil-blue transition-colors rounded-lg hover:bg-bg-light">
             Casos de uso
@@ -76,8 +76,8 @@ export default function Header() {
             <Link href="/personas" className="text-lg font-bold text-text-gray hover:text-perfil-blue" onClick={() => setIsMenuOpen(false)}>
               Personas
             </Link>
-            <Link href="/#como-funciona" className="text-lg font-bold text-text-gray hover:text-perfil-blue" onClick={() => setIsMenuOpen(false)}>
-              Cómo funciona
+            <Link href="/empresas" className="text-lg font-bold text-text-gray hover:text-perfil-blue" onClick={() => setIsMenuOpen(false)}>
+              Empresas
             </Link>
             <Link href="/#casos-de-uso" className="text-lg font-bold text-text-gray hover:text-perfil-blue" onClick={() => setIsMenuOpen(false)}>
               Casos de uso
