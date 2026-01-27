@@ -26,6 +26,9 @@ export default function Header() {
 
         {/* Desktop Navigation */}
         <div className="hidden lg:flex items-center gap-1 pl-8 border-l border-border-gray h-10 ml-8">
+          <Link href="/" className="px-4 py-2 text-sm font-bold text-text-gray hover:text-perfil-blue transition-colors rounded-lg hover:bg-bg-light">
+            Inicio
+          </Link>
           <Link href="/personas" className="px-4 py-2 text-sm font-bold text-text-gray hover:text-perfil-blue transition-colors rounded-lg hover:bg-bg-light">
             Personas
           </Link>
@@ -34,12 +37,6 @@ export default function Header() {
           </Link>
           <Link href="/centros" className="px-4 py-2 text-sm font-bold text-text-gray hover:text-perfil-blue transition-colors rounded-lg hover:bg-bg-light">
             Centros
-          </Link>
-          <Link href="/#casos-de-uso" className="px-4 py-2 text-sm font-bold text-text-gray hover:text-perfil-blue transition-colors rounded-lg hover:bg-bg-light">
-            Casos de uso
-          </Link>
-          <Link href="/#planes" className="px-4 py-2 text-sm font-bold text-text-gray hover:text-perfil-blue transition-colors rounded-lg hover:bg-bg-light">
-            Planes
           </Link>
         </div>
 
@@ -76,6 +73,9 @@ export default function Header() {
       {isMenuOpen && (
         <div className="md:hidden absolute top-20 left-0 w-full bg-white border-b border-border-gray shadow-xl p-6 flex flex-col gap-6 animate-in slide-in-from-top-5">
           <nav className="flex flex-col gap-4">
+            <Link href="/" className="text-lg font-bold text-text-gray hover:text-perfil-blue" onClick={() => setIsMenuOpen(false)}>
+              Inicio
+            </Link>
             <Link href="/personas" className="text-lg font-bold text-text-gray hover:text-perfil-blue" onClick={() => setIsMenuOpen(false)}>
               Personas
             </Link>
@@ -84,12 +84,6 @@ export default function Header() {
             </Link>
             <Link href="/empresas" className="text-lg font-bold text-text-gray hover:text-perfil-blue" onClick={() => setIsMenuOpen(false)}>
               Empresas
-            </Link>
-            <Link href="/#casos-de-uso" className="text-lg font-bold text-text-gray hover:text-perfil-blue" onClick={() => setIsMenuOpen(false)}>
-              Casos de uso
-            </Link>
-            <Link href="/#planes" className="text-lg font-bold text-text-gray hover:text-perfil-blue" onClick={() => setIsMenuOpen(false)}>
-              Planes
             </Link>
             <Link href="#" className="text-lg font-bold text-text-gray hover:text-perfil-blue" onClick={() => setIsMenuOpen(false)}>
               Preguntas frecuentes

@@ -51,11 +51,11 @@ export default function Hero() {
               El <span className="text-360-yellow">registro digital</span> de la capacitación y el trabajo.
             </h1>
             
-            <p className="text-lg md:text-xl text-gray-300 mb-10 max-w-xl mx-auto lg:mx-0 font-medium leading-relaxed">
+            <p className="text-lg md:text-xl text-gray-300 mb-10 max-w-3xl mx-auto lg:mx-0 font-medium leading-relaxed">
               Un perfil único donde se registra y verifica la información laboral de cada persona, gestionada por empresas, centros de capacitación y ART en una sola red.
             </p>
             
-            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-12">
+            {/* <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-12">
               <button 
                 onClick={() => setIsModalOpen(true)}
                 className="w-full sm:w-auto px-8 py-4 bg-360-yellow text-deep-blue font-bold rounded-full hover:bg-white transition-all flex items-center justify-center gap-2 shadow-lg shadow-360-yellow/20 hover:-translate-y-1"
@@ -70,9 +70,34 @@ export default function Hero() {
               >
                 Ver directorio
               </Link>
+            </div> */}
+
+            <div className="mb-10">
+              <div 
+                onClick={() => setIsModalOpen(true)}
+                className="relative w-full max-w-lg mx-auto lg:mx-0 aspect-video bg-black rounded-xl overflow-hidden shadow-2xl cursor-pointer group"
+              >
+                <iframe 
+                  width="100%" 
+                  height="100%" 
+                  src="https://www.youtube.com/embed/PdaeM1se7aM?autoplay=1&mute=1&loop=1&playlist=PdaeM1se7aM" 
+                  title="¿Qué es Perfil 360?" 
+                  frameBorder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  allowFullScreen
+                  className="pointer-events-none"
+                ></iframe>
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
+                  <div className="w-16 h-16 rounded-full bg-360-yellow/90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <Play size={28} fill="currentColor" className="text-deep-blue ml-1" />
+                  </div>
+                </div>
+              </div>
             </div>
             
-            <div className="flex items-center justify-center lg:justify-start gap-8 pt-8 border-t border-white/10">
+{/*             <div className="flex items-center justify-center lg:justify-start gap-8 pt-8 border-t border-white/10"></div>
+ */}            
+            {/* <div className="flex items-center justify-center lg:justify-start gap-8 pt-8 border-t border-white/10">
               <div className="flex -space-x-4">
                 {[1, 2, 3, 4].map((i) => (
                   <div key={i} className="w-10 h-10 rounded-full border-2 border-deep-blue bg-gray-700 flex items-center justify-center text-xs font-bold text-gray-300">
@@ -84,14 +109,15 @@ export default function Hero() {
                 <p className="font-bold text-white">+10.000 Trabajadores</p>
                 <p className="text-gray-400">Ya tienen su perfil verificado</p>
               </div>
-            </div>
+            </div> */}
+
           </div>
 
           {/* Right Column: Phone Mockup */}
-          <div className="w-full lg:w-auto lg:flex-none flex justify-center lg:justify-end relative z-10 lg:mb-[-140px]">
+          <div className="w-full lg:w-auto lg:flex-none flex justify-center lg:justify-end relative z-10">
             
             {/* Phone Mockup */}
-            <div className="relative w-[300px] md:w-[340px] h-[640px] bg-gray-900 rounded-[3rem] border-[14px] border-gray-900 shadow-2xl overflow-hidden ring-1 ring-white/10 transform rotate-[-5deg] hover:rotate-0 transition-transform duration-500">
+            <div className="relative w-[300px] md:w-[340px] h-[640px] bg-gray-900 rounded-[3rem] border-[14px] border-gray-900 shadow-2xl overflow-hidden ring-1 ring-white/10 transform rotate-[5deg] hover:rotate-0 transition-transform duration-500">
               {/* Notch */}
               <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-7 bg-gray-900 rounded-b-2xl z-20" />
               
