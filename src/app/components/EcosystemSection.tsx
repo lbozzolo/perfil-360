@@ -79,8 +79,8 @@ export default function EcosystemSection() {
 
           {/* Item 1: Capacitaciones (Top Center) */}
           <div className="mt-12 lg:mt-0 lg:absolute lg:top-0 lg:left-1/2 lg:-translate-x-1/2 max-w-[320px] z-20">
-            <div className={`bg-white p-6 rounded-3xl shadow-xl border border-gray-100 text-center relative ${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`} style={{ animationDelay: '0.2s' }}>
-              <div className="absolute -top-8 left-1/2 -translate-x-1/2 w-16 h-16 bg-360-yellow rounded-full flex items-center justify-center text-perfil-blue shadow-lg border-4 border-white">
+            <div className={`bg-white p-6 rounded-3xl shadow-xl border border-gray-100 text-left lg:text-center relative ${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`} style={{ animationDelay: '0.2s' }}>
+              <div className="absolute -top-8 left-6 lg:left-1/2 lg:-translate-x-1/2 w-16 h-16 bg-360-yellow rounded-full flex items-center justify-center text-perfil-blue shadow-lg border-4 border-white">
                 <GraduationCap size={32} />
               </div>
               <h3 className="text-xl font-bold text-deep-blue mb-2 mt-4">Capacitaciones</h3>
@@ -92,8 +92,8 @@ export default function EcosystemSection() {
 
           {/* Item 2: Supervisiones (Bottom Right) */}
           <div className="mt-8 lg:mt-0 lg:absolute lg:top-[220px] lg:right-[5%] max-w-[320px] z-20">
-            <div className={`bg-white p-6 rounded-3xl shadow-xl border border-gray-100 text-right relative ${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`} style={{ animationDelay: '0.4s' }}>
-              <div className="absolute -top-8 right-6 w-16 h-16 bg-connection-teal rounded-full flex items-center justify-center text-white shadow-lg border-4 border-white">
+            <div className={`bg-white p-6 rounded-3xl shadow-xl border border-gray-100 text-left lg:text-right relative ${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`} style={{ animationDelay: '0.4s' }}>
+              <div className="absolute -top-8 left-6 lg:left-auto lg:right-6 w-16 h-16 bg-connection-teal rounded-full flex items-center justify-center text-white shadow-lg border-4 border-white">
                 <Eye size={32} />
               </div>
               <div className="mt-4">

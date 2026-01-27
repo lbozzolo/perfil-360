@@ -7,7 +7,7 @@ export default function DirectoryBanner() {
       <div className="max-w-7xl mx-auto px-4 md:px-8 flex flex-col lg:flex-row items-center justify-between gap-12">
         
         {/* Text Content */}
-        <div className="flex-1 max-w-2xl relative z-10">
+        <div className="flex-1 max-w-2xl relative z-10 text-center lg:text-left">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-360-yellow text-xs font-bold uppercase tracking-wider mb-4 border border-white/10">
             <Search size={14} />
             Buscador Público

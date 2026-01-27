@@ -140,7 +140,7 @@ export default function TestimonialsSection() {
           </p>
         </div>
 
-        <div className="relative px-12">
+        <div className="relative px-4 md:px-12">
           {/* Navigation Buttons (Absolute positioned) */}
           <button 
             onClick={prevSlide}
@@ -160,7 +160,7 @@ export default function TestimonialsSection() {
 
           {/* Carousel Container */}
           <div 
-            className="overflow-hidden px-4 -mx-4"
+            className="overflow-hidden px-2 md:px-4 -mx-2 md:-mx-4"
             onMouseEnter={() => setIsAutoPlaying(false)}
             onMouseLeave={() => setIsAutoPlaying(true)}
           >
@@ -173,7 +173,7 @@ export default function TestimonialsSection() {
               {testimonials.map((item) => (
                 <div 
                   key={item.id} 
-                  className="flex-shrink-0 px-4"
+                  className="flex-shrink-0 px-2 md:px-4"
                   style={{ width: `${100 / itemsToShow}%` }}
                 >
                   <div className="bg-bg-light p-8 rounded-3xl h-full flex flex-col border border-border-gray hover:shadow-soft transition-all duration-300">

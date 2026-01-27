@@ -4,9 +4,11 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Menu, X, Search } from 'lucide-react';
 import { useState } from 'react';
+import { usePathname } from 'next/navigation';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
     <header className="sticky top-0 z-50 w-full bg-white/90 backdrop-blur-sm border-b border-border-gray">
@@ -26,25 +28,22 @@ export default function Header() {
 
         {/* Desktop Navigation */}
         <div className="hidden lg:flex items-center gap-1 pl-8 border-l border-border-gray h-10 ml-8">
-          <Link href="/" className="px-4 py-2 text-sm font-bold text-text-gray hover:text-perfil-blue transition-colors rounded-lg hover:bg-bg-light">
+          <Link href="/" className={`px-4 py-2 text-sm font-bold transition-colors rounded-lg ${pathname === '/' ? 'text-perfil-blue bg-bg-light' : 'text-text-gray hover:text-perfil-blue hover:bg-bg-light'}`}>
             Inicio
           </Link>
-          <Link href="/personas" className="px-4 py-2 text-sm font-bold text-text-gray hover:text-perfil-blue transition-colors rounded-lg hover:bg-bg-light">
+          <Link href="/personas" className={`px-4 py-2 text-sm font-bold transition-colors rounded-lg ${pathname === '/personas' ? 'text-perfil-blue bg-bg-light' : 'text-text-gray hover:text-perfil-blue hover:bg-bg-light'}`}>
             Personas
           </Link>
-          <Link href="/empresas" className="px-4 py-2 text-sm font-bold text-text-gray hover:text-perfil-blue transition-colors rounded-lg hover:bg-bg-light">
+          <Link href="/empresas" className={`px-4 py-2 text-sm font-bold transition-colors rounded-lg ${pathname === '/empresas' ? 'text-perfil-blue bg-bg-light' : 'text-text-gray hover:text-perfil-blue hover:bg-bg-light'}`}>
             Empresas
           </Link>
-          <Link href="/centros" className="px-4 py-2 text-sm font-bold text-text-gray hover:text-perfil-blue transition-colors rounded-lg hover:bg-bg-light">
+          <Link href="/centros" className={`px-4 py-2 text-sm font-bold transition-colors rounded-lg ${pathname === '/centros' ? 'text-perfil-blue bg-bg-light' : 'text-text-gray hover:text-perfil-blue hover:bg-bg-light'}`}>
             Centros
           </Link>
         </div>
 
         {/* Desktop Buttons */}
         <div className="hidden md:flex items-center gap-3 ml-auto">
-          <button className="p-2 text-text-gray hover:text-perfil-blue transition-colors">
-            <Search size={20} />
-          </button>
           <Link 
             href="#" 
             className="px-6 py-2.5 text-sm font-bold text-perfil-blue border-2 border-border-gray rounded-full hover:border-perfil-blue hover:bg-perfil-blue hover:text-white transition-all"
@@ -73,20 +72,17 @@ export default function Header() {
       {isMenuOpen && (
         <div className="md:hidden absolute top-20 left-0 w-full bg-white border-b border-border-gray shadow-xl p-6 flex flex-col gap-6 animate-in slide-in-from-top-5">
           <nav className="flex flex-col gap-4">
-            <Link href="/" className="text-lg font-bold text-text-gray hover:text-perfil-blue" onClick={() => setIsMenuOpen(false)}>
+            <Link href="/" className={`text-lg font-bold ${pathname === '/' ? 'text-perfil-blue' : 'text-text-gray hover:text-perfil-blue'}`} onClick={() => setIsMenuOpen(false)}>
               Inicio
             </Link>
-            <Link href="/personas" className="text-lg font-bold text-text-gray hover:text-perfil-blue" onClick={() => setIsMenuOpen(false)}>
+            <Link href="/personas" className={`text-lg font-bold ${pathname === '/personas' ? 'text-perfil-blue' : 'text-text-gray hover:text-perfil-blue'}`} onClick={() => setIsMenuOpen(false)}>
               Personas
             </Link>
-            <Link href="/centros" className="text-lg font-bold text-text-gray hover:text-perfil-blue" onClick={() => setIsMenuOpen(false)}>
+            <Link href="/centros" className={`text-lg font-bold ${pathname === '/centros' ? 'text-perfil-blue' : 'text-text-gray hover:text-perfil-blue'}`} onClick={() => setIsMenuOpen(false)}>
               Centros
             </Link>
-            <Link href="/empresas" className="text-lg font-bold text-text-gray hover:text-perfil-blue" onClick={() => setIsMenuOpen(false)}>
+            <Link href="/empresas" className={`text-lg font-bold ${pathname === '/empresas' ? 'text-perfil-blue' : 'text-text-gray hover:text-perfil-blue'}`} onClick={() => setIsMenuOpen(false)}>
               Empresas
-            </Link>
-            <Link href="#" className="text-lg font-bold text-text-gray hover:text-perfil-blue" onClick={() => setIsMenuOpen(false)}>
-              Preguntas frecuentes
             </Link>
           </nav>
           <div className="flex flex-col gap-3 pt-6 border-t border-border-gray">

@@ -1,37 +1,11 @@
 'use client';
 
-import { useState } from 'react';
 import Link from 'next/link';
-import { Play, User, Briefcase, Award, ArrowRight, X } from 'lucide-react';
+import { User, Briefcase, Award, ArrowRight } from 'lucide-react';
 
 export default function Hero() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
   return (
     <section className="relative pt-12 pb-20 lg:pt-20 lg:pb-12">
-      {/* Video Modal */}
-      {isModalOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm" onClick={() => setIsModalOpen(false)}>
-          <div className="relative w-full max-w-6xl aspect-video bg-black rounded-2xl overflow-hidden shadow-2xl" onClick={(e) => e.stopPropagation()}>
-            <button 
-              onClick={() => setIsModalOpen(false)}
-              className="absolute top-4 right-4 z-10 p-2 bg-black/50 text-white rounded-full hover:bg-white/20 transition-colors"
-            >
-              <X size={24} />
-            </button>
-            <iframe 
-              width="100%" 
-              height="100%" 
-              src="https://www.youtube.com/embed/PdaeM1se7aM?autoplay=1&mute=0" 
-              title="YouTube video player" 
-              frameBorder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-              allowFullScreen
-            ></iframe>
-          </div>
-        </div>
-      )}
-
       <div className="absolute inset-0 bg-gradient-to-br from-deep-blue to-connection-teal overflow-hidden -z-20">
         <div className="absolute top-1/2 right-0 -translate-y-1/2 translate-x-1/4 w-[600px] h-[600px] bg-gradient-to-tr from-connection-teal/20 to-360-yellow/20 rounded-full blur-3xl opacity-60" />
       </div>
@@ -73,25 +47,16 @@ export default function Hero() {
             </div> */}
 
             <div className="mb-10">
-              <div 
-                onClick={() => setIsModalOpen(true)}
-                className="relative w-full max-w-lg mx-auto lg:mx-0 aspect-video bg-black rounded-xl overflow-hidden shadow-2xl cursor-pointer group"
-              >
+              <div className="relative w-full max-w-lg mx-auto lg:mx-0 aspect-video bg-black rounded-xl overflow-hidden shadow-2xl">
                 <iframe 
                   width="100%" 
                   height="100%" 
-                  src="https://www.youtube.com/embed/PdaeM1se7aM?autoplay=1&mute=1&loop=1&playlist=PdaeM1se7aM" 
+                  src="https://www.youtube.com/embed/PdaeM1se7aM?autoplay=1&mute=1&loop=1&playlist=PdaeM1se7aM&controls=1" 
                   title="¿Qué es Perfil 360?" 
                   frameBorder="0" 
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                   allowFullScreen
-                  className="pointer-events-none"
                 ></iframe>
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
-                  <div className="w-16 h-16 rounded-full bg-360-yellow/90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                    <Play size={28} fill="currentColor" className="text-deep-blue ml-1" />
-                  </div>
-                </div>
               </div>
             </div>
             
@@ -114,7 +79,7 @@ export default function Hero() {
           </div>
 
           {/* Right Column: Phone Mockup */}
-          <div className="w-full lg:w-auto lg:flex-none flex justify-center lg:justify-end relative z-10">
+          <div className="hidden lg:flex w-full lg:w-auto lg:flex-none justify-center lg:justify-end relative z-10">
             
             {/* Phone Mockup */}
             <div className="relative w-[300px] md:w-[340px] h-[640px] bg-gray-900 rounded-[3rem] border-[14px] border-gray-900 shadow-2xl overflow-hidden ring-1 ring-white/10 transform rotate-[5deg] hover:rotate-0 transition-transform duration-500">

@@ -23,7 +23,7 @@ export default function PlansCentros() {
           </div>
 
           {/* Plan Pro */}
-          <div className="relative bg-deep-blue rounded-3xl p-8 shadow-2xl text-white transform md:-translate-y-4">
+          <div className="relative bg-deep-blue rounded-3xl p-8 shadow-2xl text-white">
             
             <h3 className="text-2xl font-bold mb-2 flex items-center gap-2">
               Plan Plus <Star className="fill-current text-360-yellow w-5 h-5"/>
