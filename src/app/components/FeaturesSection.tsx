@@ -63,7 +63,7 @@ export default function FeaturesSection() {
           {/* Image Card */}
           <div className="relative h-full min-h-[300px] rounded-3xl overflow-hidden group shadow-lg border border-white/10">
             <img 
-              src="/images/4.1.webp" 
+              src="/images/persona-mostrando-celular-con-perfil.webp" 
               alt="Seguridad laboral" 
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
             />

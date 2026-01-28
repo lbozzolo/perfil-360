@@ -50,11 +50,12 @@ export default function HeroPersonas() {
             {/* Right Column (Image & Microcopy) */}
             <div className="w-full lg:w-1/3 flex flex-col items-center relative mt-12 lg:mt-0 lg:mb-[-100px] z-20">
                 <div className="relative w-full rounded-2xl overflow-hidden shadow-2xl border-4 border-white/20">
-                     <img 
-                        src="/images/4.1.webp" 
-                        alt="Trabajador utilizando Perfil 360" 
-                        className="w-full h-auto object-contain"
-                     />
+                    <img 
+                      src="/images/persona-mostrando-celular-con-perfil.webp" 
+                      alt="Trabajador utilizando Perfil 360" 
+                      className="w-full h-auto" 
+                      style={{ display: 'block', background: '#fff' }}
+                    />
                      <div className="absolute inset-0 bg-deep-blue/5"></div>
                 </div>
 

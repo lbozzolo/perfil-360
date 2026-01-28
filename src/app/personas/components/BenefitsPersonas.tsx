@@ -59,7 +59,7 @@ export default function BenefitsPersonas() {
           {/* Image Card - Matching Home Layout */}
           <div className="relative h-full min-h-[300px] rounded-2xl overflow-hidden group shadow-lg border border-gray-100">
             <img 
-              src="/images/4.1.webp" 
+              src="/images/persona-mostrando-celular-con-perfil.webp" 
               alt="Seguridad laboral" 
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
             />

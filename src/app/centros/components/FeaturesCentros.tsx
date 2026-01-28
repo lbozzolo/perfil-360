@@ -53,7 +53,8 @@ export default function FeaturesCentros() {
                         "Vincular instructores para evaluaciones de campo.",
                         "Descarga de base de datos de certificaciones.",
                         "Descarga de constancia de inscripción en Perfil 360.",
-                        "Acceso a licitaciones / participación en oportunidades y contratos."
+                        "Acceso a licitaciones / participación en oportunidades y contratos.",
+                        "Acceso a certificaciones vencidas de los alumnos."
                     ].map((item, i) => (
                         <li key={i} className="flex items-start gap-3">
                             <span className="w-1.5 h-1.5 rounded-full bg-360-yellow mt-2.5 flex-shrink-0"></span>

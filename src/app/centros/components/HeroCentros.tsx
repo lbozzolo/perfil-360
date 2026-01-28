@@ -17,7 +17,7 @@ export default function HeroCentros() {
         <div className="flex flex-col lg:flex-row gap-12 items-center">
             
             {/* Left Column */}
-            <div className="flex-1">
+            <div className="w-full lg:w-3/5">
                 <div className="inline-block px-6 py-3 bg-white/10 text-white font-extrabold rounded-full text-sm uppercase tracking-wider mb-6 shadow-lg backdrop-blur-md border border-white/20">
                     Instituciones y Centros
                 </div>
@@ -47,24 +47,21 @@ export default function HeroCentros() {
             </div>
 
             {/* Right Column (Image & Microcopy) */}
-            <div className="w-full lg:w-1/3 flex flex-col items-center relative mt-12 lg:mt-0 lg:mb-[-50px] z-20">
-                <div className="relative w-full rounded-2xl overflow-hidden shadow-2xl border-4 border-white/10 bg-deep-blue aspect-[4/3] flex items-center justify-center">
-                     {/* Placeholder for center dashboard visualization */}
-                     <div className="text-center p-8">
-                        <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold text-2xl border border-white/20">
-                          360
-                        </div>
-                        <p className="font-bold text-white text-lg">Panel del Centro</p>
-                        <p className="text-sm text-gray-400 mt-2">Control total de certificaciones</p>
-                     </div>
-                     <div className="absolute inset-0 bg-gradient-to-br from-perfil-blue/20 to-transparent pointer-events-none"></div>
+            <div className="w-full lg:w-2/5 flex flex-col items-center relative mt-12 lg:mt-0 lg:mb-[-50px] z-20">
+                <div className="w-full flex items-start justify-start bg-white p-0 m-0 overflow-visible relative" style={{ minHeight: '1px' }}>
+                  <img 
+                    src="/images/interfaz-centro-de-capacitacion.webp" 
+                    alt="Interfaz del panel del centro de capacitación" 
+                    className="block lg:scale-[1.5] lg:origin-left" 
+                    style={{ width: '100%', height: 'auto', maxHeight: '1050px', maxWidth: '900px', borderRadius: '3px', display: 'block' }}
+                  />
                 </div>
 
-                 <div className="w-[110%] -mt-8 relative z-10 bg-white p-6 rounded-xl border border-gray-200 shadow-xl">
+                 {/* <div className="w-[110%] -mt-8 relative z-10 bg-white p-6 rounded-xl border border-gray-200 shadow-xl">
                     <p className="text-xs md:text-sm text-deep-blue/90 border-l-4 border-360-yellow pl-3 leading-relaxed font-medium">
                     “Cada centro registra únicamente sus propios cursos, evaluaciones y certificaciones. Eso protege la validez del sistema y evita información autodeclarada o cruzada entre instituciones.”
                     </p>
-                </div>
+                </div> */}
             </div>
 
         </div>
