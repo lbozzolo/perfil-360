@@ -42,7 +42,6 @@ export default function PlansCentros() {
               {[
                 "Descarga de base de datos de certificaciones.",
                 "Vinculación de instructores para evaluaciones de campo.",
-                "Descarga de constancia de inscripción en Perfil 360.",
                 "Acceso a licitaciones.",
                 "Acceso a certificaciones vencidas de los alumnos."
               ].map((feature, i) => (

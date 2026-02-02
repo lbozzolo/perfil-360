@@ -1,6 +1,7 @@
 'use client';
 
 import { Check } from 'lucide-react';
+const registroUrl = process.env.NEXT_PUBLIC_REGISTRO_URL || 'https://registro.perfil360.com.ar';
 
 export default function PlansEmpresas() {
   return (
@@ -53,9 +54,13 @@ export default function PlansEmpresas() {
                 <p className="text-sm text-text-gray">Gestión administrativa básica (informes sin inspector en campo).</p>
               </div>
             </div>
-            <button className="w-full py-3 rounded-full border-2 border-green-600 text-green-700 font-bold hover:bg-green-600 hover:text-white transition-all">
+            <a
+              href={registroUrl}
+              className="w-full block text-center py-3 rounded-full border-2 border-green-600 text-green-700 font-bold hover:bg-green-600 hover:text-white transition-all"
+              target="_blank" rel="noopener noreferrer"
+            >
               Registrar mi empresa
-            </button>
+            </a>
           </div>
 
           {/* Plan Plus */}
@@ -96,12 +101,7 @@ export default function PlansEmpresas() {
                 </div>
                 <p className="text-sm text-text-gray"><strong>Licitaciones de capacitación:</strong> solicitar, comparar y gestionar.</p>
               </div>
-               <div className="flex items-start gap-3">
-                <div className="w-5 h-5 rounded-full bg-perfil-blue/10 flex items-center justify-center text-perfil-blue shrink-0 mt-0.5">
-                  <Check size={12} strokeWidth={3} />
-                </div>
-                <p className="text-sm text-text-gray">Constancia de inscripción.</p>
-              </div>
+               
             </div>
             <div className="p-4 bg-gray-50 rounded-xl text-center text-xs text-text-gray border border-gray-100">
                 Se activa desde la configuración una vez registrada la empresa.

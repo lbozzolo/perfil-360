@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+const directorioUrl = process.env.NEXT_PUBLIC_DIRECTORIO_URL || 'https://directorio.perfil360.com.ar';
 import { User, Briefcase, Award, ArrowRight } from 'lucide-react';
 import { useState } from 'react';
 
@@ -67,7 +68,7 @@ export default function Hero() {
               </button>
               
               <Link 
-                href="#" 
+                href={directorioUrl}
                 className="w-full sm:w-auto px-8 py-4 border-2 border-white/20 text-white font-bold rounded-full hover:border-white hover:bg-white/10 transition-all text-center hover:-translate-y-1"
               >
                 Ver directorio

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from 'next/link';
+const directorioUrl = process.env.NEXT_PUBLIC_DIRECTORIO_URL || 'https://directorio.perfil360.com.ar';
 import Image from 'next/image';
 import { Menu, X, Search } from 'lucide-react';
 import { useState } from 'react';
@@ -44,14 +45,14 @@ export default function Header() {
 
         {/* Desktop Buttons */}
         <div className="hidden md:flex items-center gap-3 ml-auto">
-          <Link 
+          {/* <Link 
             href="#" 
             className="px-6 py-2.5 text-sm font-bold text-perfil-blue border-2 border-border-gray rounded-full hover:border-perfil-blue hover:bg-perfil-blue hover:text-white transition-all"
           >
             Solicitar demo
-          </Link>
+          </Link> */}
           <Link 
-            href="#" 
+            href={directorioUrl}
             className="px-6 py-2.5 text-sm font-bold text-white bg-perfil-blue rounded-full hover:bg-deep-blue transition-all shadow-lg shadow-perfil-blue/20"
           >
             Ver directorio
@@ -87,17 +88,17 @@ export default function Header() {
           </nav>
           <div className="flex flex-col gap-3 pt-6 border-t border-border-gray">
             <Link 
-              href="#" 
+              href={directorioUrl}
               className="w-full text-center px-6 py-3 text-sm font-bold text-white bg-perfil-blue rounded-full shadow-lg shadow-perfil-blue/20"
             >
               Ver directorio de trabajadores
             </Link>
-            <Link 
+            {/* <Link 
               href="#" 
               className="w-full text-center px-6 py-3 text-sm font-bold text-perfil-blue border-2 border-border-gray rounded-full"
             >
               Solicitar demo
-            </Link>
+            </Link> */}
           </div>
         </div>
       )}

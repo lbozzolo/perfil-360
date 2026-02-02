@@ -9,7 +9,7 @@ const features = [
   {
     title: "Verificación pública y segura",
     icon: <ShieldCheck size={24} />,
-    text: "Directorio público para verificar trabajadores en segundos. Datos sensibles resguardados."
+    text: `Directorio público para verificar trabajadores en segundos. Datos sensibles resguardados.`,
   },
   {
     title: "Supervisores integrados",

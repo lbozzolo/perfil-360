@@ -35,7 +35,7 @@ export default function FAQEmpresas() {
         </div>
 
         {/* Manual Note */}
-        <div className="bg-bg-light rounded-2xl p-8 border border-gray-200 flex flex-col md:flex-row gap-6 items-center">
+        {/* <div className="bg-bg-light rounded-2xl p-8 border border-gray-200 flex flex-col md:flex-row gap-6 items-center">
              <div className="h-14 w-14 bg-deep-blue text-white rounded-full flex items-center justify-center shrink-0">
                 <BookOpen size={24} />
              </div>
@@ -45,7 +45,7 @@ export default function FAQEmpresas() {
                     Perfil 360 cuenta con un manual de usuario completo para empresas. Por seguridad operativa, el manual no es público: se accede directamente desde dentro del sistema una vez que tu empresa está registrada.
                 </p>
              </div>
-        </div>
+        </div> */}
 
       </div>
     </section>

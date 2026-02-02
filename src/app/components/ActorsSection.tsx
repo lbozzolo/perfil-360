@@ -1,4 +1,5 @@
 import { Building2, GraduationCap, ShieldCheck, UserCheck, CheckCircle2, ArrowRight } from 'lucide-react';
+import Link from 'next/link';
 
 const actors = [
   {
@@ -80,9 +81,18 @@ export default function ActorsSection() {
                 ))}
               </ul>
               <div className="pt-6 border-t border-black/5 mt-auto">
-                <button className="text-sm font-bold text-perfil-blue flex items-center gap-2 group-hover:gap-3 transition-all">
+                <Link
+                  href={
+                    actor.title === 'Empresas' ? '/empresas'
+                    : actor.title === 'Trabajadores' ? '/personas'
+                    : actor.title === 'Centros de capacitación' ? '/centros'
+                    : actor.title === 'ART' ? '/empresas'
+                    : '/'
+                  }
+                  className="text-sm font-bold text-perfil-blue flex items-center gap-2 group-hover:gap-3 transition-all"
+                >
                   Ver más <ArrowRight size={16} />
-                </button>
+                </Link>
               </div>
             </div>
           ))}

@@ -27,7 +27,7 @@ export default function CentrosPage() {
         <HowItWorksCentros />
         <ExpiredCertificationsCentros />
         <PlansCentros />
-        <ManualSupportCentros />
+        {/* <ManualSupportCentros /> */}
         <IntegrationCentros />
       </main>
 

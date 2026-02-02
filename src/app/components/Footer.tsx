@@ -1,4 +1,5 @@
 import Link from 'next/link';
+const directorioUrl = process.env.NEXT_PUBLIC_DIRECTORIO_URL || 'https://directorio.perfil360.com.ar';
 import { Facebook, Twitter, Linkedin, Youtube, Instagram } from 'lucide-react';
 
 export default function Footer() {
@@ -42,7 +43,7 @@ export default function Footer() {
               <li><Link href="#" className="hover:text-360-yellow transition-colors">Cómo funciona</Link></li>
               <li><Link href="#" className="hover:text-360-yellow transition-colors">Casos de uso</Link></li>
               <li><Link href="#" className="hover:text-360-yellow transition-colors">Planes y precios</Link></li>
-              <li><Link href="#" className="hover:text-360-yellow transition-colors">Directorio público</Link></li>
+              <li><Link href={directorioUrl} className="hover:text-360-yellow transition-colors">Directorio público</Link></li>
             </ul>
           </div>
 

@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+const registroUrl = process.env.NEXT_PUBLIC_REGISTRO_URL || 'https://registro.perfil360.com.ar';
 import { ArrowRight } from 'lucide-react';
 
 export default function HeroEmpresas() {
@@ -32,16 +33,17 @@ export default function HeroEmpresas() {
                 
                 <div className="flex flex-col sm:flex-row items-center gap-4 justify-start">
                 <Link 
-                    href="#registro" 
-                    className="w-full sm:w-auto px-8 py-3 bg-360-yellow text-deep-blue font-bold rounded-full hover:bg-white hover:text-connection-teal transition-all shadow-md hover:shadow-lg flex items-center justify-center gap-2 transform hover:-translate-y-0.5 text-base"
+                  href={registroUrl}
+                  className="w-full sm:w-auto px-8 py-3 bg-360-yellow text-deep-blue font-bold rounded-full hover:bg-white hover:text-connection-teal transition-all shadow-md hover:shadow-lg flex items-center justify-center gap-2 transform hover:-translate-y-0.5 text-base"
                 >
-                    Registrar mi empresa (Gratis) <ArrowRight size={20} />
+                  Registrar mi empresa (Gratis) <ArrowRight size={20} />
                 </Link>
                 <Link 
-                    href="#contacto" 
-                    className="w-full sm:w-auto px-8 py-3 border-2 border-white text-white font-bold rounded-full hover:bg-white hover:text-connection-teal transition-all flex items-center justify-center transform hover:-translate-y-0.5 text-base"
+                  href={process.env.NEXT_PUBLIC_CONTACTO_EMPRESAS_CENTROS_URL || 'https://wkf.ms/4rpQ3Ml'}
+                  className="w-full sm:w-auto px-8 py-3 border-2 border-white text-white font-bold rounded-full hover:bg-white hover:text-connection-teal transition-all flex items-center justify-center transform hover:-translate-y-0.5 text-base"
+                  target="_blank" rel="noopener noreferrer"
                 >
-                    Quiero que me contacten
+                  Quiero que me contacten
                 </Link>
                 </div>
             </div>

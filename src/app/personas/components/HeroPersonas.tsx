@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+const contactoPersonasUrl = process.env.NEXT_PUBLIC_CONTACTO_PERSONAS_URL || 'https://wkf.ms/4jzNjtg';
 import { ArrowRight } from 'lucide-react';
 
 export default function HeroPersonas() {
@@ -33,10 +34,11 @@ export default function HeroPersonas() {
                 
                 <div className="flex flex-col sm:flex-row items-center gap-4 justify-start">
                 <Link 
-                    href="#" 
-                    className="w-full sm:w-auto px-8 py-3 bg-deep-blue text-white font-bold rounded-full hover:bg-white hover:text-deep-blue transition-all shadow-md hover:shadow-lg flex items-center justify-center gap-2 transform hover:-translate-y-0.5 text-base"
+                  href={contactoPersonasUrl}
+                  className="w-full sm:w-auto px-8 py-3 bg-deep-blue text-white font-bold rounded-full hover:bg-white hover:text-deep-blue transition-all shadow-md hover:shadow-lg flex items-center justify-center gap-2 transform hover:-translate-y-0.5 text-base"
+                  target="_blank" rel="noopener noreferrer"
                 >
-                    Solicitar contacto con mi empresa o centro <ArrowRight size={20} />
+                  Solicitar contacto con mi empresa o centro <ArrowRight size={20} />
                 </Link>
                 </div>
             </div>

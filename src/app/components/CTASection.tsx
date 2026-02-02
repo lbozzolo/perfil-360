@@ -1,4 +1,5 @@
 import Link from 'next/link';
+const directorioUrl = process.env.NEXT_PUBLIC_DIRECTORIO_URL || 'https://directorio.perfil360.com.ar';
 
 export default function CTASection() {
   return (
@@ -10,7 +11,7 @@ export default function CTASection() {
         
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <Link 
-            href="#" 
+            href={directorioUrl}
             className="w-full sm:w-auto px-8 py-4 bg-360-yellow text-perfil-blue font-bold rounded-lg hover:bg-yellow-400 transition-colors shadow-lg"
           >
             Ver directorio de trabajadores
