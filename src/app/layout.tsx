@@ -11,6 +11,9 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   title: "Perfil 360 - Plataforma de trazabilidad laboral",
   description: "Plataforma que conecta a trabajadores, empresas, centros de capacitación y ART en una red de información verificada.",
+  icons: {
+    icon: "/images/favicon.ico",
+  },
 };
 
 export default function RootLayout({
