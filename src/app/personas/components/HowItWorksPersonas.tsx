@@ -21,10 +21,9 @@ export default function HowItWorksPersonas() {
             <div className="w-14 h-14 bg-deep-blue text-white rounded-full flex items-center justify-center font-bold text-xl mb-6 shadow-lg shadow-deep-blue/20">
               1
             </div>
-            <h3 className="text-xl font-bold text-deep-blue mb-4">Solicitud de alta (iniciada por vos)</h3>
+            <h3 className="text-xl font-bold text-deep-blue mb-4">Solicitud de contacto (iniciada por vos)</h3>
             <p className="text-text-gray max-w-sm">
-              Podés solicitar la apertura de tu Perfil 360 completando el formulario de alta. Esto nos permite crear tu perfil personal y preparar el vínculo con las instituciones correspondientes.
-            </p>
+Podés dejar una solicitud de contacto para que Perfil 360 se comunique con la empresa donde trabajás o el centro donde te capacitaste, en caso de que aún no utilicen la plataforma.            </p>
           </div>
 
           {/* Step 2 */}
@@ -37,8 +36,8 @@ export default function HowItWorksPersonas() {
               Para que la información sea confiable y verificable:
             </p>
             <ul className="text-text-gray text-sm text-left max-w-sm space-y-2 list-disc pl-5">
-                <li>Las capacitaciones y certificaciones las cargan los centros de capacitación que las emitieron.</li>
-                <li>Los vínculos laborales (empresa, sucursal, puesto/rol si aplica) los cargan las empresas donde trabajás.</li>
+                <li>Las capacitaciones y certificaciones las cargan los centros que las emitieron.</li>
+                <li>Los vínculos laborales los cargan las empresas donde trabajás.</li>
                 <li>Cada institución carga únicamente sus propios registros.</li>
             </ul>
           </div>
@@ -50,7 +49,7 @@ export default function HowItWorksPersonas() {
             </div>
             <h3 className="text-xl font-bold text-deep-blue mb-4">Tu uso diario</h3>
              <p className="text-text-gray max-w-sm">
-              Entrás, consultás tu perfil, revisás tus cursos/certificados, descargás evidencia y compartís tu enlace si lo necesitás.
+               Accedés a tu perfil, consultás tus cursos y certificaciones, descargás evidencia y compartís tu enlace cuando lo necesitás.
             </p>
           </div>
         </div>

@@ -2,6 +2,34 @@
 
 import Link from 'next/link';
 import { User, Briefcase, Award, ArrowRight } from 'lucide-react';
+import { useState } from 'react';
+
+// Componente para mostrar placeholder hasta que el video cargue
+function VideoWithPlaceholder() {
+  const [loaded, setLoaded] = useState(false);
+  return (
+    <div className="relative w-full h-full">
+      {!loaded && (
+        <img 
+          src="/images/video-imagen.webp" 
+          alt="Placeholder video" 
+          className="absolute inset-0 w-full h-full object-contain bg-white z-10" 
+        />
+      )}
+      <iframe
+        width="100%"
+        height="100%"
+        src="https://www.youtube.com/embed/PdaeM1se7aM?autoplay=1&mute=1&loop=1&playlist=PdaeM1se7aM&controls=1"
+        title="¿Qué es Perfil 360?"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen
+        className="relative z-20"
+        onLoad={() => setLoaded(true)}
+      ></iframe>
+    </div>
+  );
+}
 
 export default function Hero() {
   return (
@@ -48,15 +76,7 @@ export default function Hero() {
 
             <div className="mb-10">
               <div className="relative w-full max-w-lg mx-auto lg:mx-0 aspect-video bg-black rounded-xl overflow-hidden shadow-2xl">
-                <iframe 
-                  width="100%" 
-                  height="100%" 
-                  src="https://www.youtube.com/embed/PdaeM1se7aM?autoplay=1&mute=1&loop=1&playlist=PdaeM1se7aM&controls=1" 
-                  title="¿Qué es Perfil 360?" 
-                  frameBorder="0" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                  allowFullScreen
-                ></iframe>
+                <VideoWithPlaceholder />
               </div>
             </div>
             
