@@ -16,15 +16,15 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 md:px-8 h-24 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 group">
-          <Image
-            src="/images/logo_perfil_360_04.webp?v=2"
-            alt="Perfil 360"
-            width={240}
-            height={80}
-            className="h-20 w-auto object-contain"
-            priority
-            unoptimized // Esto ayuda a evitar el caché de optimización de Next.js durante el desarrollo
-          />
+            <Image
+              src="/images/logo_perfil360_md.webp"
+              alt="Perfil 360"
+              width={240}
+              height={80}
+              className="h-20 w-auto object-contain"
+              priority
+              unoptimized // Esto ayuda a evitar el caché de optimización de Next.js durante el desarrollo
+            />
         </Link>
 
         {/* Desktop Navigation */}

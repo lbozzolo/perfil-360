@@ -21,7 +21,7 @@ export default function Home() {
         <FeaturesSection />
         <PlansSection />
         <DirectoryBanner />
-        <TestimonialsSection />
+        {/* <TestimonialsSection /> */}
         <CTASection />
       </main>
 
