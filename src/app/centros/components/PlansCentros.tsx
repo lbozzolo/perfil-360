@@ -72,7 +72,7 @@ export default function PlansCentros() {
         </div>
 
         {/* Botón único exterior */}
-        <div className="flex justify-center">
+        <div className="flex flex-col items-center justify-center gap-2">
           <a
             href={process.env.NEXT_PUBLIC_REGISTRO_URL || '#'}
             target="_blank"
@@ -80,6 +80,13 @@ export default function PlansCentros() {
             className="px-12 py-4 text-lg bg-deep-blue text-white font-bold rounded-full hover:bg-perfil-blue transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-center"
           >
             Registrarme gratis
+          </a>
+          <a
+            href="/aranceles1.26.pdf"
+            download
+            className="text-xs text-perfil-blue underline hover:text-360-yellow transition-colors mt-1"
+          >
+            Ver aranceles
           </a>
         </div>
 
