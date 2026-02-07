@@ -49,14 +49,17 @@ export default function HeroCentros() {
             </div>
 
             {/* Right Column (Image & Microcopy) */}
-            <div className="w-full lg:w-2/5 flex flex-col items-center relative mt-12 lg:mt-0 lg:mb-[-50px] z-20">
-                <div className="w-full flex items-start justify-start bg-white p-0 m-0 overflow-visible relative" style={{ minHeight: '1px' }}>
-                  <img 
-                    src="/images/interfaz-centro-de-capacitacion.webp" 
-                    alt="Interfaz del panel del centro de capacitación" 
-                    className="block lg:scale-[1.5] lg:origin-left" 
-                    style={{ width: '100%', height: 'auto', maxHeight: '1050px', maxWidth: '900px', borderRadius: '3px', display: 'block' }}
-                  />
+            <div className="w-full lg:w-[42%] flex flex-col items-center relative mt-12 lg:mt-0 lg:mb-[-50px] z-20" style={{ perspective: '1000px' }}>
+                <div className="relative w-[115%] rounded-2xl overflow-hidden shadow-2xl bg-white aspect-[4/3] flex items-center justify-center" style={{ transform: 'rotateY(-8deg)', transformStyle: 'preserve-3d' }}>
+                    {/* Imagen principal del hero */}
+                    <img 
+                      src="/images/perfil360-02.webp"
+                      alt="Panel de gestión de Centros Perfil 360"
+                      className="object-cover w-full h-full"
+                      loading="eager"
+                    />
+                    {/* Gradiente de opacidad para efecto de profundidad */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-black/20 to-transparent"></div>
                 </div>
 
                  {/* <div className="w-[110%] -mt-8 relative z-10 bg-white p-6 rounded-xl border border-gray-200 shadow-xl">

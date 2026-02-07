@@ -23,7 +23,7 @@ export default function HeroEmpresas() {
                 Control de Competencias 360°
                 </div>
 
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-[1.1] tracking-tight text-white">
+                <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold mb-6 leading-[1.1] tracking-tight text-white">
                 Digitalizá las competencias de tus trabajadores y gestioná capacitaciones <span className="text-360-yellow drop-shadow-sm">con evidencia operativa.</span>
                 </h1>
                 
@@ -49,17 +49,17 @@ export default function HeroEmpresas() {
             </div>
 
             {/* Right Column (Image & Microcopy) */}
-            <div className="w-full lg:w-1/3 flex flex-col items-center relative mt-12 lg:mt-0 lg:mb-[-50px] z-20">
-                <div className="relative w-full rounded-2xl overflow-hidden shadow-2xl border-4 border-white/20 bg-white aspect-[4/3] flex items-center justify-center">
-                     {/* Placeholder for business functionality image */}
-                     <div className="text-center p-8">
-                        <div className="w-16 h-16 bg-deep-blue/10 rounded-full flex items-center justify-center mx-auto mb-4 text-deep-blue font-bold text-2xl">
-                          360
-                        </div>
-                        <p className="font-bold text-deep-blue">Dashboard de Gestión</p>
-                        <p className="text-sm text-gray-500 mt-2">Vista de sucursales, staff y estado de cumplimiento.</p>
-                     </div>
-                     <div className="absolute inset-0 bg-deep-blue/5"></div>
+            <div className="w-full lg:w-[42%] flex flex-col items-center relative mt-12 lg:mt-0 lg:mb-[-50px] z-20" style={{ perspective: '1000px' }}>
+              <div className="relative w-[115%] rounded-2xl overflow-hidden shadow-2xl bg-white aspect-[4/3] flex items-center justify-center" style={{ transform: 'rotateY(-8deg)', transformStyle: 'preserve-3d' }}>
+                    {/* Imagen principal del hero */}
+                    <img 
+                      src="/images/perfil360-01.webp"
+                      alt="Dashboard de Gestión Perfil 360"
+                      className="object-cover w-full h-full"
+                      loading="eager"
+                    />
+                    {/* Gradiente de opacidad para efecto de profundidad */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-black/20 to-transparent"></div>
                 </div>
 
                  <div className="w-[110%] -mt-8 relative z-10 bg-white p-6 rounded-xl border border-deep-blue/10 shadow-xl">
