@@ -4,7 +4,7 @@ import { Search, ShieldCheck, User, CheckCircle2 } from 'lucide-react';
 
 export default function DirectoryBanner() {
   return (
-    <section className="py-20 bg-deep-blue border-y border-white/10 overflow-hidden">
+    <section className="py-20 bg-connection-teal text-white border-y border-white/10 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 md:px-8 flex flex-col lg:flex-row items-center justify-between gap-12">
         
         {/* Text Content */}
@@ -25,7 +25,7 @@ export default function DirectoryBanner() {
             className="inline-flex items-center gap-2 px-8 py-4 bg-360-yellow text-perfil-blue font-bold rounded-full hover:bg-yellow-400 transition-all shadow-lg shadow-yellow-500/20 hover:-translate-y-1"
           >
             <Search size={20} />
-            Ver directorio de trabajadores
+            Verificar perfil laboral
           </Link>
         </div>
         
