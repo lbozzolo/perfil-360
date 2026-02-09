@@ -55,7 +55,7 @@ export default function Header() {
             href={directorioUrl}
             className="px-6 py-2.5 text-sm font-bold text-white bg-perfil-blue rounded-full hover:bg-deep-blue transition-all shadow-lg shadow-perfil-blue/20"
           >
-            Ver directorio
+            Verificar perfil laboral
           </Link>
         </div>
 
@@ -91,7 +91,7 @@ export default function Header() {
               href={directorioUrl}
               className="w-full text-center px-6 py-3 text-sm font-bold text-white bg-perfil-blue rounded-full shadow-lg shadow-perfil-blue/20"
             >
-              Ver directorio de trabajadores
+              Verificar perfil laboral
             </Link>
             {/* <Link 
               href="#" 

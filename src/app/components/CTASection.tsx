@@ -14,7 +14,7 @@ export default function CTASection() {
             href={directorioUrl}
             className="w-full sm:w-auto px-8 py-4 bg-360-yellow text-perfil-blue font-bold rounded-lg hover:bg-yellow-400 transition-colors shadow-lg"
           >
-            Ver directorio de trabajadores
+            Verificar perfil laboral
           </Link>
           
           <Link 
