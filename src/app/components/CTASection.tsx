@@ -18,7 +18,7 @@ export default function CTASection() {
           </Link>
           
           <Link 
-            href="#" 
+            href="https://registro.perfil360.com.ar" 
             className="w-full sm:w-auto px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-white/10 transition-colors"
           >
             Solicitar demo y crear cuenta
