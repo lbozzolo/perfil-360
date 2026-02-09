@@ -24,59 +24,47 @@ export default function Footer() {
             </p>
             
             <div className="flex gap-4">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="https://www.linkedin.com/company/perfil360" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
                 <Linkedin size={20} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="https://twitter.com/perfil360" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
                 <Twitter size={20} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="https://instagram.com/perfil360" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
                 <Instagram size={20} />
               </a>
             </div>
           </div>
 
-          {/* Links 1 */}
+          {/* Navegación principal igual al header */}
           <div>
-            <h4 className="font-bold text-white mb-6">Plataforma</h4>
+            <h4 className="font-bold text-white mb-6">Navegación</h4>
             <ul className="space-y-4 text-sm text-gray-400">
-              <li><Link href="#" className="hover:text-360-yellow transition-colors">Cómo funciona</Link></li>
-              <li><Link href="#" className="hover:text-360-yellow transition-colors">Casos de uso</Link></li>
-              <li><Link href="#" className="hover:text-360-yellow transition-colors">Planes y precios</Link></li>
-              <li><Link href={directorioUrl} className="hover:text-360-yellow transition-colors">Directorio público</Link></li>
+              <li><Link href="/" className="hover:text-360-yellow transition-colors">Inicio</Link></li>
+              <li><Link href="/personas" className="hover:text-360-yellow transition-colors">Personas</Link></li>
+              <li><Link href="/empresas" className="hover:text-360-yellow transition-colors">Empresas</Link></li>
+              <li><Link href="/centros" className="hover:text-360-yellow transition-colors">Centros</Link></li>
             </ul>
+            
           </div>
 
-          {/* Links 2 */}
-          <div>
-            <h4 className="font-bold text-white mb-6">Soporte</h4>
-            <ul className="space-y-4 text-sm text-gray-400">
-              <li><Link href="#" className="hover:text-360-yellow transition-colors">Preguntas frecuentes</Link></li>
-              <li><Link href="#" className="hover:text-360-yellow transition-colors">Centro de ayuda</Link></li>
-              <li><Link href="#" className="hover:text-360-yellow transition-colors">Contacto</Link></li>
-              <li><Link href="#" className="hover:text-360-yellow transition-colors">Ingresar</Link></li>
-            </ul>
-          </div>
-
-          {/* Newsletter / Legal */}
+          {/* Legal */}
           <div>
             <h4 className="font-bold text-white mb-6">Legal</h4>
             <ul className="space-y-4 text-sm text-gray-400 mb-8">
-              <li><Link href="#" className="hover:text-360-yellow transition-colors">Términos y condiciones</Link></li>
-              <li><Link href="#" className="hover:text-360-yellow transition-colors">Política de privacidad</Link></li>
+              <li><Link href="/terminos" className="hover:text-360-yellow transition-colors">Términos y condiciones</Link></li>
+              <li><Link href="/privacidad" className="hover:text-360-yellow transition-colors">Política de privacidad</Link></li>
             </ul>
-            
-            <h4 className="font-bold text-white mb-4">Suscribite</h4>
-            <div className="flex">
-              <input 
-                type="email" 
-                placeholder="Tu email" 
-                className="bg-white/5 border border-white/10 rounded-l-lg px-4 py-2 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-360-yellow w-full"
-              />
-              <button className="bg-360-yellow text-perfil-blue px-4 py-2 rounded-r-lg font-bold text-sm hover:bg-yellow-400 transition-colors">
-                OK
-              </button>
+
+            <div className="mt-6">
+              <Link 
+                href={directorioUrl}
+                className="inline-block px-6 py-2.5 text-sm font-bold text-white bg-perfil-blue rounded-full hover:bg-deep-blue transition-all shadow-lg shadow-perfil-blue/20"
+              >
+                Verificar perfil laboral
+              </Link>
             </div>
+            
           </div>
         </div>
 
