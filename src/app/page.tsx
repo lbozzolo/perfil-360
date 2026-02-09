@@ -6,7 +6,6 @@ import FeaturesSection from "./components/FeaturesSection";
 import PlansSection from "./components/PlansSection";
 import DirectoryBanner from "./components/DirectoryBanner";
 import TestimonialsSection from "./components/TestimonialsSection";
-import CTASection from "./components/CTASection";
 import Footer from "./components/Footer";
 
 export default function Home() {
@@ -22,7 +21,6 @@ export default function Home() {
         <PlansSection />
         <DirectoryBanner />
         {/* <TestimonialsSection /> */}
-        <CTASection />
       </main>
 
       <Footer />
