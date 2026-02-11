@@ -1,7 +1,13 @@
 import Link from 'next/link';
+
 import { ArrowRight, Check } from 'lucide-react';
 
+const registerUrl = typeof window !== 'undefined' ? process.env.NEXT_PUBLIC_REGISTRO_URL : process.env.NEXT_PUBLIC_REGISTRO_URL;
+
 export default function PlansSection() {
+  // fallback para entorno cliente
+  const url = process.env.NEXT_PUBLIC_REGISTRO_URL;
+  const finalUrl = url || registerUrl || '#';
   return (
     <section id="planes" className="py-24 bg-bg-light scroll-mt-28">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
@@ -58,9 +64,14 @@ Perfil 360 es una plataforma de uso gratuito y acceso público que permite regis
                 <p className="text-sm text-text-gray">Descarga de constancia de inscripción en Perfil 360 como herramienta de gestión y calidad.</p>
               </div> */}
             </div>
-            <button className="w-full py-3 rounded-full border-2 border-green-600 text-green-700 font-bold hover:bg-green-600 hover:text-white transition-all">
+            <a
+              href={finalUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full block text-center py-3 rounded-full border-2 border-green-600 text-green-700 font-bold hover:bg-green-600 hover:text-white transition-all"
+            >
               👉 Empezar gratis
-            </button>
+            </a>
           </div>
 
           {/* Plan Plus */}
@@ -104,14 +115,14 @@ Perfil 360 es una plataforma de uso gratuito y acceso público que permite regis
                 <p className="text-sm text-text-gray">Paneles de control y seguimiento de vigencias.</p>
               </div>
             </div>
-            <div className="flex flex-col gap-3">
+            {/* <div className="flex flex-col gap-3">
               <button className="w-full py-3 rounded-full bg-perfil-blue text-white font-bold hover:bg-deep-blue transition-all shadow-lg shadow-perfil-blue/20">
                 👉 Activar Plan Plus
               </button>
               <button className="w-full py-3 rounded-full border-2 border-perfil-blue text-perfil-blue font-bold hover:bg-blue-50 transition-all">
                 👉 Solicitar demo
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
 
