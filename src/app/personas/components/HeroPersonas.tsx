@@ -20,7 +20,7 @@ export default function HeroPersonas() {
             {/* Left Column */}
             <div className="flex-1">
                 <div className="inline-block px-6 py-3 bg-deep-blue text-white font-extrabold rounded-full text-base tracking-wide mb-6 shadow-lg transform hover:scale-105 transition-transform duration-300">
-                ★ GRATIS PARA PERSONAS. 100%.
+                ★ GRATIS PARA PERSONAS. 100%
                 </div>
 
                 <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-6 leading-[0.95] tracking-tight text-deep-blue max-w-4xl">
@@ -38,7 +38,7 @@ export default function HeroPersonas() {
                   className="w-full sm:w-auto px-8 py-3 bg-deep-blue text-white font-bold rounded-full hover:bg-white hover:text-deep-blue transition-all shadow-md hover:shadow-lg flex items-center justify-center gap-2 transform hover:-translate-y-0.5 text-base"
                   target="_blank" rel="noopener noreferrer"
                 >
-                  Solicitar contacto con mi empresa o centro <ArrowRight size={20} />
+                  Quiero digitalizar mis capacitaciones <ArrowRight size={20} />
                 </Link>
                 </div>
             </div>

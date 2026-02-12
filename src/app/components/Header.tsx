@@ -53,8 +53,9 @@ export default function Header() {
           </Link> */}
           <Link 
             href={directorioUrl}
-            className="px-6 py-2.5 text-sm font-bold text-white bg-perfil-blue rounded-full hover:bg-deep-blue transition-all shadow-lg shadow-perfil-blue/20"
+            className="px-6 py-2.5 text-sm font-bold text-white bg-perfil-blue rounded-full hover:bg-deep-blue transition-all shadow-lg shadow-perfil-blue/20 flex items-center gap-2"
           >
+            <Search size={18} />
             Verificar perfil laboral
           </Link>
         </div>
@@ -89,8 +90,9 @@ export default function Header() {
           <div className="flex flex-col gap-3 pt-6 border-t border-border-gray">
             <Link 
               href={directorioUrl}
-              className="w-full text-center px-6 py-3 text-sm font-bold text-white bg-perfil-blue rounded-full shadow-lg shadow-perfil-blue/20"
+              className="w-full text-center px-6 py-3 text-sm font-bold text-white bg-perfil-blue rounded-full shadow-lg shadow-perfil-blue/20 flex items-center justify-center gap-2"
             >
+              <Search size={18} />
               Verificar perfil laboral
             </Link>
             {/* <Link 

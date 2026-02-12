@@ -1,12 +1,12 @@
 import Link from 'next/link';
 const directorioUrl = process.env.NEXT_PUBLIC_DIRECTORIO_URL || 'https://directorio.perfil360.com.ar';
-import { Facebook, Twitter, Linkedin, Youtube, Instagram } from 'lucide-react';
+import { Facebook, Twitter, Linkedin, Youtube, Instagram, Search } from 'lucide-react';
 
 export default function Footer() {
   return (
     <footer className="bg-deep-blue text-white pt-20 pb-10 border-t border-white/10">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-12 mb-16">
           
           {/* Brand */}
           <div className="col-span-1 md:col-span-1">
@@ -49,7 +49,7 @@ export default function Footer() {
           </div>
 
           {/* Legal */}
-          <div>
+          <div className="md:col-span-2">
             <h4 className="font-bold text-white mb-6">Legal</h4>
             <ul className="space-y-4 text-sm text-gray-400 mb-8">
               <li><Link href="/terminos" className="hover:text-360-yellow transition-colors">Términos y condiciones</Link></li>
@@ -59,8 +59,9 @@ export default function Footer() {
             <div className="mt-6">
               <Link 
                 href={directorioUrl}
-                className="inline-block px-6 py-2.5 text-sm font-bold text-white bg-perfil-blue rounded-full hover:bg-deep-blue transition-all shadow-lg shadow-perfil-blue/20"
+                className="inline-flex items-center justify-center px-6 py-2 text-base font-bold text-white bg-perfil-blue rounded-full hover:bg-deep-blue transition-all shadow-lg shadow-perfil-blue/20 gap-2"
               >
+                <Search size={18} className="-mt-0.5" />
                 Verificar perfil laboral
               </Link>
             </div>
