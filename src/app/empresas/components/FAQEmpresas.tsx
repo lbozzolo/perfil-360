@@ -19,7 +19,7 @@ export default function FAQEmpresas() {
     },
     {
       question: "¿El Plan Plus cuánto cuesta?",
-      answer: `El valor es de $${process.env.NEXT_PUBLIC_PRICE_PLAN_PLUS || '35.000'} ARS final (IVA incluido) por mes.`
+      answer: `El valor es de $${Number(process.env.NEXT_PUBLIC_PRICE_PLAN_PLUS || '35000').toLocaleString('es-AR')} ARS final (IVA incluido) por mes.`
     }
   ];
 

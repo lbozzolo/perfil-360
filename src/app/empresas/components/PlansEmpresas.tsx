@@ -72,7 +72,7 @@ export default function PlansEmpresas() {
               </span>
               <div className="flex items-baseline justify-between flex-wrap gap-2">
                 <h3 className="text-2xl font-bold text-deep-blue mb-2">Plan Plus</h3>
-                <p className="text-3xl font-extrabold text-deep-blue">${process.env.NEXT_PUBLIC_PRICE_PLAN_PLUS || '35.000'} <span className="text-sm font-normal text-text-gray">ARS / mes</span></p>
+                <p className="text-3xl font-extrabold text-deep-blue">${Number(process.env.NEXT_PUBLIC_PRICE_PLAN_PLUS || '35000').toLocaleString('es-AR')} <span className="text-sm font-normal text-text-gray">ARS / mes</span></p>
               </div>
                <p className="text-xs text-text-gray mb-2 font-medium">IVA incluido.</p>
             </div>
