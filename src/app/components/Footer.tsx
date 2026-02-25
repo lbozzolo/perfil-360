@@ -1,6 +1,6 @@
 import Link from 'next/link';
 const directorioUrl = process.env.NEXT_PUBLIC_DIRECTORIO_URL || 'https://directorio.perfil360.com.ar';
-import { Facebook, Twitter, Linkedin, Youtube, Instagram, Search } from 'lucide-react';
+import { Facebook, Twitter, Linkedin, Youtube, Instagram, Search, X } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -27,10 +27,12 @@ export default function Footer() {
               <a href="https://www.linkedin.com/company/perfil360" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
                 <Linkedin size={20} />
               </a>
-              <a href="https://twitter.com/perfil360" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
-                <Twitter size={20} />
+              <a href="https://x.com/perfil360" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17.211 3H21.5L14.924 10.09L23 21H17.423L12.572 14.729L7.117 21H2.5L9.414 13.414L1.5 3H7.211L11.572 8.727L17.211 3ZM16.423 19H18.346L10.346 7H8.423L16.423 19Z" fill="currentColor"/>
+                </svg>
               </a>
-              <a href="https://instagram.com/perfil360" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+              <a href="https://instagram.com/perfil360.arg" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
                 <Instagram size={20} />
               </a>
             </div>
