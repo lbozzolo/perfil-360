@@ -22,6 +22,7 @@ export default function DirectoryBanner() {
           
           <Link 
             href={directorioUrl}
+            target="_blank"
             className="inline-flex items-center gap-2 px-8 py-4 bg-360-yellow text-perfil-blue font-bold rounded-full hover:bg-yellow-400 transition-all shadow-lg shadow-yellow-500/20 hover:-translate-y-1"
           >
             <Search size={20} />

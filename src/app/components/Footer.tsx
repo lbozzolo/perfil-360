@@ -59,6 +59,7 @@ export default function Footer() {
             <div className="mt-6">
               <Link 
                 href={directorioUrl}
+                target="_blank"
                 className="inline-flex items-center justify-center px-6 py-2 text-base font-bold text-white bg-perfil-blue rounded-full hover:bg-deep-blue transition-all shadow-lg shadow-perfil-blue/20 gap-2"
               >
                 <Search size={18} className="-mt-0.5" />
