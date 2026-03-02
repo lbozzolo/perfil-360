@@ -149,6 +149,14 @@ export default function Header() {
             </Link>
           </nav>
           <div className="flex flex-col gap-3 pt-6 border-t border-border-gray">
+            <a
+              href="https://app.perfil360.com.ar/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full text-center px-6 py-3 text-sm font-bold text-perfil-blue border-2 border-border-gray rounded-full hover:border-perfil-blue hover:bg-perfil-blue hover:text-white transition-all"
+            >
+              Iniciar sesión
+            </a>
             <Link
               href={directorioUrl}
               className="w-full text-center px-6 py-3 text-sm font-bold text-white bg-perfil-blue rounded-full shadow-lg shadow-perfil-blue/20 flex items-center justify-center gap-2"
