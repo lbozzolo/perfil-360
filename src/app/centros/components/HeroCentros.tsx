@@ -50,16 +50,15 @@ export default function HeroCentros() {
 
             {/* Right Column (Image & Microcopy) */}
             <div className="w-full lg:w-[42%] flex flex-col items-center relative mt-12 lg:mt-0 lg:mb-[-50px] z-20" style={{ perspective: '1000px' }}>
-                <div className="relative w-[115%] rounded-2xl overflow-hidden shadow-2xl bg-white aspect-[4/3] flex items-center justify-center" style={{ transform: 'rotateY(-8deg)', transformStyle: 'preserve-3d' }}>
-                    {/* Imagen principal del hero */}
-                    <img 
-                      src="/images/perfil360-02.webp"
-                      alt="Panel de gestión de Centros Perfil 360"
-                      className="object-cover w-full h-full"
-                      loading="eager"
+                <div className="relative w-[115%] rounded-2xl overflow-hidden shadow-2xl bg-black aspect-video" style={{ transform: 'rotateY(-8deg)', transformStyle: 'preserve-3d' }}>
+                    {/* Video principal del hero */}
+                    <iframe
+                      src="https://www.youtube.com/embed/kSrr9X4SML8?rel=0&modestbranding=1"
+                      title="Panel de gestión de Centros Perfil 360"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      className="absolute inset-0 w-full h-full"
                     />
-                    {/* Gradiente de opacidad para efecto de profundidad */}
-                    <div className="absolute inset-0 bg-gradient-to-r from-black/20 to-transparent"></div>
                 </div>
 
                  {/* <div className="w-[110%] -mt-8 relative z-10 bg-white p-6 rounded-xl border border-gray-200 shadow-xl">
