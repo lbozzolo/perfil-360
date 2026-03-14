@@ -4,20 +4,18 @@ import { Facebook, Twitter, Linkedin, Youtube, Instagram, Search, X } from 'luci
 
 export default function Footer() {
   return (
-    <footer className="bg-deep-blue text-white pt-20 pb-10 border-t border-white/10">
+    <footer className="bg-[#101012] text-white pt-20 pb-10 border-t border-white/10">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <div className="grid grid-cols-1 md:grid-cols-5 gap-12 mb-16">
           
           {/* Brand */}
           <div className="col-span-1 md:col-span-1">
             <Link href="/" className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 bg-360-yellow rounded-full flex items-center justify-center text-perfil-blue font-bold text-xl">
-                P
-              </div>
-              <div className="flex flex-col leading-none">
-                <span className="text-xl font-bold text-white tracking-tight">PERFIL 360</span>
-                <span className="text-[10px] font-bold text-gray-400 uppercase tracking-wider">Trazabilidad laboral</span>
-              </div>
+              <img 
+                src="/images/logo_perfil_360_oscuro.webp" 
+                alt="Perfil 360" 
+                className="w-40 h-auto object-contain rounded-lg" 
+              />
             </Link>
             <p className="text-sm text-gray-400 leading-relaxed mb-8">
               Dando memoria, visibilidad y justicia al esfuerzo de cada trabajador. Una plataforma integral para el ecosistema laboral.
@@ -43,7 +41,7 @@ export default function Footer() {
             <h4 className="font-bold text-white mb-6">Navegación</h4>
             <ul className="space-y-4 text-sm text-gray-400">
               <li><Link href="/" className="hover:text-360-yellow transition-colors">Inicio</Link></li>
-              <li><Link href="/personas" className="hover:text-360-yellow transition-colors">Personas</Link></li>
+              <li><Link href="/trabajadores" className="hover:text-360-yellow transition-colors">Trabajadores</Link></li>
               <li><Link href="/empresas" className="hover:text-360-yellow transition-colors">Empresas</Link></li>
               <li><Link href="/centros" className="hover:text-360-yellow transition-colors">Centros</Link></li>
             </ul>

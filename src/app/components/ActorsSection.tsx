@@ -84,7 +84,7 @@ export default function ActorsSection() {
                 <Link
                   href={
                     actor.title === 'Empresas' ? '/empresas'
-                    : actor.title === 'Trabajadores' ? '/personas'
+                    : actor.title === 'Trabajadores' ? '/trabajadores'
                     : actor.title === 'Centros de capacitación' ? '/centros'
                     : actor.title === 'ART' ? '/empresas'
                     : '/'

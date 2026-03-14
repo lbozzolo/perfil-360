@@ -18,7 +18,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 md:px-8 h-24 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3 group">
           <Image
-            src="/images/logo_perfil360_md.webp"
+            src="/images/nuevo_logo_perfil_360_xs.webp"
             alt="Perfil 360"
             width={240}
             height={80}
@@ -40,14 +40,14 @@ export default function Header() {
             Inicio
           </Link>
           <Link
-            href="/personas"
+            href="/trabajadores"
             className={`px-4 py-2 text-sm font-bold transition-colors rounded-lg ${
-              pathname === "/personas"
+              pathname === "/trabajadores"
                 ? "text-perfil-blue bg-bg-light"
                 : "text-text-gray hover:text-perfil-blue hover:bg-bg-light"
             }`}
           >
-            Personas
+            Trabajadores
           </Link>
           <Link
             href="/empresas"
@@ -115,15 +115,15 @@ export default function Header() {
               Inicio
             </Link>
             <Link
-              href="/personas"
+              href="/trabajadores"
               className={`text-lg font-bold ${
-                pathname === "/personas"
+                pathname === "/trabajadores"
                   ? "text-perfil-blue"
                   : "text-text-gray hover:text-perfil-blue"
               }`}
               onClick={() => setIsMenuOpen(false)}
             >
-              Personas
+              Trabajadores
             </Link>
             <Link
               href="/centros"
