@@ -14,7 +14,7 @@ export default function TrainingTypesCentros() {
                 (y se entienda en auditorías)
             </p> */}
              <p className="text-gray-400 mt-4 max-w-3xl mx-auto">
-                Perfil 360 permite clasificar cursos de dos maneras: <br/>capacitaciones reglamentarias y capacitaciones complementarias.
+                Certired permite clasificar cursos de dos maneras: <br/>capacitaciones reglamentarias y capacitaciones complementarias.
             </p>
         </div>
 

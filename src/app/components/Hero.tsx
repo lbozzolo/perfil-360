@@ -21,7 +21,7 @@ function VideoWithPlaceholder() {
         width="100%"
         height="100%"
         src="https://www.youtube.com/embed/PdaeM1se7aM?autoplay=1&mute=1&loop=1&playlist=PdaeM1se7aM&controls=1"
-        title="¿Qué es Perfil 360?"
+        title="¿Qué es Certired?"
         frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowFullScreen
@@ -64,7 +64,7 @@ export default function Hero() {
                 className="w-full sm:w-auto px-8 py-4 bg-360-yellow text-deep-blue font-bold rounded-full hover:bg-white transition-all flex items-center justify-center gap-2 shadow-lg shadow-360-yellow/20 hover:-translate-y-1"
               >
                 <Play size={20} fill="currentColor" />
-                ¿Qué es Perfil 360?
+                ¿Qué es Certired?
               </button>
               
               <Link 
@@ -110,8 +110,8 @@ export default function Hero() {
               {/* Screen Content */}
               <div className="w-full h-full bg-bg-light overflow-y-auto relative rounded-[2.2rem] scrollbar-hide">
                 <img 
-                  src="/images/scroll_celular.webp" 
-                  alt="Perfil 360 App" 
+                  src="/images/mockup-cel-certired.webp" 
+                  alt="Certired App Mockup" 
                   className="w-full h-auto block"
                 />
               </div>

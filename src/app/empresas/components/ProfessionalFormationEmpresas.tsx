@@ -20,7 +20,7 @@ export default function ProfessionalFormationEmpresas() {
                 </h2>
                 
                 <p className="text-lg text-gray-300 mb-8 leading-relaxed">
-                    Además de cursos y certificaciones, Perfil 360 permite reflejar formación y preparación profesional (por ejemplo, estudios y títulos) dentro del perfil personal del trabajador.
+                    Además de cursos y certificaciones, Certired permite reflejar formación y preparación profesional (por ejemplo, estudios y títulos) dentro del perfil personal del trabajador.
                 </p>
 
                 <div className="bg-white/10 rounded-xl p-6 md:p-8 border border-white/10 backdrop-blur-sm shadow-xl">

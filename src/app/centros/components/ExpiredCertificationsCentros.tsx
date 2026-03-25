@@ -24,7 +24,7 @@ export default function ExpiredCertificationsCentros() {
                 Certificaciones vencidas: control, renovación y prevención operativa
             </h2>
             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                Perfil 360 te permite gestionar el ciclo de vida real de una competencia. Si una certificación vence, el centro puede detectarlo, accionar y renovar. Esto mejora el servicio al alumno y aporta valor a empresas, que muchas veces no detectan a tiempo vencimientos críticos.
+                Certired te permite gestionar el ciclo de vida real de una competencia. Si una certificación vence, el centro puede detectarlo, accionar y renovar. Esto mejora el servicio al alumno y aporta valor a empresas, que muchas veces no detectan a tiempo vencimientos críticos.
             </p>
         </div>
 

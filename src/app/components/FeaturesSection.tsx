@@ -40,7 +40,7 @@ export default function FeaturesSection() {
       <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
         <div className="text-center mb-20 max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 tracking-tight">
-            Funciones clave de Perfil 360
+            Funciones clave de Certired
           </h2>
           <p className="text-lg text-gray-300 font-medium">
             Herramientas diseñadas para simplificar la gestión y potenciar la transparencia.
@@ -64,7 +64,7 @@ export default function FeaturesSection() {
           <div className="relative h-full min-h-[300px] rounded-3xl overflow-hidden group shadow-lg border border-white/10">
             <img 
               src="/images/persona-mostrando-celular-con-perfil.webp" 
-              alt="Seguridad laboral" 
+              alt="Certired App Mockup" 
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-deep-blue/90 via-deep-blue/20 to-transparent flex items-end p-8">

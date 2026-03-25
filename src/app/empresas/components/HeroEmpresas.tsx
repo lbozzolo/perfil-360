@@ -28,7 +28,7 @@ export default function HeroEmpresas() {
                 </h1>
                 
                 <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl font-medium leading-relaxed">
-                Perfil 360 transforma certificaciones, vigencias e inspecciones en registros verificables. Empezá con una estructura simple (sucursal + staff) y escalá a una operación completa con roles y licitaciones cuando tu organización lo requiera.
+                Certired transforma certificaciones, vigencias e inspecciones en registros verificables. Empezá con una estructura simple (sucursal + staff) y escalá a una operación completa con roles y licitaciones cuando tu organización lo requiera.
                 </p>
                 
                 <div className="flex flex-col sm:flex-row items-center gap-4 justify-start">
@@ -54,7 +54,7 @@ export default function HeroEmpresas() {
                     {/* Imagen principal del hero */}
                     <img 
                       src="/images/perfil360-01.webp"
-                      alt="Dashboard de Gestión Perfil 360"
+                      alt="Dashboard de Gestión Certired"
                       className="object-cover w-full h-full"
                       loading="eager"
                     />

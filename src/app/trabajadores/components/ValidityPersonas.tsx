@@ -9,11 +9,11 @@ export default function ValidityPersonas() {
         <div className="flex flex-col lg:flex-row gap-12 items-center">
             <div className="flex-1">
                 <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                    ¿Tenés un carnet vencido? En Perfil 360 se ve, y se actualiza cuando renovás.
+                    ¿Tenés un carnet vencido? En Certired se ve, y se actualiza cuando renovás.
                 </h2>
                 <div className="space-y-6 text-gray-300">
                     <p>
-                        En Perfil 360, un “carnet vencido” se refleja como una capacitación vencida. Vas a ver claramente la fecha de emisión, la fecha de vencimiento y el estado.
+                        En Certired, un “carnet vencido” se refleja como una capacitación vencida. Vas a ver claramente la fecha de emisión, la fecha de vencimiento y el estado.
                     </p>
                     <div className="bg-white/10 p-6 rounded-xl border border-white/10">
                         <h4 className="font-bold text-white mb-2 flex items-center gap-2">

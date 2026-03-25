@@ -34,7 +34,7 @@ export default function EcosystemSection() {
             Cada organización carga datos.<br/> El trabajador conserva su historial.
           </h2>
           <p className="text-lg text-text-gray max-w-2xl mx-auto">
-            Un solo Perfil 360 se alimenta con información de empresas, CECAP y ART.
+            Un solo perfil Certired se alimenta con información de empresas, CECAP y ART.
           </p>
         </div>
 
@@ -69,8 +69,8 @@ export default function EcosystemSection() {
           <div className={`relative z-10 w-[280px] h-[560px] mx-auto lg:absolute lg:left-1/2 lg:top-[200px] lg:-translate-x-1/2 [mask-image:linear-gradient(to_bottom,black_50%,transparent_100%)] ${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`}>
             <div className="absolute inset-0 border-[12px] border-gray-900 rounded-[2.5rem] z-20 pointer-events-none shadow-2xl"></div>
             <Image
-              src="/images/celular.webp"
-              alt="Perfil 360 App"
+              src="/images/mockup-cel-certired.webp"
+              alt="Certired App"
               fill
               className="object-cover rounded-[2rem]"
               priority

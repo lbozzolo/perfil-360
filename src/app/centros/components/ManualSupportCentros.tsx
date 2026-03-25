@@ -18,7 +18,7 @@ export default function ManualSupportCentros() {
             </h2>
             
             <p className="text-gray-600 leading-relaxed max-w-2xl">
-                Perfil 360 cuenta con manual de usuario para centros de capacitación. Por seguridad y para cuidar la operación, el manual no es público: se accede desde dentro del sistema, una vez que el centro está registrado.
+                Certired cuenta con manual de usuario para centros de capacitación. Por seguridad y para cuidar la operación, el manual no es público: se accede desde dentro del sistema, una vez que el centro está registrado.
             </p>
 
             <div className="flex items-center gap-2 text-sm text-gray-500 bg-gray-100 px-4 py-2 rounded-full">

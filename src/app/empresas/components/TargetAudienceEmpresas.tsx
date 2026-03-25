@@ -39,7 +39,7 @@ export default function TargetAudienceEmpresas() {
                 Sirve para cualquier empresa que quiera controlar capacitación y competencias.
             </h2>
             <p className="text-lg text-text-gray font-medium">
-                Perfil 360 está pensado para organizaciones que necesitan visibilidad, orden y verificación sobre la formación de su gente. Funciona tanto para capacitaciones reglamentarias como para capacitaciones complementarias, en cualquier sector.
+                Certired está pensado para organizaciones que necesitan visibilidad, orden y verificación sobre la formación de su gente. Funciona tanto para capacitaciones reglamentarias como para capacitaciones complementarias, en cualquier sector.
             </p>
         </div>
 
@@ -62,7 +62,7 @@ export default function TargetAudienceEmpresas() {
                     <div>
                         <h3 className="font-bold text-deep-blue mb-2">Más allá del cumplimiento legal</h3>
                         <p className="text-sm text-deep-blue/80 leading-relaxed">
-                            No se trata solo de cumplir la ley: Perfil 360 también sirve para demostrar profesionalismo, preparación y desarrollo de tus equipos ante clientes y auditores.
+                            No se trata solo de cumplir la ley: Certired también sirve para demostrar profesionalismo, preparación y desarrollo de tus equipos ante clientes y auditores.
                         </p>
                     </div>
             </div>

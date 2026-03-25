@@ -16,7 +16,7 @@ export default function PlansSection() {
             Acceso y planes de uso
           </h2>
           <p className="text-lg text-text-gray font-medium">
-Perfil 360 es una plataforma de uso gratuito y acceso público que permite registrar, consultar y compartir información laboral en un entorno integrado, con funciones avanzadas disponibles según la necesidad de gestión.
+Certired es una plataforma de uso gratuito y acceso público que permite registrar, consultar y compartir información laboral en un entorno integrado, con funciones avanzadas disponibles según la necesidad de gestión.
           </p>
         </div>
 
@@ -37,7 +37,7 @@ Perfil 360 es una plataforma de uso gratuito y acceso público que permite regis
                 <div className="w-5 h-5 rounded-full bg-green-100 flex items-center justify-center text-green-600 shrink-0 mt-0.5">
                   <Check size={12} strokeWidth={3} />
                 </div>
-                <p className="text-sm text-text-gray">Registro de personas dentro de Perfil 360.</p>
+                <p className="text-sm text-text-gray">Registro de personas dentro de Certired.</p>
               </div>
               <div className="flex items-start gap-3">
                 <div className="w-5 h-5 rounded-full bg-green-100 flex items-center justify-center text-green-600 shrink-0 mt-0.5">
@@ -61,7 +61,7 @@ Perfil 360 es una plataforma de uso gratuito y acceso público que permite regis
                 <div className="w-5 h-5 rounded-full bg-green-100 flex items-center justify-center text-green-600 shrink-0 mt-0.5">
                   <Check size={12} strokeWidth={3} />
                 </div>
-                <p className="text-sm text-text-gray">Descarga de constancia de inscripción en Perfil 360 como herramienta de gestión y calidad.</p>
+                <p className="text-sm text-text-gray">Descarga de constancia de inscripción en Certired como herramienta de gestión y calidad.</p>
               </div> */}
             </div>
             <a

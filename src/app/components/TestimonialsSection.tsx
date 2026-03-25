@@ -19,7 +19,7 @@ const testimonials = [
     id: 1,
     name: "Carlos Rodríguez",
     role: "Director – Centro de Capacitación Técnica",
-    quote: "Antes no teníamos una visión clara de qué capacitaciones estaban vigentes y cuáles vencían. Hoy, con Perfil 360, podemos anticiparnos, notificar a las personas y mantener los registros siempre actualizados. La trazabilidad nos permitió profesionalizar la gestión y mejorar la calidad del servicio que brindamos.",
+    quote: "Antes no teníamos una visión clara de qué capacitaciones estaban vigentes y cuáles vencían. Hoy, con Certired, podemos anticiparnos, notificar a las personas y mantener los registros siempre actualizados. La trazabilidad nos permitió profesionalizar la gestión y mejorar la calidad del servicio que brindamos.",
     color: "text-perfil-blue",
     bg: "bg-blue-50",
     category: "Gestión y vigencias"
@@ -28,7 +28,7 @@ const testimonials = [
     id: 2,
     name: "Ana Martínez",
     role: "Responsable Académico – Centro de Formación Profesional",
-    quote: "Muchas veces los trabajadores nos pedían certificados que habían perdido o deteriorado. Con la digitalización en Perfil 360, cada persona tiene un respaldo permanente de su historial de capacitación. Eso les da seguridad, y a nosotros nos posiciona como un centro más confiable y profesional frente a las empresas.",
+    quote: "Muchas veces los trabajadores nos pedían certificados que habían perdido o deteriorado. Con la digitalización en Certired, cada persona tiene un respaldo permanente de su historial de capacitación. Eso les da seguridad, y a nosotros nos posiciona como un centro más confiable y profesional frente a las empresas.",
     color: "text-360-yellow",
     bg: "bg-yellow-50",
     category: "Digitalización y respaldo"
@@ -37,7 +37,7 @@ const testimonials = [
     id: 3,
     name: "Javier López",
     role: "Técnico en Higiene y Seguridad Laboral",
-    quote: "El mayor desafío siempre fue verificar si cada persona estaba realmente preparada para su puesto. Perfil 360 nos permite ver la formación, las evaluaciones y la vigencia de cada capacitación en un solo lugar. Eso eleva el estándar de control y mejora la prevención en el trabajo.",
+    quote: "El mayor desafío siempre fue verificar si cada persona estaba realmente preparada para su puesto. Certired nos permite ver la formación, las evaluaciones y la vigencia de cada capacitación en un solo lugar. Eso eleva el estándar de control y mejora la prevención en el trabajo.",
     color: "text-connection-teal",
     bg: "bg-teal-50",
     category: "Control de competencia"
@@ -55,7 +55,7 @@ const testimonials = [
     id: 5,
     name: "Roberto Sánchez",
     role: "Analista de Prevención – Aseguradora de Riesgos del Trabajo",
-    quote: "La integración de nuestros inspectores a Perfil 360 nos permite ingresar a las sucursales de nuestros clientes y verificar, en el momento, la preparación del personal. Cada inspección deja un registro claro, con devoluciones concretas y reportes que fortalecen la gestión preventiva.",
+    quote: "La integración de nuestros inspectores a Certired nos permite ingresar a las sucursales de nuestros clientes y verificar, en el momento, la preparación del personal. Cada inspección deja un registro claro, con devoluciones concretas y reportes que fortalecen la gestión preventiva.",
     color: "text-connection-teal",
     bg: "bg-teal-50",
     category: "Inspecciones e informes"
@@ -64,7 +64,7 @@ const testimonials = [
     id: 6,
     name: "Laura Díaz",
     role: "Consultor en Gestión Laboral",
-    quote: "Acceder a perfiles verificados cambia la forma de auditar. La información está ordenada, respaldada y disponible. Perfil 360 reduce tiempos, elimina dudas y aporta trazabilidad real a los procesos de control.",
+    quote: "Acceder a perfiles verificados cambia la forma de auditar. La información está ordenada, respaldada y disponible. Certired reduce tiempos, elimina dudas y aporta trazabilidad real a los procesos de control.",
     color: "text-360-yellow",
     bg: "bg-yellow-50",
     category: "Auditoría externa"
@@ -73,7 +73,7 @@ const testimonials = [
     id: 7,
     name: "Miguel Ángel Torres",
     role: "Operador de Maquinaria / Técnico de Campo",
-    quote: "Antes mi experiencia quedaba en el currículum o en papeles sueltos. Hoy tengo un perfil que muestra mi formación y mi trayectoria de forma clara y verificable. Perfil 360 me da visibilidad, respaldo y más oportunidades laborales.",
+    quote: "Antes mi experiencia quedaba en el currículum o en papeles sueltos. Hoy tengo un perfil que muestra mi formación y mi trayectoria de forma clara y verificable. Certired me da visibilidad, respaldo y más oportunidades laborales.",
     color: "text-perfil-blue",
     bg: "bg-blue-50",
     category: "Impacto profesional"
@@ -136,7 +136,7 @@ export default function TestimonialsSection() {
             Lo que dicen nuestros usuarios
           </h2>
           <p className="text-lg text-text-gray font-medium max-w-2xl mx-auto">
-            Actores de todo el ecosistema ya están transformando su gestión con Perfil 360.
+            Actores de todo el ecosistema ya están transformando su gestión con Certired.
           </p>
         </div>
 

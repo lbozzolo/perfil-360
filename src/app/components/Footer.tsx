@@ -12,8 +12,8 @@ export default function Footer() {
           <div className="col-span-1 md:col-span-1">
             <Link href="/" className="flex items-center gap-3 mb-6">
               <img 
-                src="/images/logo_perfil_360_oscuro.webp" 
-                alt="Perfil 360" 
+                src="/images/logo_certired_amarillo.webp" 
+                alt="Certired Amarillo" 
                 className="w-40 h-auto object-contain rounded-lg" 
               />
             </Link>
@@ -72,7 +72,7 @@ export default function Footer() {
 
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-xs text-gray-500">
-            © {new Date().getFullYear()} Perfil 360. Todos los derechos reservados.
+            © {new Date().getFullYear()} Certired. Todos los derechos reservados.
           </p>
           <div className="flex items-center gap-2 text-xs text-gray-500">
             <span>Desarrollado por</span>

@@ -17,7 +17,7 @@ export default function FeaturesPersonas() {
       title: "Mis cursos y mis certificados",
       items: [
         "Listado de cursos realizados",
-        "Detalle del curso (carga horaria, fecha, número de certificación Perfil 360, calificaciones/observaciones)",
+        "Detalle del curso (carga horaria, fecha, número de certificación Certired, calificaciones/observaciones)",
         "Descarga de certificado"
       ]
     },

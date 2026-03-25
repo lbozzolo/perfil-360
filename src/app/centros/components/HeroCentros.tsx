@@ -28,7 +28,7 @@ export default function HeroCentros() {
                 </h1>
                 
                 <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl font-medium leading-relaxed">
-                En Perfil 360, tu capacitación no termina en un PDF: se transforma en un registro verificable dentro del perfil personal del trabajador. Las empresas pueden validar vigencias y evidencias sin perseguir archivos, y tu centro mantiene el control institucional de lo que realmente dictó y certificó.
+                En Certired, tu capacitación no termina en un PDF: se transforma en un registro verificable dentro del perfil personal del trabajador. Las empresas pueden validar vigencias y evidencias sin perseguir archivos, y tu centro mantiene el control institucional de lo que realmente dictó y certificó.
                 </p>
                 
                 <div className="flex flex-col sm:flex-row items-center gap-4 justify-start">
@@ -36,7 +36,7 @@ export default function HeroCentros() {
                   href={registroUrl}
                   className="w-full sm:w-auto px-8 py-3 bg-360-yellow text-deep-blue font-bold rounded-full hover:bg-white hover:text-deep-blue transition-all shadow-md hover:shadow-lg flex items-center justify-center gap-2 transform hover:-translate-y-0.5 text-base"
                 >
-                  Registrar mi Centro en Perfil 360 (Gratis) <ArrowRight size={20} />
+                  Registrar mi Centro en Certired (Gratis) <ArrowRight size={20} />
                 </Link>
                 <Link 
                   href={process.env.NEXT_PUBLIC_CONTACTO_EMPRESAS_CENTROS_URL || 'https://wkf.ms/4rpQ3Ml'}
@@ -54,7 +54,7 @@ export default function HeroCentros() {
                     {/* Video principal del hero */}
                     <iframe
                       src="https://www.youtube.com/embed/kSrr9X4SML8?rel=0&modestbranding=1"
-                      title="Panel de gestión de Centros Perfil 360"
+                      title="Panel de gestión de Centros Certired"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowFullScreen
                       className="absolute inset-0 w-full h-full"

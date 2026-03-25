@@ -17,7 +17,7 @@ export default function IntegrationCentros() {
                     Tu certificación deja de ser un archivo. Se vuelve verificable.
                 </h2>
                 <p className="text-gray-400 text-lg mb-8 leading-relaxed">
-                    Cuando una empresa opera con Perfil 360, puede consultar perfiles, verificar vigencias y acceder a evidencia sin depender de reenvíos. Para tu centro eso significa menos reemisiones, menos discusiones y más reputación como emisor confiable.
+                    Cuando una empresa opera con Certired, puede consultar perfiles, verificar vigencias y acceder a evidencia sin depender de reenvíos. Para tu centro eso significa menos reemisiones, menos discusiones y más reputación como emisor confiable.
                 </p>
             </div>
 
@@ -39,7 +39,7 @@ export default function IntegrationCentros() {
                      {/* Step 2: System */}
                      <div className="flex items-center justify-center p-4 bg-deep-blue border border-gray-600 rounded-xl relative overflow-hidden">
                         <div className="absolute inset-0 bg-green-500/10 animate-pulse"></div>
-                        <span className="font-bold tracking-widest text-white relative z-10">PERFIL 360</span>
+                        <span className="font-bold tracking-widest text-white relative z-10">CERTIRED</span>
                      </div>
 
                       {/* Arrow */}

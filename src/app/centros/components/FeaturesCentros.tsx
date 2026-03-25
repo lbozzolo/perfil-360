@@ -8,7 +8,7 @@ export default function FeaturesCentros() {
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-deep-blue mb-4">
-            Qué podés hacer dentro de Perfil 360
+            Qué podés hacer dentro de Certired
           </h2>
         </div>
 

@@ -38,7 +38,7 @@ export default function RedInstitucionalPage() {
                   {/* Imagen principal del hero */}
                   <img 
                     src="/images/red.webp"
-                    alt="Red Institucional Perfil 360"
+                    alt="Red Institucional Certired"
                     className="object-cover w-full h-full"
                     loading="eager"
                   />

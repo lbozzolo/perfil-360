@@ -23,13 +23,13 @@ export default function CentroDeRecursosPage() {
                   Acceso exclusivo · Centros de Capacitación
                 </div>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight tracking-tight">
-                  Centro de Recursos Oficial – <span className="text-360-yellow">Perfil 360</span>
+                  Centro de Recursos Oficial – <span className="text-360-yellow">Certired</span>
                 </h1>
                 <p className="text-lg md:text-3xl text-gray-200 font-semibold mb-4 leading-relaxed">
                   Espacio exclusivo para Centros de Capacitación registrados en la plataforma.
                 </p>
                 <p className="text-base text-gray-400 max-w-2xl leading-relaxed mb-2">
-                  En este espacio encontrará los lineamientos de uso de marca, recursos oficiales de comunicación e instructivos operativos para la correcta utilización de Perfil 360.
+                  En este espacio encontrará los lineamientos de uso de marca, recursos oficiales de comunicación e instructivos operativos para la correcta utilización de Certired.
                 </p>
                 <p className="text-sm text-gray-500 max-w-xl mt-4 italic">
                   El acceso y uso de estos materiales implica la aceptación de las condiciones aquí establecidas.
@@ -41,7 +41,7 @@ export default function CentroDeRecursosPage() {
                   {/* Imagen principal del hero */}
                   <img 
                     src="/images/recursos.webp"
-                    alt="Centro de Recursos Perfil 360"
+                    alt="Centro de Recursos Certired"
                     className="object-cover w-full h-full"
                     loading="eager"
                   />
@@ -70,7 +70,7 @@ export default function CentroDeRecursosPage() {
                 </div>
                 <div className="flex-1">
                   <p className="text-gray-600 leading-relaxed mb-6">
-                    Antes de utilizar el nombre o logotipo de Perfil 360 en sus comunicaciones,
+                    Antes de utilizar el nombre o logotipo de Certired en sus comunicaciones,
                     consulte las condiciones oficiales de uso de marca.
                   </p>
                   <a
@@ -109,7 +109,7 @@ export default function CentroDeRecursosPage() {
                 <div className="flex-1">
                   <p className="text-gray-600 leading-relaxed mb-6">
                     Descargue aquí los recursos oficiales para comunicar correctamente su integración
-                    con Perfil 360 y promocionar el beneficio de trazabilidad laboral para sus alumnos.
+                    con Certired y promocionar el beneficio de trazabilidad laboral para sus alumnos.
                   </p>
                   <a
                     href="#"
@@ -140,7 +140,7 @@ export default function CentroDeRecursosPage() {
               </h2>
               <div className="w-20 h-1 bg-360-yellow mx-auto rounded-full" />
               <p className="text-gray-500 mt-6 leading-relaxed">
-                Guías paso a paso para operar correctamente en Perfil 360: creación de cursos,
+                Guías paso a paso para operar correctamente en Certired: creación de cursos,
                 registro de alumnos, carga de certificaciones, facturación y gestión de vencimientos.
               </p>
             </div>
@@ -250,7 +250,7 @@ export default function CentroDeRecursosPage() {
             
             <div className="space-y-3 text-sm text-gray-400 leading-relaxed border border-white/10 rounded-2xl p-8 bg-white/5">
               <p className="font-semibold text-gray-300 text-lg">
-                Perfil 360 es una herramienta tecnológica de trazabilidad laboral digital.
+                Certired es una herramienta tecnológica de trazabilidad laboral digital.
               </p>
               <p>
                 No certifica cursos ni avala contenidos académicos.

@@ -29,7 +29,7 @@ export default function HeroPersonas() {
                 </h1>
                 
                 <p className="text-lg md:text-xl text-deep-blue/80 mb-8 max-w-2xl font-medium leading-relaxed">
-                Tu Perfil 360 reúne tu información y certificaciones para que no dependas más del papel ni de archivos sueltos o aislados. Todo queda en un solo lugar, es verificable por empresas y se completa con registros cargados por centros de capacitación y empleadores.
+                Tu perfil Certired reúne tu información y certificaciones para que no dependas más del papel ni de archivos sueltos o aislados. Todo queda en un solo lugar, es verificable por empresas y se completa con registros cargados por centros de capacitación y empleadores.
                 </p>
                 
                 <div className="flex flex-col sm:flex-row items-center gap-4 justify-start">
@@ -48,7 +48,7 @@ export default function HeroPersonas() {
                 <div className="relative w-full rounded-2xl overflow-hidden shadow-2xl border-4 border-white/20">
                     <img 
                       src="/images/persona-mostrando-celular-con-perfil.webp" 
-                      alt="Trabajador utilizando Perfil 360" 
+                      alt="Trabajador utilizando Certired" 
                       className="w-full h-auto" 
                       style={{ display: 'block', background: '#fff' }}
                     />

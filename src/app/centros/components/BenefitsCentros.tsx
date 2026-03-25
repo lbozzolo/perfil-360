@@ -36,7 +36,7 @@ export default function BenefitsCentros() {
       icon: <Briefcase className="w-8 h-8 text-360-yellow" />,
       title: "Canal comercial por demanda real",
       subtitle: "(Plan Plus)",
-      description: "Perfil 360 no es una vidriera pública de cursos. Las oportunidades aparecen cuando una empresa abre una necesidad: licitaciones y cotizaciones."
+      description: "Certired no es una vidriera pública de cursos. Las oportunidades aparecen cuando una empresa abre una necesidad: licitaciones y cotizaciones."
     }
   ];
 

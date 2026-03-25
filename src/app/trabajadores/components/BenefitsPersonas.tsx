@@ -40,7 +40,7 @@ export default function BenefitsPersonas() {
             Se terminó el “¿dónde quedó el certificado?”
           </h2>
           <p className="text-xl text-text-gray">
-            El papel tiene un superpoder: desaparecer justo cuando lo necesitás. <strong>Perfil 360</strong> lo neutraliza. Tus capacitaciones quedan <strong>registradas y ordenadas</strong>, con vigencias claras y respaldo institucional.
+            El papel tiene un superpoder: desaparecer justo cuando lo necesitás. <strong>Certired</strong> lo neutraliza. Tus capacitaciones quedan <strong>registradas y ordenadas</strong>, con vigencias claras y respaldo institucional.
           </p>
         </div>
 

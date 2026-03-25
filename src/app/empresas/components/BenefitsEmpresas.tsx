@@ -45,7 +45,7 @@ export default function BenefitsEmpresas() {
             Del “mandame el certificado” a un sistema que deja huella.
           </h2>
           <p className="text-xl text-text-gray">
-            La operación no falla solo por falta de capacitación; muchas veces falla por falta de visibilidad. Certificados dispersos, vencimientos silenciosos y supervisiones que no quedan registradas. <strong className="text-deep-blue">Perfil 360 ordena el circuito:</strong> competencias verificables, vigencias claras e inspecciones con evidencia.
+            La operación no falla solo por falta de capacitación; muchas veces falla por falta de visibilidad. Certificados dispersos, vencimientos silenciosos y supervisiones que no quedan registradas. <strong className="text-deep-blue">Certired ordena el circuito:</strong> competencias verificables, vigencias claras e inspecciones con evidencia.
           </p>
         </div>
 

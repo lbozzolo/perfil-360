@@ -18,8 +18,8 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 md:px-8 h-24 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3 group">
           <Image
-            src="/images/nuevo_logo_perfil_360_xs.webp"
-            alt="Perfil 360"
+            src="/images/logo_certired_r.webp"
+            alt="Certired Logo"
             width={240}
             height={80}
             className="h-20 w-auto object-contain"

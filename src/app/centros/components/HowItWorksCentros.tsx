@@ -15,7 +15,7 @@ export default function HowItWorksCentros() {
     {
       num: "03",
       title: "¿Necesitás más?",
-      desc: "Si necesitás funciones avanzadas (descargas, instructores/evaluaciones, licitaciones), solicitás Plan Plus desde la configuración de tu perfil dentro de Perfil 360."
+      desc: "Si necesitás funciones avanzadas (descargas, instructores/evaluaciones, licitaciones), solicitás Plan Plus desde la configuración de tu perfil dentro de Certired."
     },
     {
         num: "04",

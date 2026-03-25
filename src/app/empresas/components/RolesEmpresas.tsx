@@ -14,7 +14,7 @@ export default function RolesEmpresas() {
             Un gatekeeper y permisos por rol
           </h2>
           <p className="text-lg text-text-gray max-w-2xl mx-auto">
-            Definí quién opera, quién inspecciona y quién verifica. Perfil 360 ordena la seguridad de tu información con roles claros.
+            Definí quién opera, quién inspecciona y quién verifica. Certired ordena la seguridad de tu información con roles claros.
           </p>
         </div>
 

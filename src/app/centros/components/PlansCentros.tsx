@@ -16,7 +16,7 @@ export default function PlansCentros() {
             <p className="text-gray-500 mb-8 font-bold">(IVA incluido) por certificación vinculada</p>
             <p className="text-gray-600 leading-relaxed">
               Aplica tanto para nuevas certificaciones como para carga de antecedentes.<br />
-              Cuando tu centro registra una certificación y esta impacta en el perfil laboral del alumno dentro de Perfil 360, se genera un cargo al centro de capacitación.            </p>
+              Cuando tu centro registra una certificación y esta impacta en el perfil laboral del alumno dentro de Certired, se genera un cargo al centro de capacitación.            </p>
           </div>
 
           {/* Plan Pro */}

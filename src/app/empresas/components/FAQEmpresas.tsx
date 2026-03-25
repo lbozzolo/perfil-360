@@ -42,7 +42,7 @@ export default function FAQEmpresas() {
              <div className="text-center md:text-left">
                 <h3 className="text-lg font-bold text-deep-blue mb-2">Manual de usuario incluido</h3>
                 <p className="text-text-gray text-sm">
-                    Perfil 360 cuenta con un manual de usuario completo para empresas. Por seguridad operativa, el manual no es público: se accede directamente desde dentro del sistema una vez que tu empresa está registrada.
+                    Certired cuenta con un manual de usuario completo para empresas. Por seguridad operativa, el manual no es público: se accede directamente desde dentro del sistema una vez que tu empresa está registrada.
                 </p>
              </div>
         </div> */}

@@ -18,7 +18,7 @@ export default function ProblemPromiseCentros() {
         </h2>
         
         <p className="text-xl text-gray-600 leading-relaxed mb-6">
-          En la práctica, los certificados se mueven por correo, WhatsApp y carpetas: se duplican, se pierden, se vencen y nadie lo ve a tiempo. <strong>Perfil 360</strong> ordena el ciclo completo: tu centro deja constancia institucional, el alumno conserva su perfil personal y las empresas verifican vigencias y evidencia sin perseguir documentos.
+          En la práctica, los certificados se mueven por correo, WhatsApp y carpetas: se duplican, se pierden, se vencen y nadie lo ve a tiempo. <strong>Certired</strong> ordena el ciclo completo: tu centro deja constancia institucional, el alumno conserva su perfil personal y las empresas verifican vigencias y evidencia sin perseguir documentos.
         </p>
 
         <p className="text-xl text-deep-blue font-semibold leading-relaxed">

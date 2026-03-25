@@ -22,7 +22,7 @@ const actors = [
     bullets: [
       "Crear perfil institucional y publicar cursos.",
       "Vincular alumnos y registrar resultados.",
-      "Cargar certificados y carnets al Perfil 360.",
+      "Cargar certificados y carnets a Certired.",
       "Postularse a licitaciones de empresas."
     ]
   },
@@ -44,7 +44,7 @@ const actors = [
     color: "text-perfil-blue",
     bg: "bg-gray-100",
     bullets: [
-      "Acceder siempre gratis a su Perfil 360.",
+      "Acceder siempre gratis a su perfil Certired.",
       "Ver capacitaciones vigentes y experiencia.",
       "Actualizar datos personales y foto.",
       "Compartir perfil mediante enlace seguro."
@@ -58,7 +58,7 @@ export default function ActorsSection() {
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <div className="text-center mb-16 max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-deep-blue mb-4 tracking-tight">
-            Qué puede hacer cada actor en Perfil 360
+            Qué puede hacer cada actor en Certired
           </h2>
           <p className="text-lg text-text-gray">
             Funciones concretas para empresas, centros de capacitación, ART y trabajadores.

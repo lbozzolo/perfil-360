@@ -17,7 +17,7 @@ export default function DirectoryBanner() {
             Directorio de trabajadores capacitados
           </h2>
           <p className="text-gray-300 text-lg mb-8 leading-relaxed">
-            Accedé al directorio público para buscar personas por nombre, DNI o empresa y verificar en segundos si tienen Perfil 360 activo y documentación al día.
+            Accedé al directorio público para buscar personas por nombre, DNI o empresa y verificar en segundos si tienen Certired activo y documentación al día.
           </p>
           
           <Link 

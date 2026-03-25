@@ -23,7 +23,7 @@ export default function HowItWorksPersonas() {
             </div>
             <h3 className="text-xl font-bold text-deep-blue mb-4">Solicitud de contacto (iniciada por vos)</h3>
             <p className="text-text-gray max-w-sm">
-Podés dejar una solicitud de contacto para que Perfil 360 se comunique con la empresa donde trabajás o el centro donde te capacitaste, en caso de que aún no utilicen la plataforma.            </p>
+Podés dejar una solicitud de contacto para que Certired se comunique con la empresa donde trabajás o el centro donde te capacitaste, en caso de que aún no utilicen la plataforma.            </p>
           </div>
 
           {/* Step 2 */}
@@ -56,7 +56,7 @@ Podés dejar una solicitud de contacto para que Perfil 360 se comunique con la e
 
         <div className="mt-16 bg-white p-6 rounded-xl border border-gray-200 text-center max-w-3xl mx-auto shadow-sm">
             <p className="text-text-gray italic">
-                <span className="font-bold text-perfil-blue">Dato:</span> Este proceso agiliza la gestión: cuando tu empresa o centro ya usa Perfil 360, la vinculación y carga de información se realiza de manera más rápida y ordenada.
+                <span className="font-bold text-perfil-blue">Dato:</span> Este proceso agiliza la gestión: cuando tu empresa o centro ya usa Certired, la vinculación y carga de información se realiza de manera más rápida y ordenada.
             </p>
         </div>
       </div>
