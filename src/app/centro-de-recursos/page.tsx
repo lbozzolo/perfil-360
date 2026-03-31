@@ -266,10 +266,10 @@ export default function CentroDeRecursosPage() {
                 <p className="text-gray-500 mt-2">
                   En caso de necesitar nuevamente el acceso, puede solicitarlo escribiendo a{" "}
                   <a
-                    href="mailto:soporte@perfil360.com.ar"
+                    href="mailto:soporte@certired.com.ar"
                     className="text-360-yellow underline hover:text-white transition-colors"
                   >
-                    soporte@perfil360.com.ar
+                    soporte@certired.com.ar
                   </a>
                 </p>
               </div>

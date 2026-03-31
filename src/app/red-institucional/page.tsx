@@ -23,10 +23,10 @@ export default function RedInstitucionalPage() {
                   Red Institucional
                 </div>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight tracking-tight">
-                  Organizaciones que articulan el <span className="text-360-yellow">estándar de trazabilidad laboral</span> junto a Perfil360.
+                  Organizaciones que articulan el <span className="text-360-yellow">estándar de trazabilidad laboral</span> junto a Certired.
                 </h1>
                 <p className="text-lg md:text-xl text-gray-300 font-medium leading-relaxed mb-2">
-                  Perfil360 impulsa un modelo colaborativo de trazabilidad y verificación de competencias laborales.
+                  Certired impulsa un modelo colaborativo de trazabilidad y verificación de competencias laborales.
                 </p>
                 <p className="text-base text-gray-400 max-w-2xl leading-relaxed mb-2">
                   Nuestra Red Institucional reúne actores estratégicos que contribuyen al desarrollo, integración y consolidación del estándar en distintos sectores.
