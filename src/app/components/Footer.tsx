@@ -1,8 +1,9 @@
 import Link from 'next/link';
-const directorioUrl = process.env.NEXT_PUBLIC_DIRECTORIO_URL || 'https://directorio.perfil360.com.ar';
+const directorioUrl = process.env.NEXT_PUBLIC_DIRECTORIO_URL || 'https://directorio.certired.com.ar';
 const facebookUrl = process.env.NEXT_PUBLIC_FACEBOOK_URL || 'https://www.facebook.com/certired.latam';
-const linkedinUrl = process.env.NEXT_PUBLIC_LINKEDIN_URL || 'https://www.linkedin.com/company/perfil360';
-const instagramUrl = process.env.NEXT_PUBLIC_INSTAGRAM_URL || 'https://instagram.com/perfil360.arg';
+const linkedinUrl = process.env.NEXT_PUBLIC_LINKEDIN_URL || 'https://www.linkedin.com/company/identidadlaboral/?viewAsMember=true';
+const instagramUrl = process.env.NEXT_PUBLIC_INSTAGRAM_URL || 'https://www.instagram.com/certired.oficial/';
+const youtubeUrl = process.env.NEXT_PUBLIC_YOUTUBE_URL || 'https://www.youtube.com/@CertiRed';
 import { Facebook, Twitter, Linkedin, Youtube, Instagram, Search, X } from 'lucide-react';
 
 export default function Footer() {
@@ -33,6 +34,9 @@ export default function Footer() {
               </a>
               <a href={instagramUrl} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
                 <Instagram size={20} />
+              </a>
+              <a href={youtubeUrl} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+                <Youtube size={20} />
               </a>
             </div>
           </div>
