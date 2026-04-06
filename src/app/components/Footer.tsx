@@ -6,6 +6,8 @@ const instagramUrl = process.env.NEXT_PUBLIC_INSTAGRAM_URL || 'https://www.insta
 const youtubeUrl = process.env.NEXT_PUBLIC_YOUTUBE_URL || 'https://www.youtube.com/@CertiRed';
 import { Facebook, Twitter, Linkedin, Youtube, Instagram, Search, X } from 'lucide-react';
 
+const address = process.env.NEXT_PUBLIC_ADDRESS || 'Av. Hipólito Yrigoyen 146, Piso 15. Ciudad de Córdoba (CP 5000), Argentina';
+
 export default function Footer() {
   return (
     <footer className="bg-[#101012] text-white pt-20 pb-10 border-t border-white/10">
@@ -13,7 +15,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-5 gap-12 mb-16">
           
           {/* Brand */}
-          <div className="col-span-1 md:col-span-1">
+          <div className="col-span-1 md:col-span-2 max-w-xs md:max-w-sm">
             <Link href="/" className="flex items-center gap-3 mb-6">
               <img 
                 src="/images/logo_certired_amarillo.webp" 
@@ -21,9 +23,11 @@ export default function Footer() {
                 className="w-40 h-auto object-contain rounded-lg" 
               />
             </Link>
-            <p className="text-sm text-gray-400 leading-relaxed mb-8">
+            
+            <p className="text-sm text-gray-400 leading-relaxed mb-6">
               Dando memoria, visibilidad y justicia al esfuerzo de cada trabajador. Una plataforma integral para el ecosistema laboral.
             </p>
+            <p className="text-xs text-gray-400 mb-6 hidden md:block">{address}</p>
             
             <div className="flex gap-4">
               <a href={facebookUrl} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
@@ -80,8 +84,7 @@ export default function Footer() {
             © {new Date().getFullYear()} Certired. Todos los derechos reservados.
           </p>
           <div className="flex items-center gap-2 text-xs text-gray-500">
-            <span>Desarrollado por</span>
-            <span><a href="https://verticedigital.com.ar" target="_blank" rel="noopener noreferrer">Vértice Digital</a></span>
+            <span>Desarrollado por <a href="https://verticedigital.com.ar" target="_blank" rel="noopener noreferrer">Vértice Digital</a></span>
           </div>
         </div>
       </div>
