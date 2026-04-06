@@ -2,6 +2,8 @@
 
 import Link from 'next/link';
 
+const registroUrl = process.env.NEXT_PUBLIC_REGISTRO_URL || "https://registro.certired.com.ar";
+
 export default function AdditionalInfoPersonas() {
   return (
     <section className="public-visibility-section">
@@ -40,7 +42,8 @@ export default function AdditionalInfoPersonas() {
                 Si querés que tus capacitaciones aparezcan verificadas en tu perfil, necesitás que el centro o la empresa que las emitió esté en Certired. Si todavía no están, podés solicitar el alta y nos contactamos para invitarlos a sumarse.
             </p>
             <Link 
-                href="#"
+                href={registroUrl}
+                target="_blank"
                 className="inline-block px-8 py-4 bg-360-yellow text-deep-blue font-bold rounded-full hover:bg-white transition-all shadow-lg"
             >
                 Solicitar alta de mi empresa/centro
