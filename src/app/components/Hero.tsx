@@ -50,12 +50,12 @@ export default function Hero() {
               </span>
             </div>
             
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.1] mb-6 tracking-tight">
-              El <span className="text-360-yellow">registro digital</span> de la capacitación y el trabajo.
+            <h1 className="text-4xl md:text-6xl lg:text-6xl font-bold text-white leading-[1.1] mb-6 tracking-tight">
+              Capacitación, trabajo y empresas <span className="text-360-yellow">en un mismo lugar.</span>
             </h1>
             
             <p className="text-lg md:text-xl text-gray-300 mb-10 max-w-3xl mx-auto lg:mx-0 font-medium leading-relaxed">
-              Un perfil único donde se registra y verifica la información laboral de cada persona, gestionada por empresas, centros de capacitación y ART en una sola red.
+                CertiRed reúne a centros de capacitación, empresas y trabajadores en un sistema donde la información laboral se carga, se comparte y se organiza de forma más clara. Esto da más orden, respaldo y presencia dentro del sector.
             </p>
             
             {/* <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-12">
