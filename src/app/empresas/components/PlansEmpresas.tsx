@@ -1,7 +1,7 @@
 'use client';
 
 import { Check } from 'lucide-react';
-const registroUrl = process.env.NEXT_PUBLIC_REGISTRO_URL || 'https://registro.perfil360.com.ar';
+const registroUrl = process.env.NEXT_PUBLIC_REGISTRO_URL || 'https://registro.certired.com.ar';
 
 export default function PlansEmpresas() {
   return (

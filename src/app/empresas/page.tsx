@@ -5,6 +5,7 @@ import TargetAudienceEmpresas from "./components/TargetAudienceEmpresas";
 import BenefitsEmpresas from "./components/BenefitsEmpresas";
 import HowItWorksEmpresas from "./components/HowItWorksEmpresas";
 import RolesEmpresas from "./components/RolesEmpresas";
+import BusquedaLaboralEmpresas from "./components/BusquedaLaboralEmpresas";
 import PlansEmpresas from "./components/PlansEmpresas";
 import ProfessionalFormationEmpresas from "./components/ProfessionalFormationEmpresas";
 import FAQEmpresas from "./components/FAQEmpresas";
@@ -20,8 +21,9 @@ export default function EmpresasPage() {
         <BenefitsEmpresas />
         <HowItWorksEmpresas />
         <RolesEmpresas />
-        <PlansEmpresas />
+        <BusquedaLaboralEmpresas />
         <ProfessionalFormationEmpresas />
+        <PlansEmpresas />
         <FAQEmpresas />
       </main>
 

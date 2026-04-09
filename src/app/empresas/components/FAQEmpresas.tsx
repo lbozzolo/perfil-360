@@ -24,7 +24,7 @@ export default function FAQEmpresas() {
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-2 bg-white">
       <div className="max-w-4xl mx-auto px-4 md:px-8">
         <h2 className="text-3xl font-bold text-deep-blue mb-12 text-center">Preguntas Frecuentes</h2>
 
