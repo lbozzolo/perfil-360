@@ -39,7 +39,7 @@ export const metadata: Metadata = {
       "Conectamos trabajadores, empresas y centros de capacitación en un ecosistema de información laboral verificada.",
     images: [
       {
-        url: "/images/og-certired.webp",
+        url: "/images/og-image-certired.webp",
         width: 1200,
         height: 630,
         alt: "Certired – Plataforma de trazabilidad laboral",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     title: "Certired – Plataforma de trazabilidad laboral",
     description:
       "Conectamos trabajadores, empresas y centros de capacitación en un ecosistema de información laboral verificada.",
-    images: ["/images/og-certired.webp"],
+    images: ["/images/og-image-certired.webp"],
   },
   robots: {
     index: true,
