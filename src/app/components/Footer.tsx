@@ -1,6 +1,5 @@
 import Link from 'next/link';
 const directorioUrl = process.env.NEXT_PUBLIC_DIRECTORIO_URL || 'https://directorio.certired.com.ar';
-const facebookUrl = process.env.NEXT_PUBLIC_FACEBOOK_URL || 'https://www.facebook.com/certired.latam';
 const linkedinUrl = process.env.NEXT_PUBLIC_LINKEDIN_URL || 'https://www.linkedin.com/company/identidadlaboral/?viewAsMember=true';
 const instagramUrl = process.env.NEXT_PUBLIC_INSTAGRAM_URL || 'https://www.instagram.com/certired.oficial/';
 const youtubeUrl = process.env.NEXT_PUBLIC_YOUTUBE_URL || 'https://www.youtube.com/@CertiRed';
@@ -30,9 +29,6 @@ export default function Footer() {
             <p className="text-xs text-gray-400 mb-6 hidden md:block">{address}</p>
             
             <div className="flex gap-4">
-              <a href={facebookUrl} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
-                <Facebook size={20} />
-              </a>
               <a href={linkedinUrl} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
                 <Linkedin size={20} />
               </a>

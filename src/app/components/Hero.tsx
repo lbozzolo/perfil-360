@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-const directorioUrl = process.env.NEXT_PUBLIC_DIRECTORIO_URL || 'https://directorio.perfil360.com.ar';
+const directorioUrl = process.env.NEXT_PUBLIC_DIRECTORIO_URL || 'https://directorio.certired.com.ar';
 import { User, Briefcase, Award, ArrowRight } from 'lucide-react';
 import { useState } from 'react';
 

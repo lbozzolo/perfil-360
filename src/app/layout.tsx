@@ -11,8 +11,52 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Certired - Plataforma de trazabilidad laboral",
-  description: "Plataforma que conecta a trabajadores, empresas, centros de capacitación y ART en una red de información verificada.",
+  metadataBase: new URL("https://www.certired.com.ar"),
+  title: {
+    default: "Certired – Plataforma de trazabilidad laboral",
+    template: "%s | Certired",
+  },
+  description:
+    "Certired conecta trabajadores, empresas y centros de capacitación en un ecosistema de trazabilidad laboral verificada. Gestioná capacitaciones, certificaciones y competencias en un solo lugar.",
+  keywords: [
+    "trazabilidad laboral",
+    "certificaciones laborales",
+    "capacitaciones verificadas",
+    "perfil laboral digital",
+    "gestión de competencias",
+    "Certired",
+    "Argentina",
+  ],
+  authors: [{ name: "Certired" }],
+  creator: "Certired",
+  openGraph: {
+    type: "website",
+    locale: "es_AR",
+    url: "https://www.certired.com.ar",
+    siteName: "Certired",
+    title: "Certired – Plataforma de trazabilidad laboral",
+    description:
+      "Conectamos trabajadores, empresas y centros de capacitación en un ecosistema de información laboral verificada.",
+    images: [
+      {
+        url: "/images/og-certired.webp",
+        width: 1200,
+        height: 630,
+        alt: "Certired – Plataforma de trazabilidad laboral",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Certired – Plataforma de trazabilidad laboral",
+    description:
+      "Conectamos trabajadores, empresas y centros de capacitación en un ecosistema de información laboral verificada.",
+    images: ["/images/og-certired.webp"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
   icons: {
     icon: "/images/favicon.ico",
   },

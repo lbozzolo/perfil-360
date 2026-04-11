@@ -1,6 +1,19 @@
+import type { Metadata } from "next";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { Building2, Globe, Cpu } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Red Institucional – Organizaciones que articulan el estándar",
+  description:
+    "Conocé la red de organizaciones, alianzas estratégicas y plataformas integradas que articulan el estándar de trazabilidad laboral junto a Certired en Argentina.",
+  openGraph: {
+    title: "Red Institucional – Organizaciones que articulan el estándar",
+    description:
+      "Alianzas estratégicas y plataformas integradas que articulan el estándar de trazabilidad laboral junto a Certired.",
+    url: "https://www.certired.com.ar/red-institucional",
+  },
+};
 
 export default function RedInstitucionalPage() {
   return (

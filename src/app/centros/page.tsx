@@ -1,4 +1,17 @@
+import type { Metadata } from "next";
 import Header from "../components/Header";
+
+export const metadata: Metadata = {
+  title: "Centros de Capacitación – Conectá tus cursos con el mundo del trabajo",
+  description:
+    "Transformá tus capacitaciones en registros verificables dentro del perfil laboral de cada trabajador. Las empresas validan vigencias sin perseguir archivos. Registrá tu centro gratis en Certired.",
+  openGraph: {
+    title: "Centros de Capacitación – Conectá tus cursos con el mundo del trabajo",
+    description:
+      "Transformá tus capacitaciones en registros verificables. Las empresas validan vigencias sin perseguir archivos.",
+    url: "https://www.certired.com.ar/centros",
+  },
+};
 import Footer from "../components/Footer";
 import HeroCentros from "./components/HeroCentros";
 import ProblemPromiseCentros from "./components/ProblemPromiseCentros";

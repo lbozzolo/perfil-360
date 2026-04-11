@@ -1,6 +1,19 @@
+import type { Metadata } from "next";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { ShieldCheck, Download, BookOpen, Eye, ArrowDownToLine, AlertCircle } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Centro de Recursos – Documentación y materiales de Certired",
+  description:
+    "Accedé a la documentación, guías y materiales de referencia de Certired. Recursos para trabajadores, empresas y centros de capacitación.",
+  openGraph: {
+    title: "Centro de Recursos – Documentación y materiales de Certired",
+    description:
+      "Documentación, guías y materiales de referencia para trabajadores, empresas y centros de capacitación.",
+    url: "https://www.certired.com.ar/centro-de-recursos",
+  },
+};
 
 export default function CentroDeRecursosPage() {
   return (

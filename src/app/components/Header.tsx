@@ -7,7 +7,7 @@ import { useState } from "react";
 import { usePathname } from "next/navigation";
 
 const directorioUrl =
-  process.env.NEXT_PUBLIC_DIRECTORIO_URL || "https://directorio.perfil360.com.ar";
+  process.env.NEXT_PUBLIC_DIRECTORIO_URL || "https://directorio.certired.com.ar";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -31,7 +31,7 @@ export default function Header() {
         <div className="hidden lg:flex items-center gap-1 pl-8 border-l border-border-gray h-10 ml-8">
           <Link
             href="/"
-            className={`px-4 py-2 text-sm font-bold transition-colors rounded-lg ${
+            className={`px-3 py-2 text-sm font-bold transition-colors rounded-lg ${
               pathname === "/"
                 ? "text-perfil-blue bg-bg-light"
                 : "text-text-gray hover:text-perfil-blue hover:bg-bg-light"
@@ -41,7 +41,7 @@ export default function Header() {
           </Link>
           <Link
             href="/trabajadores"
-            className={`px-4 py-2 text-sm font-bold transition-colors rounded-lg ${
+            className={`px-3 py-2 text-sm font-bold transition-colors rounded-lg ${
               pathname === "/trabajadores"
                 ? "text-perfil-blue bg-bg-light"
                 : "text-text-gray hover:text-perfil-blue hover:bg-bg-light"
@@ -51,7 +51,7 @@ export default function Header() {
           </Link>
           <Link
             href="/empresas"
-            className={`px-4 py-2 text-sm font-bold transition-colors rounded-lg ${
+            className={`px-3 py-2 text-sm font-bold transition-colors rounded-lg ${
               pathname === "/empresas"
                 ? "text-perfil-blue bg-bg-light"
                 : "text-text-gray hover:text-perfil-blue hover:bg-bg-light"
@@ -61,13 +61,23 @@ export default function Header() {
           </Link>
           <Link
             href="/centros"
-            className={`px-4 py-2 text-sm font-bold transition-colors rounded-lg ${
+            className={`px-3 py-2 text-sm font-bold transition-colors rounded-lg ${
               pathname === "/centros"
                 ? "text-perfil-blue bg-bg-light"
                 : "text-text-gray hover:text-perfil-blue hover:bg-bg-light"
             }`}
           >
             Centros
+          </Link>
+          <Link
+            href="/contacto"
+            className={`px-3 py-2 text-sm font-bold transition-colors rounded-lg ${
+              pathname === "/contacto"
+                ? "text-perfil-blue bg-bg-light"
+                : "text-text-gray hover:text-perfil-blue hover:bg-bg-light"
+            }`}
+          >
+            Contacto
           </Link>
         </div>
 
@@ -147,10 +157,21 @@ export default function Header() {
             >
               Empresas
             </Link>
+            <Link
+              href="/contacto"
+              className={`text-lg font-bold ${
+                pathname === "/contacto"
+                  ? "text-perfil-blue"
+                  : "text-text-gray hover:text-perfil-blue"
+              }`}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Contacto
+            </Link>
           </nav>
           <div className="flex flex-col gap-3 pt-6 border-t border-border-gray">
             <a
-              href="https://app.perfil360.com.ar/"
+              href="https://app.certired.com.ar/"
               target="_blank"
               rel="noopener noreferrer"
               className="w-full text-center px-6 py-3 text-sm font-bold text-perfil-blue border-2 border-border-gray rounded-full hover:border-perfil-blue hover:bg-perfil-blue hover:text-white transition-all"

@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-const registroUrl = process.env.NEXT_PUBLIC_REGISTRO_URL || 'https://registro.perfil360.com.ar';
+const registroUrl = process.env.NEXT_PUBLIC_REGISTRO_URL || 'https://registro.certired.com.ar';
 import { ArrowRight } from 'lucide-react';
 
 export default function HeroCentros() {

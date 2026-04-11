@@ -1,5 +1,17 @@
+import type { Metadata } from "next";
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+
+export const metadata: Metadata = {
+  title: "Política de Privacidad",
+  description:
+    "Conocé cómo Certired recopila, usa y protege tus datos personales. Política de privacidad conforme a la legislación vigente de la República Argentina.",
+  robots: { index: false, follow: false },
+  openGraph: {
+    title: "Política de Privacidad | Certired",
+    url: "https://www.certired.com.ar/privacidad",
+  },
+};
 
 export default function PrivacidadPage() {
   return (
@@ -20,7 +32,7 @@ export default function PrivacidadPage() {
           <li>datos de vinculación institucional (empresa, centro de capacitación, rol, función);</li>
           <li>datos de uso de la plataforma (accesos, interacciones, registros operativos).</li>
         </ul>
-        <p className="mb-4 text-gray-700">La información es suministrada directamente por el usuario o por actores habilitados dentro del sistema, conforme a los roles definidos en la plataforma.<br/>www.perfil360.com.ar</p>
+        <p className="mb-4 text-gray-700">La información es suministrada directamente por el usuario o por actores habilitados dentro del sistema, conforme a los roles definidos en la plataforma.<br/>www.certired.com.ar</p>
         <h2 className="text-xl font-bold mt-8 mb-2">3. Finalidad del tratamiento de los datos</h2>
         <p className="mb-4 text-gray-700">Los datos personales son tratados exclusivamente para las siguientes finalidades:</p>
         <ul className="list-disc pl-6 mb-4 text-gray-700">
@@ -73,7 +85,7 @@ export default function PrivacidadPage() {
           <li>oponerse al tratamiento de los mismos;</li>
           <li>solicitar información sobre el uso de sus datos.</li>
         </ul>
-        <p className="mb-4 text-gray-700">Estos derechos podrán ejercerse conforme al procedimiento establecido por la Ley 25.326, mediante los canales de contacto habilitados por Certired.<br/>La Agencia de Acceso a la Información Pública, en su carácter de órgano de control de la Ley 25.326, tiene la atribución de atender denuncias y reclamos relacionados con el incumplimiento de las normas sobre protección de datos personales.<br/>www.perfil360.com.ar</p>
+        <p className="mb-4 text-gray-700">Estos derechos podrán ejercerse conforme al procedimiento establecido por la Ley 25.326, mediante los canales de contacto habilitados por Certired.<br/>La Agencia de Acceso a la Información Pública, en su carácter de órgano de control de la Ley 25.326, tiene la atribución de atender denuncias y reclamos relacionados con el incumplimiento de las normas sobre protección de datos personales.<br/>www.certired.com.ar</p>
         <h2 className="text-xl font-bold mt-8 mb-2">8. Conservación de los datos</h2>
         <ul className="list-disc pl-6 mb-4 text-gray-700">
           <li>exista una relación activa con la plataforma,</li>
@@ -84,7 +96,7 @@ export default function PrivacidadPage() {
         <h2 className="text-xl font-bold mt-8 mb-2">9. Modificaciones de la Política de Privacidad</h2>
         <p className="mb-4 text-gray-700">Certired podrá modificar la presente Política de Privacidad en cualquier momento.<br/>Las modificaciones serán publicadas en el sitio web oficial.<br/>El uso continuado de la plataforma implicará la aceptación de las modificaciones introducidas.</p>
         <h2 className="text-xl font-bold mt-8 mb-2">10. Contacto</h2>
-        <p className="mb-4 text-gray-700">Para ejercer derechos, realizar consultas o solicitar información relacionada con esta Política de Privacidad, el usuario podrá comunicarse a través de los canales oficiales informados en el sitio web de Certired.<br/>www.perfil360.com.ar</p>
+        <p className="mb-4 text-gray-700">Para ejercer derechos, realizar consultas o solicitar información relacionada con esta Política de Privacidad, el usuario podrá comunicarse a través de los canales oficiales informados en el sitio web de Certired.<br/>www.certired.com.ar</p>
       </main>
       <Footer />
     </div>

@@ -1,5 +1,5 @@
 import Link from 'next/link';
-const directorioUrl = process.env.NEXT_PUBLIC_DIRECTORIO_URL || 'https://directorio.perfil360.com.ar';
+const directorioUrl = process.env.NEXT_PUBLIC_DIRECTORIO_URL || 'https://directorio.certired.com.ar';
 import { Search, ShieldCheck, User, CheckCircle2 } from 'lucide-react';
 
 export default function DirectoryBanner() {
