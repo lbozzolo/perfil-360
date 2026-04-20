@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
+import WhatsAppButton from "./components/WhatsAppButton";
 
 
 const montserrat = Montserrat({
@@ -74,6 +75,7 @@ export default function RootLayout({
         suppressHydrationWarning
       >
         {children}
+        <WhatsAppButton />
         <Analytics />
 
       </body>

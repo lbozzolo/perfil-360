@@ -18,7 +18,7 @@ import { MapPin, Mail, Phone, Facebook, Linkedin, Instagram, Youtube } from "luc
 const address =
   process.env.NEXT_PUBLIC_ADDRESS ||
   "Av. Hipólito Yrigoyen 146, Piso 15. Ciudad de Córdoba (CP 5000), Argentina";
-const email = process.env.NEXT_PUBLIC_EMAIL || "contacto@certired.com.ar";
+const email = process.env.NEXT_PUBLIC_EMAIL || "direccion@certired.com.ar";
 const phone = process.env.NEXT_PUBLIC_PHONE || "+54 351 000-0000";
 const linkedinUrl = process.env.NEXT_PUBLIC_LINKEDIN_URL;
 const instagramUrl = process.env.NEXT_PUBLIC_INSTAGRAM_URL;
