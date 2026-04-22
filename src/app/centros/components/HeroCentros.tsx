@@ -84,8 +84,8 @@ export default function HeroCentros() {
             </div>
 
             {/* Right Column (Image & Microcopy) */}
-            <div className="w-full lg:w-[42%] flex flex-col items-center relative mt-12 lg:mt-0 lg:mb-[-50px] z-20" style={{ perspective: '1000px' }}>
-                <div className="relative w-[115%] rounded-2xl overflow-hidden shadow-2xl bg-black aspect-video" style={{ transform: 'rotateY(-8deg)', transformStyle: 'preserve-3d' }}>
+            <div className="w-full lg:w-[42%] flex flex-col items-center relative mt-12 lg:mt-0 lg:mb-[-50px] z-20 lg:[perspective:1000px]">
+                <div className="relative w-[90%] lg:w-[115%] rounded-2xl overflow-hidden shadow-2xl bg-black aspect-video lg:[transform:rotateY(-8deg)] lg:[transform-style:preserve-3d]">
                     {/* Video principal del hero con preview personalizado */}
                     <VideoWithPlaceholderCentros />
                 </div>
