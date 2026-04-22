@@ -7,27 +7,35 @@ import { useState } from 'react';
 
 // Componente para mostrar placeholder hasta que el video cargue
 function VideoWithPlaceholder() {
-  const [loaded, setLoaded] = useState(false);
+  const [showVideo, setShowVideo] = useState(false);
   return (
-    <div className="relative w-full h-full">
-      {!loaded && (
-        <img 
-          src="/images/video-imagen.webp" 
-          alt="Placeholder video" 
-          className="absolute inset-0 w-full h-full object-contain bg-white z-10" 
-        />
+    <div className="relative w-full h-full cursor-pointer">
+      {!showVideo ? (
+        <div className="absolute inset-0 w-full h-full flex items-center justify-center bg-black z-10" onClick={() => setShowVideo(true)}>
+          <img
+            src="/images/video-imagen.webp"
+            alt="Preview video"
+            className="w-full h-full object-contain bg-white rounded-xl"
+          />
+          <div className="absolute inset-0 flex items-center justify-center">
+            <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="40" cy="40" r="40" fill="rgba(0,0,0,0.5)" />
+              <polygon points="32,25 60,40 32,55" fill="#fff" />
+            </svg>
+          </div>
+        </div>
+      ) : (
+        <iframe
+          width="100%"
+          height="100%"
+          src="https://www.youtube.com/embed/gMLuiXHoZzk?autoplay=1&si=EBtt9O_-w4CsQAQ2"
+          title="¿Qué es Certired?"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+          className="relative z-20 rounded-xl"
+        ></iframe>
       )}
-      <iframe
-        width="100%"
-        height="100%"
-        src="https://www.youtube.com/watch?v=gMLuiXHoZzk"
-        title="¿Qué es Certired?"
-        frameBorder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowFullScreen
-        className="relative z-20"
-        onLoad={() => setLoaded(true)}
-      ></iframe>
     </div>
   );
 }
