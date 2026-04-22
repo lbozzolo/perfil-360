@@ -20,7 +20,7 @@ function VideoWithPlaceholder() {
       <iframe
         width="100%"
         height="100%"
-        src="https://www.youtube.com/embed/PdaeM1se7aM?autoplay=1&mute=1&loop=1&playlist=PdaeM1se7aM&controls=1"
+        src="https://www.youtube.com/watch?v=gMLuiXHoZzk"
         title="¿Qué es Certired?"
         frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
