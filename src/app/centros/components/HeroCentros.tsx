@@ -6,7 +6,7 @@ import { useState } from 'react';
 function VideoWithPlaceholderCentros() {
   const [showVideo, setShowVideo] = useState(false);
   return (
-    <div className="relative w-full h-full cursor-pointer">
+    <div className="relative w-full aspect-video cursor-pointer">
       {!showVideo ? (
         <div className="absolute inset-0 w-full h-full flex items-center justify-center bg-black z-10" onClick={() => setShowVideo(true)}>
           <img
