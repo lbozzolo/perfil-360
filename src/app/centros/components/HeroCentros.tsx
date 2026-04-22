@@ -1,6 +1,41 @@
 'use client';
 
 import Link from 'next/link';
+import { useState } from 'react';
+// Componente para mostrar preview personalizado del video
+function VideoWithPlaceholderCentros() {
+  const [showVideo, setShowVideo] = useState(false);
+  return (
+    <div className="relative w-full h-full cursor-pointer">
+      {!showVideo ? (
+        <div className="absolute inset-0 w-full h-full flex items-center justify-center bg-black z-10" onClick={() => setShowVideo(true)}>
+          <img
+            src="/images/video-imagen-2.webp"
+            alt="Preview video centros"
+            className="w-full h-full object-contain bg-white rounded-2xl"
+          />
+          <div className="absolute inset-0 flex items-center justify-center">
+            <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="40" cy="40" r="40" fill="rgba(0,0,0,0.5)" />
+              <polygon points="32,25 60,40 32,55" fill="#fff" />
+            </svg>
+          </div>
+        </div>
+      ) : (
+        <iframe
+          width="100%"
+          height="100%"
+          src="https://www.youtube.com/embed/6tkFKG-kBf8?autoplay=1&si=o8ps-63UVDgcY-B3"
+          title="Panel de gestión de Centros Certired"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+          className="absolute inset-0 w-full h-full rounded-2xl"
+        ></iframe>
+      )}
+    </div>
+  );
+}
 const registroUrl = process.env.NEXT_PUBLIC_REGISTRO_URL || 'https://registro.certired.com.ar';
 import { ArrowRight } from 'lucide-react';
 
@@ -51,14 +86,8 @@ export default function HeroCentros() {
             {/* Right Column (Image & Microcopy) */}
             <div className="w-full lg:w-[42%] flex flex-col items-center relative mt-12 lg:mt-0 lg:mb-[-50px] z-20" style={{ perspective: '1000px' }}>
                 <div className="relative w-[115%] rounded-2xl overflow-hidden shadow-2xl bg-black aspect-video" style={{ transform: 'rotateY(-8deg)', transformStyle: 'preserve-3d' }}>
-                    {/* Video principal del hero */}
-                    <iframe
-                      src="https://www.youtube.com/embed/kSrr9X4SML8?rel=0&modestbranding=1"
-                      title="Panel de gestión de Centros Certired"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                      className="absolute inset-0 w-full h-full"
-                    />
+                    {/* Video principal del hero con preview personalizado */}
+                    <VideoWithPlaceholderCentros />
                 </div>
 
                  {/* <div className="w-[110%] -mt-8 relative z-10 bg-white p-6 rounded-xl border border-gray-200 shadow-xl">
