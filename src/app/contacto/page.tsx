@@ -13,11 +13,11 @@ export const metadata: Metadata = {
     url: "https://www.certired.com.ar/contacto",
   },
 };
-import { MapPin, Mail, Phone, Facebook, Linkedin, Instagram, Youtube } from "lucide-react";
+import { Mail, Phone, Linkedin, Instagram, Youtube } from "lucide-react";
 
-const address =
-  process.env.NEXT_PUBLIC_ADDRESS ||
-  "Av. Hipólito Yrigoyen 146, Piso 15. Ciudad de Córdoba (CP 5000), Argentina";
+// const address =
+//   process.env.NEXT_PUBLIC_ADDRESS ||
+//   "Av. Hipólito Yrigoyen 146, Piso 15. Ciudad de Córdoba (CP 5000), Argentina";
 const email = process.env.NEXT_PUBLIC_EMAIL || "direccion@certired.com.ar";
 const phone = process.env.NEXT_PUBLIC_PHONE || "+54 351 000-0000";
 const linkedinUrl = process.env.NEXT_PUBLIC_LINKEDIN_URL;
@@ -25,8 +25,6 @@ const instagramUrl = process.env.NEXT_PUBLIC_INSTAGRAM_URL;
 const youtubeUrl = process.env.NEXT_PUBLIC_YOUTUBE_URL;
 
 export default function ContactoPage() {
-  const mapSrc = `https://www.google.com/maps?q=${encodeURIComponent(address)}&output=embed`;
-
   return (
     <div className="min-h-screen flex flex-col font-sans">
       <Header />
@@ -35,7 +33,7 @@ export default function ContactoPage() {
         {/* Dos columnas: info + imagen */}
         <section className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 md:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-12 items-stretch">
+            <div className="grid grid-cols-1 gap-12 items-stretch max-w-2xl">
               {/* Columna izquierda — título, bajada y datos de contacto */}
               <div className="flex flex-col">
                 <div className="inline-block self-start px-5 py-2.5 bg-perfil-blue/10 text-perfil-blue font-extrabold rounded-full text-sm uppercase tracking-wider mb-6">
@@ -49,7 +47,8 @@ export default function ContactoPage() {
                 </p>
 
                 <ul className="space-y-6 mb-10">
-                  <li className="flex items-start gap-4">
+                  {/* Dirección oculta temporalmente — el cliente no tiene oficina por el momento */}
+                  {/* <li className="flex items-start gap-4">
                     <div className="flex-shrink-0 w-12 h-12 rounded-full bg-perfil-blue/10 text-perfil-blue flex items-center justify-center">
                       <MapPin size={22} />
                     </div>
@@ -59,7 +58,7 @@ export default function ContactoPage() {
                       </h3>
                       <p className="text-base text-text-gray leading-relaxed">{address}</p>
                     </div>
-                  </li>
+                  </li> */}
 
                   <li className="flex items-start gap-4">
                     <div className="flex-shrink-0 w-12 h-12 rounded-full bg-perfil-blue/10 text-perfil-blue flex items-center justify-center">
@@ -132,8 +131,8 @@ export default function ContactoPage() {
                 </div>
               </div>
 
-              {/* Columna derecha — imagen vertical completa */}
-              <div className="w-full min-h-[500px] lg:min-h-0">
+              {/* Foto del edificio oculta temporalmente — el cliente no tiene oficina por el momento */}
+              {/* <div className="w-full min-h-[500px] lg:min-h-0">
                 <div className="relative w-full h-full min-h-[500px] rounded-2xl overflow-hidden shadow-xl">
                   <img
                     src="/images/edificio-certired.webp"
@@ -141,13 +140,13 @@ export default function ContactoPage() {
                     className="absolute inset-0 w-full h-full object-cover object-center"
                   />
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>
 
-        {/* Mapa */}
-        <section className="pb-20 bg-white">
+        {/* Mapa oculto temporalmente — el cliente no tiene oficina por el momento */}
+        {/* <section className="pb-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 md:px-8">
             <h2 className="text-2xl md:text-3xl font-bold text-deep-blue mb-8 text-center">
               ¿Dónde estamos?
@@ -163,7 +162,7 @@ export default function ContactoPage() {
               />
             </div>
           </div>
-        </section>
+        </section> */}
       </main>
 
       <Footer />
