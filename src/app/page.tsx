@@ -13,6 +13,7 @@ export const metadata: Metadata = {
   },
 };
 import Hero from "./components/Hero";
+import VideoIntro from "./components/VideoIntro";
 import EcosystemSection from "./components/EcosystemSection";
 import ActorsSection from "./components/ActorsSection";
 import FeaturesSection from "./components/FeaturesSection";
@@ -28,6 +29,9 @@ export default function Home() {
       
       <main className="flex-grow">
         <Hero />
+        {/* El video salió del Hero (Fase 1). Su ubicación definitiva se define
+            en la Fase 2, cuando el Directorio pase a ser el bloque 2. */}
+        <VideoIntro />
         <EcosystemSection />
         <ActorsSection />
         <FeaturesSection />
