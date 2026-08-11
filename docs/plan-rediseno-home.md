@@ -65,7 +65,9 @@ Consecuencias prácticas para el sitio:
 
 | Pendiente | Bloqueado por | Estado | Dónde va cuando llegue |
 |---|---|---|---|
-| **Mapa de presencia territorial** (bloque 2 del Home) | Datos reales: en qué provincias hay trabajadores registrados, idealmente con cantidades. No se inventan: el mapa es prueba de adopción. | ❓ **Consultado al cliente el 2026-08-11, sin respuesta aún.** | `components/MapaPresencia.tsx`, dentro de `DirectorioSection` debajo del contador. El diseño ya tiene el lugar previsto. |
+| **Contador: ¿348 o 970?** | La plataforma muestra hoy **+348 trabajadores** "con capacitaciones validadas por centros registrados", pero la propuesta dice **+970** "con certificaciones laborales registradas". Pueden medir cosas distintas. | ❗ **Publicado con 970 por decisión del 2026-08-11. Confirmar con el cliente antes de pasar a producción.** | `NEXT_PUBLIC_TRABAJADORES_COUNT`. |
+| **Lista de provincias con presencia** | El mapa ya está construido, pero la lista de provincias está tomada de la lectura del mapa de la plataforma, no de la tabla de datos. | ❗ **Contrastar contra la tabla de Glide antes de publicar.** | `src/lib/presencia.ts`, campo `presencia` de cada provincia. |
+| **Terminología del contador dentro de Glide** | El cartel de la plataforma dice "capacitaciones **validadas**", uno de los términos que el punto 6 pide reemplazar por "certificaciones **registradas**". Está fuera de este repo. | Avisar al cliente: la unificación de terminología también alcanza a la app de Glide. | Plataforma Glide, no este repo. |
 | `NEXT_PUBLIC_TRABAJADORES_COUNT` en Vercel | Cargar la env var en los entornos Preview y Production. | Pendiente (mientras tanto usa el fallback 970). | Panel de Vercel. |
 
 ---
@@ -79,7 +81,7 @@ Resolver **antes de empezar la Fase 3**. El resto de las fases avanza igual.
 | D1 | ¿La página `/empresas` se elimina, se oculta del menú o se reescribe como "cómo consulta una empresa"? | **Reescribirla corta** (1 hero + 3 pasos + CTA al Directorio) y **sacarla del menú principal**. No se borra: queda accesible por URL. |
 | D2 | ~~El buscador por DNI del Home, ¿hace submit al Directorio externo con querystring?~~ | ✅ **Resuelto.** El Directorio es una app **Glide**, y Glide no soporta precargar valores por querystring (sus deep links funcionan solo por Row ID). El buscador copia el documento al portapapeles y abre el Directorio para pegarlo. `buildDirectorioUrl()` en `src/lib/site.ts` queda listo por si eso cambia. |
 | D3 | El contador "+970", ¿es un número fijo por ahora o hay endpoint/API que lo devuelva? | Arrancar con **número por ENV** (`NEXT_PUBLIC_TRABAJADORES_COUNT`) y cablear API después. |
-| D4 | El mapa de presencia territorial: ¿SVG estático de Argentina con provincias marcadas, o mapa interactivo? | **SVG estático** de Argentina con puntos por provincia. Cero dependencias, carga instantánea, y es prueba social — no una herramienta. |
+| D4 | ~~El mapa de presencia territorial: ¿SVG estático o interactivo?~~ | ✅ **Resuelto: SVG propio por provincia.** Implementado en `components/MapaPresencia.tsx`, con los puntos ubicados por las coordenadas reales de cada capital provincial. Sin dependencias ni API keys. El mapa de la plataforma es un Mapbox dentro de Glide y no es reutilizable desde acá. |
 | D5 | Planes: ¿se ocultan también en `/centros` y `/empresas`, o solo en el Home? | Ocultar en **todos lados** durante esta etapa (el PDF dice "registro gratuito" para centros). |
 | D6 | `/red-institucional` y `/centro-de-recursos`, ¿siguen en línea? | Dejarlas publicadas pero fuera del menú. |
 
