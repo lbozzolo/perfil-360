@@ -13,13 +13,12 @@ export const metadata: Metadata = {
   },
 };
 import Hero from "./components/Hero";
+import DirectorioSection from "./components/DirectorioSection";
 import VideoIntro from "./components/VideoIntro";
 import EcosystemSection from "./components/EcosystemSection";
 import ActorsSection from "./components/ActorsSection";
 import FeaturesSection from "./components/FeaturesSection";
 import PlansSection from "./components/PlansSection";
-import DirectoryBanner from "./components/DirectoryBanner";
-import TestimonialsSection from "./components/TestimonialsSection";
 import Footer from "./components/Footer";
 
 export default function Home() {
@@ -29,15 +28,14 @@ export default function Home() {
       
       <main className="flex-grow">
         <Hero />
-        {/* El video salió del Hero (Fase 1). Su ubicación definitiva se define
-            en la Fase 2, cuando el Directorio pase a ser el bloque 2. */}
+        <DirectorioSection />
         <VideoIntro />
+        {/* Fase 3: EcosystemSection se reemplaza por ComoFunciona.
+            Fase 4: ActorsSection, FeaturesSection y PlansSection se ocultan. */}
         <EcosystemSection />
         <ActorsSection />
         <FeaturesSection />
         <PlansSection />
-        <DirectoryBanner />
-        {/* <TestimonialsSection /> */}
       </main>
 
       <Footer />
