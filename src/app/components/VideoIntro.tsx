@@ -11,7 +11,7 @@ export default function VideoIntro() {
   const [showVideo, setShowVideo] = useState(false);
 
   return (
-    <section className="py-16 bg-bg-light">
+    <section className="py-16 bg-white">
       <div className="max-w-3xl mx-auto px-4 md:px-8">
         <h2 className="text-2xl md:text-3xl font-bold text-deep-blue text-center mb-8">
           ¿Qué es CertiRed?

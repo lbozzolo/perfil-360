@@ -1,40 +1,46 @@
 import type { Metadata } from "next";
 import Header from "./components/Header";
+import { BRAND } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Certired – Capacitación, trabajo y empresas en un mismo lugar",
-  description:
-    "Certired reúne a centros de capacitación, empresas y trabajadores en un sistema donde la información laboral se carga, se comparte y se verifica de forma clara y segura.",
+  title: "CertiRed – Certificaciones laborales registradas",
+  description: BRAND.claimLargo,
   openGraph: {
-    title: "Certired – Capacitación, trabajo y empresas en un mismo lugar",
-    description:
-      "Certired reúne a centros de capacitación, empresas y trabajadores en un sistema donde la información laboral se carga, se comparte y se verifica de forma clara y segura.",
+    title: "CertiRed – Certificaciones laborales registradas",
+    description: BRAND.claimLargo,
     url: "https://www.certired.com.ar",
   },
 };
+
 import Hero from "./components/Hero";
 import DirectorioSection from "./components/DirectorioSection";
 import ComoFunciona from "./components/ComoFunciona";
+import BloqueTrabajadores from "./components/BloqueTrabajadores";
+import BloqueCentros from "./components/BloqueCentros";
+import QueSignificaRegistrada from "./components/QueSignificaRegistrada";
 import VideoIntro from "./components/VideoIntro";
-import ActorsSection from "./components/ActorsSection";
-import FeaturesSection from "./components/FeaturesSection";
-import PlansSection from "./components/PlansSection";
 import Footer from "./components/Footer";
+
+// Ocultos en esta etapa de adquisición (los componentes se conservan):
+// ActorsSection    -> ART y empresas como perfil operativo.
+// FeaturesSection  -> supervisores, licitaciones, indicadores y reportes.
+// PlansSection     -> planes Free / Plus.
+// EcosystemSection -> reemplazado por ComoFunciona.
+// DirectoryBanner  -> reemplazado por DirectorioSection.
 
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col font-sans">
       <Header />
-      
+
       <main className="flex-grow">
         <Hero />
         <DirectorioSection />
         <ComoFunciona />
+        <BloqueTrabajadores />
+        <BloqueCentros />
+        <QueSignificaRegistrada />
         <VideoIntro />
-        {/* Fase 4: ActorsSection, FeaturesSection y PlansSection se ocultan. */}
-        <ActorsSection />
-        <FeaturesSection />
-        <PlansSection />
       </main>
 
       <Footer />
