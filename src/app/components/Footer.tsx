@@ -1,9 +1,10 @@
 import Link from 'next/link';
-const directorioUrl = process.env.NEXT_PUBLIC_DIRECTORIO_URL || 'https://directorio.certired.com.ar';
+import { Linkedin, Youtube, Instagram, Search } from 'lucide-react';
+import { URLS, BRAND } from '@/lib/site';
+
 const linkedinUrl = process.env.NEXT_PUBLIC_LINKEDIN_URL || 'https://www.linkedin.com/company/identidadlaboral/?viewAsMember=true';
 const instagramUrl = process.env.NEXT_PUBLIC_INSTAGRAM_URL || 'https://www.instagram.com/certired.oficial/';
 const youtubeUrl = process.env.NEXT_PUBLIC_YOUTUBE_URL || 'https://www.youtube.com/@CertiRed';
-import { Facebook, Twitter, Linkedin, Youtube, Instagram, Search, X } from 'lucide-react';
 
 const address = process.env.NEXT_PUBLIC_ADDRESS || 'Av. Hipólito Yrigoyen 146, Piso 15. Ciudad de Córdoba (CP 5000), Argentina';
 
@@ -12,72 +13,85 @@ export default function Footer() {
     <footer className="bg-[#101012] text-white pt-20 pb-10 border-t border-white/10">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <div className="grid grid-cols-1 md:grid-cols-5 gap-12 mb-16">
-          
-          {/* Brand */}
+
+          {/* Marca */}
           <div className="col-span-1 md:col-span-2 max-w-xs md:max-w-sm">
             <Link href="/" className="flex items-center gap-3 mb-6">
-              <img 
-                src="/images/logo_certired_amarillo.webp" 
-                alt="Certired Amarillo" 
-                className="w-40 h-auto object-contain rounded-lg" 
+              <img
+                src="/images/logo_certired_amarillo.webp"
+                alt="CertiRed"
+                className="w-40 h-auto object-contain rounded-lg"
               />
             </Link>
-            
+
             <p className="text-sm text-gray-400 leading-relaxed mb-6">
-              Dando memoria, visibilidad y justicia al esfuerzo de cada trabajador. Una plataforma integral para el ecosistema laboral.
+              {BRAND.tagline}
             </p>
             <p className="text-xs text-gray-400 mb-6 hidden md:block">{address}</p>
-            
+
             <div className="flex gap-4">
-              <a href={linkedinUrl} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+              <a href={linkedinUrl} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-gray-400 hover:text-white transition-colors">
                 <Linkedin size={20} />
               </a>
-              <a href={instagramUrl} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+              <a href={instagramUrl} target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-gray-400 hover:text-white transition-colors">
                 <Instagram size={20} />
               </a>
-              <a href={youtubeUrl} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+              <a href={youtubeUrl} target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="text-gray-400 hover:text-white transition-colors">
                 <Youtube size={20} />
               </a>
             </div>
           </div>
 
-          {/* Navegación principal igual al header */}
+          {/* Navegación del punto 8 de la propuesta */}
           <div>
-            <h4 className="font-bold text-white mb-6">Navegación</h4>
+            <h2 className="font-bold text-white mb-6">Navegación</h2>
             <ul className="space-y-4 text-sm text-gray-400">
-              <li><Link href="/" className="hover:text-360-yellow transition-colors">Inicio</Link></li>
               <li><Link href="/trabajadores" className="hover:text-360-yellow transition-colors">Trabajadores</Link></li>
-              <li><Link href="/empresas" className="hover:text-360-yellow transition-colors">Empresas</Link></li>
-              <li><Link href="/centros" className="hover:text-360-yellow transition-colors">Centros</Link></li>
+              <li><Link href="/centros" className="hover:text-360-yellow transition-colors">Centros de capacitación</Link></li>
+              <li>
+                <a href={URLS.directorio} target="_blank" rel="noopener noreferrer" className="hover:text-360-yellow transition-colors">
+                  Directorio
+                </a>
+              </li>
+              <li>
+                <a href={URLS.registro} target="_blank" rel="noopener noreferrer" className="hover:text-360-yellow transition-colors">
+                  Crear perfil
+                </a>
+              </li>
+              <li>
+                <a href={URLS.login} target="_blank" rel="noopener noreferrer" className="hover:text-360-yellow transition-colors">
+                  Ingresar
+                </a>
+              </li>
             </ul>
-            
           </div>
 
           {/* Legal */}
           <div className="md:col-span-2">
-            <h4 className="font-bold text-white mb-6">Legal</h4>
+            <h2 className="font-bold text-white mb-6">Legal</h2>
             <ul className="space-y-4 text-sm text-gray-400 mb-8">
               <li><Link href="/terminos" className="hover:text-360-yellow transition-colors">Términos y condiciones</Link></li>
               <li><Link href="/privacidad" className="hover:text-360-yellow transition-colors">Política de privacidad</Link></li>
+              <li><Link href="/contacto" className="hover:text-360-yellow transition-colors">Contacto</Link></li>
             </ul>
 
             <div className="mt-6">
-              <Link 
-                href={directorioUrl}
+              <Link
+                href={URLS.directorio}
                 target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-6 py-2 text-base font-bold text-white bg-perfil-blue rounded-full hover:bg-deep-blue transition-all shadow-lg shadow-perfil-blue/20 gap-2"
               >
                 <Search size={18} className="-mt-0.5" />
-                Verificar perfil laboral
+                Consultar certificaciones
               </Link>
             </div>
-            
           </div>
         </div>
 
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-xs text-gray-500">
-            © {new Date().getFullYear()} Certired. Todos los derechos reservados.
+            © {new Date().getFullYear()} CertiRed. Todos los derechos reservados.
           </p>
           <div className="flex items-center gap-2 text-xs text-gray-500">
             <span>Desarrollado por <a href="https://verticedigital.com.ar" target="_blank" rel="noopener noreferrer">Vértice Digital</a></span>

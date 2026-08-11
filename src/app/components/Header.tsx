@@ -5,9 +5,20 @@ import Link from "next/link";
 import { Menu, Search, X } from "lucide-react";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
+import { URLS } from "@/lib/site";
 
-const directorioUrl =
-  process.env.NEXT_PUBLIC_DIRECTORIO_URL || "https://directorio.certired.com.ar";
+/**
+ * Navegación simplificada (punto 10.3 de la propuesta): Trabajadores, Centros,
+ * Directorio, Registro e Ingreso. Empresas sale del menú principal; la página
+ * sigue publicada y accesible por URL.
+ */
+const NAV = [
+  { href: "/", label: "Inicio" },
+  { href: "/trabajadores", label: "Trabajadores" },
+  { href: "/centros", label: "Centros" },
+  { href: URLS.directorio, label: "Directorio", external: true },
+  { href: "/contacto", label: "Contacto" },
+];
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,7 +30,7 @@ export default function Header() {
         <Link href="/" className="flex items-center gap-3 group">
           <Image
             src="/images/logo_certired_r.webp"
-            alt="Certired Logo"
+            alt="CertiRed"
             width={240}
             height={80}
             className="h-20 w-auto object-contain"
@@ -28,162 +39,104 @@ export default function Header() {
           />
         </Link>
 
-        <div className="hidden lg:flex items-center gap-1 pl-8 border-l border-border-gray h-10 ml-8">
-          <Link
-            href="/"
-            className={`px-3 py-2 text-sm font-bold transition-colors rounded-lg ${
-              pathname === "/"
-                ? "text-perfil-blue bg-bg-light"
-                : "text-text-gray hover:text-perfil-blue hover:bg-bg-light"
-            }`}
-          >
-            Inicio
-          </Link>
-          <Link
-            href="/trabajadores"
-            className={`px-3 py-2 text-sm font-bold transition-colors rounded-lg ${
-              pathname === "/trabajadores"
-                ? "text-perfil-blue bg-bg-light"
-                : "text-text-gray hover:text-perfil-blue hover:bg-bg-light"
-            }`}
-          >
-            Trabajadores
-          </Link>
-          <Link
-            href="/empresas"
-            className={`px-3 py-2 text-sm font-bold transition-colors rounded-lg ${
-              pathname === "/empresas"
-                ? "text-perfil-blue bg-bg-light"
-                : "text-text-gray hover:text-perfil-blue hover:bg-bg-light"
-            }`}
-          >
-            Empresas
-          </Link>
-          <Link
-            href="/centros"
-            className={`px-3 py-2 text-sm font-bold transition-colors rounded-lg ${
-              pathname === "/centros"
-                ? "text-perfil-blue bg-bg-light"
-                : "text-text-gray hover:text-perfil-blue hover:bg-bg-light"
-            }`}
-          >
-            Centros
-          </Link>
-          <Link
-            href="/contacto"
-            className={`px-3 py-2 text-sm font-bold transition-colors rounded-lg ${
-              pathname === "/contacto"
-                ? "text-perfil-blue bg-bg-light"
-                : "text-text-gray hover:text-perfil-blue hover:bg-bg-light"
-            }`}
-          >
-            Contacto
-          </Link>
-        </div>
+        <nav className="hidden lg:flex items-center gap-1 pl-8 border-l border-border-gray h-10 ml-8">
+          {NAV.map((item) => (
+            <Link
+              key={item.label}
+              href={item.href}
+              {...(item.external
+                ? { target: "_blank", rel: "noopener noreferrer" }
+                : {})}
+              className={`px-3 py-2 text-sm font-bold transition-colors rounded-lg ${
+                !item.external && pathname === item.href
+                  ? "text-perfil-blue bg-bg-light"
+                  : "text-text-gray hover:text-perfil-blue hover:bg-bg-light"
+              }`}
+            >
+              {item.label}
+            </Link>
+          ))}
+        </nav>
 
-        <div className="hidden md:flex items-center gap-3 ml-auto">
+        <div className="hidden lg:flex items-center gap-3 ml-auto">
           <a
-            href={process.env.NEXT_PUBLIC_LOGIN_URL}
+            href={URLS.login}
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-2.5 text-sm font-bold text-perfil-blue border-2 border-border-gray rounded-full hover:border-perfil-blue hover:bg-perfil-blue hover:text-white transition-all"
           >
-            Iniciar sesión
+            Ingresar
           </a>
 
           <Link
-            href={directorioUrl}
+            href={URLS.directorio}
             target="_blank"
+            rel="noopener noreferrer"
             className="px-6 py-2.5 text-sm font-bold text-white bg-perfil-blue rounded-full hover:bg-deep-blue transition-all shadow-lg shadow-perfil-blue/20 flex items-center gap-2"
           >
             <Search size={18} />
-            Verificar perfil laboral
+            Consultar certificaciones
           </Link>
         </div>
 
         <button
-          className="md:hidden p-2 text-text-gray hover:text-perfil-blue"
+          className="lg:hidden p-2 text-text-gray hover:text-perfil-blue"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          aria-label="Toggle menu"
+          aria-label={isMenuOpen ? "Cerrar menú" : "Abrir menú"}
+          aria-expanded={isMenuOpen}
         >
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
 
       {isMenuOpen && (
-        <div className="md:hidden absolute top-20 left-0 w-full bg-white border-b border-border-gray shadow-xl p-6 flex flex-col gap-6 animate-in slide-in-from-top-5">
+        <div className="lg:hidden absolute top-24 left-0 w-full bg-white border-b border-border-gray shadow-xl p-6 flex flex-col gap-6 animate-in slide-in-from-top-5">
           <nav className="flex flex-col gap-4">
-            <Link
-              href="/"
-              className={`text-lg font-bold ${
-                pathname === "/"
-                  ? "text-perfil-blue"
-                  : "text-text-gray hover:text-perfil-blue"
-              }`}
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Inicio
-            </Link>
-            <Link
-              href="/trabajadores"
-              className={`text-lg font-bold ${
-                pathname === "/trabajadores"
-                  ? "text-perfil-blue"
-                  : "text-text-gray hover:text-perfil-blue"
-              }`}
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Trabajadores
-            </Link>
-            <Link
-              href="/centros"
-              className={`text-lg font-bold ${
-                pathname === "/centros"
-                  ? "text-perfil-blue"
-                  : "text-text-gray hover:text-perfil-blue"
-              }`}
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Centros
-            </Link>
-            <Link
-              href="/empresas"
-              className={`text-lg font-bold ${
-                pathname === "/empresas"
-                  ? "text-perfil-blue"
-                  : "text-text-gray hover:text-perfil-blue"
-              }`}
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Empresas
-            </Link>
-            <Link
-              href="/contacto"
-              className={`text-lg font-bold ${
-                pathname === "/contacto"
-                  ? "text-perfil-blue"
-                  : "text-text-gray hover:text-perfil-blue"
-              }`}
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Contacto
-            </Link>
+            {NAV.map((item) => (
+              <Link
+                key={item.label}
+                href={item.href}
+                {...(item.external
+                  ? { target: "_blank", rel: "noopener noreferrer" }
+                  : {})}
+                className={`text-lg font-bold ${
+                  !item.external && pathname === item.href
+                    ? "text-perfil-blue"
+                    : "text-text-gray hover:text-perfil-blue"
+                }`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {item.label}
+              </Link>
+            ))}
           </nav>
+
           <div className="flex flex-col gap-3 pt-6 border-t border-border-gray">
             <a
-              href="https://app.certired.com.ar/"
+              href={URLS.registro}
               target="_blank"
               rel="noopener noreferrer"
               className="w-full text-center px-6 py-3 text-sm font-bold text-perfil-blue border-2 border-border-gray rounded-full hover:border-perfil-blue hover:bg-perfil-blue hover:text-white transition-all"
             >
-              Iniciar sesión
+              Crear mi perfil
+            </a>
+            <a
+              href={URLS.login}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full text-center px-6 py-3 text-sm font-bold text-perfil-blue border-2 border-border-gray rounded-full hover:border-perfil-blue hover:bg-perfil-blue hover:text-white transition-all"
+            >
+              Ingresar
             </a>
             <Link
-              href={directorioUrl}
+              href={URLS.directorio}
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-full text-center px-6 py-3 text-sm font-bold text-white bg-perfil-blue rounded-full shadow-lg shadow-perfil-blue/20 flex items-center justify-center gap-2"
+              onClick={() => setIsMenuOpen(false)}
             >
               <Search size={18} />
-              Verificar perfil laboral
+              Consultar certificaciones
             </Link>
           </div>
         </div>
