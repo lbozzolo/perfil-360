@@ -4,13 +4,13 @@ import {
   ALTO_MAPA,
   proyectar,
 } from '@/lib/presencia';
+import { ARGENTINA_PATH } from '@/lib/argentina';
 
 /**
  * Presencia territorial (bloque 2 de la propuesta).
  *
- * Los puntos se ubican por las coordenadas reales de cada capital provincial:
- * la distribución dibuja el país sin necesidad de un contorno ni de una
- * librería de mapas.
+ * El contorno del país y los puntos usan la misma proyección, así que quedan
+ * alineados por construcción. Sin dependencias ni API keys en runtime.
  */
 export default function MapaPresencia() {
   const conPresencia = PROVINCIAS.filter((p) => p.presencia);
@@ -26,22 +26,32 @@ export default function MapaPresencia() {
       >
         <defs>
           <radialGradient id="halo-presencia">
-            <stop offset="0%" stopColor="#FFC52A" stopOpacity="0.5" />
+            <stop offset="0%" stopColor="#FFC52A" stopOpacity="0.55" />
             <stop offset="100%" stopColor="#FFC52A" stopOpacity="0" />
           </radialGradient>
         </defs>
 
+        <path
+          d={ARGENTINA_PATH}
+          fill="#ffffff"
+          fillOpacity="0.14"
+          stroke="#ffffff"
+          strokeOpacity="0.45"
+          strokeWidth="0.8"
+          strokeLinejoin="round"
+        />
+
         {puntos.map((punto) => (
           <g key={punto.nombre}>
-            <circle cx={punto.x} cy={punto.y} r="14" fill="url(#halo-presencia)" />
+            <circle cx={punto.x} cy={punto.y} r="12" fill="url(#halo-presencia)" />
             <circle
               cx={punto.x}
               cy={punto.y}
-              r="4"
+              r="3.5"
               fill="#FFC52A"
               stroke="#ffffff"
-              strokeWidth="1.5"
-              strokeOpacity="0.5"
+              strokeWidth="1.2"
+              strokeOpacity="0.65"
             />
           </g>
         ))}
