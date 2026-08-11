@@ -14,8 +14,8 @@ export const metadata: Metadata = {
 };
 import Hero from "./components/Hero";
 import DirectorioSection from "./components/DirectorioSection";
+import ComoFunciona from "./components/ComoFunciona";
 import VideoIntro from "./components/VideoIntro";
-import EcosystemSection from "./components/EcosystemSection";
 import ActorsSection from "./components/ActorsSection";
 import FeaturesSection from "./components/FeaturesSection";
 import PlansSection from "./components/PlansSection";
@@ -29,10 +29,9 @@ export default function Home() {
       <main className="flex-grow">
         <Hero />
         <DirectorioSection />
+        <ComoFunciona />
         <VideoIntro />
-        {/* Fase 3: EcosystemSection se reemplaza por ComoFunciona.
-            Fase 4: ActorsSection, FeaturesSection y PlansSection se ocultan. */}
-        <EcosystemSection />
+        {/* Fase 4: ActorsSection, FeaturesSection y PlansSection se ocultan. */}
         <ActorsSection />
         <FeaturesSection />
         <PlansSection />

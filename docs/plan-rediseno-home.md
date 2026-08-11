@@ -61,6 +61,15 @@ Consecuencias prácticas para el sitio:
 
 ---
 
+## 1 bis. ⏳ Pendientes bloqueados (esperando al cliente)
+
+| Pendiente | Bloqueado por | Estado | Dónde va cuando llegue |
+|---|---|---|---|
+| **Mapa de presencia territorial** (bloque 2 del Home) | Datos reales: en qué provincias hay trabajadores registrados, idealmente con cantidades. No se inventan: el mapa es prueba de adopción. | ❓ **Consultado al cliente el 2026-08-11, sin respuesta aún.** | `components/MapaPresencia.tsx`, dentro de `DirectorioSection` debajo del contador. El diseño ya tiene el lugar previsto. |
+| `NEXT_PUBLIC_TRABAJADORES_COUNT` en Vercel | Cargar la env var en los entornos Preview y Production. | Pendiente (mientras tanto usa el fallback 970). | Panel de Vercel. |
+
+---
+
 ## 2. Decisiones a confirmar con el cliente (bloquean parte de la Fase 3 y 5)
 
 Resolver **antes de empezar la Fase 3**. El resto de las fases avanza igual.
@@ -68,7 +77,7 @@ Resolver **antes de empezar la Fase 3**. El resto de las fases avanza igual.
 | # | Pregunta | Recomendación |
 |---|---|---|
 | D1 | ¿La página `/empresas` se elimina, se oculta del menú o se reescribe como "cómo consulta una empresa"? | **Reescribirla corta** (1 hero + 3 pasos + CTA al Directorio) y **sacarla del menú principal**. No se borra: queda accesible por URL. |
-| D2 | El buscador por DNI del Home, ¿hace submit al Directorio externo con querystring? ¿Qué parámetro acepta `directorio.certired.com.ar`? | Necesito el nombre del parámetro (ej. `?dni=`). Si no lo soporta, el input solo redirige al Directorio sin precargar. |
+| D2 | ~~El buscador por DNI del Home, ¿hace submit al Directorio externo con querystring?~~ | ✅ **Resuelto.** El Directorio es una app **Glide**, y Glide no soporta precargar valores por querystring (sus deep links funcionan solo por Row ID). El buscador copia el documento al portapapeles y abre el Directorio para pegarlo. `buildDirectorioUrl()` en `src/lib/site.ts` queda listo por si eso cambia. |
 | D3 | El contador "+970", ¿es un número fijo por ahora o hay endpoint/API que lo devuelva? | Arrancar con **número por ENV** (`NEXT_PUBLIC_TRABAJADORES_COUNT`) y cablear API después. |
 | D4 | El mapa de presencia territorial: ¿SVG estático de Argentina con provincias marcadas, o mapa interactivo? | **SVG estático** de Argentina con puntos por provincia. Cero dependencias, carga instantánea, y es prueba social — no una herramienta. |
 | D5 | Planes: ¿se ocultan también en `/centros` y `/empresas`, o solo en el Home? | Ocultar en **todos lados** durante esta etapa (el PDF dice "registro gratuito" para centros). |
