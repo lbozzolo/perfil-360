@@ -4,7 +4,7 @@ import CtaLink from './CtaLink';
 
 export default function Hero() {
   return (
-    <section className="relative pt-12 pb-20 lg:pt-20 lg:pb-16">
+    <section className="relative pt-12 pb-32 md:pb-48 lg:pt-20 lg:pb-48">
       <div className="absolute inset-0 bg-gradient-to-br from-deep-blue to-connection-teal overflow-hidden -z-20">
         <div className="absolute top-1/2 right-0 -translate-y-1/2 translate-x-1/4 w-[600px] h-[600px] bg-gradient-to-tr from-connection-teal/20 to-360-yellow/20 rounded-full blur-3xl opacity-60" />
       </div>

@@ -35,12 +35,13 @@ export default function Home() {
 
       <main className="flex-grow">
         <Hero />
+        {/* Montado a caballo entre las dos secciones. */}
+        <VideoIntro />
         <DirectorioSection />
         <ComoFunciona />
         <BloqueTrabajadores />
         <BloqueCentros />
         <QueSignificaRegistrada />
-        <VideoIntro />
       </main>
 
       <Footer />

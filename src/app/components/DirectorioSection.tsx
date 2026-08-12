@@ -34,7 +34,7 @@ export default function DirectorioSection() {
   return (
     <section
       id="directorio"
-      className="py-20 bg-connection-teal text-white border-y border-white/10 overflow-hidden scroll-mt-28"
+      className="pt-32 md:pt-52 pb-20 bg-connection-teal text-white border-y border-white/10 overflow-hidden scroll-mt-28"
     >
       <div className="max-w-7xl mx-auto px-4 md:px-8 flex flex-col lg:flex-row items-center justify-between gap-12">
 
