@@ -1,6 +1,6 @@
 'use client';
 
-import { FileCheck, Users, Clock, RefreshCw, AlertOctagon, Briefcase } from 'lucide-react';
+import { FileCheck, Users, Clock, RefreshCw, AlertOctagon } from 'lucide-react';
 
 export default function BenefitsCentros() {
   const benefits = [
@@ -13,7 +13,6 @@ export default function BenefitsCentros() {
     {
       icon: <Users className="w-8 h-8 text-360-yellow" />,
       title: "Instructores integrados al centro",
-      subtitle: "(Plan Plus)",
       description: "Tus instructores se vinculan al centro y operan desde su perfil: buscan trabajadores del directorio del centro, seleccionan el curso correspondiente y evalúan con trazabilidad."
     },
     {
@@ -32,12 +31,6 @@ export default function BenefitsCentros() {
       title: "Panel de certificaciones vencidas",
       description: "Detectás vencimientos, filtrás, contactás y ofrecés renovación; y si corresponde, podés alertar a la empresa vinculada para prevenir riesgos operativos."
     },
-    {
-      icon: <Briefcase className="w-8 h-8 text-360-yellow" />,
-      title: "Canal comercial por demanda real",
-      subtitle: "(Plan Plus)",
-      description: "Certired no es una vidriera pública de cursos. Las oportunidades aparecen cuando una empresa abre una necesidad: licitaciones y cotizaciones."
-    }
   ];
 
   return (

@@ -6,7 +6,7 @@ const capacidades = [
   'Registrar trabajadores.',
   'Crear y administrar sus cursos.',
   'Cargar certificaciones y vigencias.',
-  'Validar certificaciones declaradas por trabajadores.',
+  'Validar las certificaciones registradas.',
   'Mantener presencia dentro del Directorio de centros registrados.',
 ];
 

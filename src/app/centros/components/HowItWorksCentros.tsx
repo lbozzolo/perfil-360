@@ -5,7 +5,7 @@ export default function HowItWorksCentros() {
     {
       num: "01",
       title: "Registrás tu centro",
-      desc: "Registrás tu centro en el plan gratuito y configurás datos y operación."
+      desc: "Registrás tu centro sin costo y configurás sus datos y su operación."
     },
     {
       num: "02",
@@ -14,13 +14,8 @@ export default function HowItWorksCentros() {
     },
     {
       num: "03",
-      title: "¿Necesitás más?",
-      desc: "Si necesitás funciones avanzadas (descargas, instructores/evaluaciones, licitaciones), solicitás Plan Plus desde la configuración de tu perfil dentro de Certired."
-    },
-    {
-        num: "04",
-        title: "Activación",
-        desc: "El sistema habilita los módulos correspondientes una vez activado."
+      title: "Las empresas consultan",
+      desc: "Las certificaciones que registrás quedan disponibles en el Directorio para cualquier empresa que necesite consultarlas."
     }
   ];
 
@@ -31,12 +26,12 @@ export default function HowItWorksCentros() {
         
       <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
-          Primero te registrás. Después, si lo necesitás, activás Plan Plus.
+          Registrás tu centro y empezás a operar.
         </h2>
         <div className="w-20 h-1 bg-360-yellow mx-auto mb-16 rounded-full"></div>
 
-        <div className="grid md:grid-cols-4 gap-8 relative">
-            {/* Connector Line (Desktop) - Adjusted for 4 columns */}
+        <div className="grid md:grid-cols-3 gap-8 relative">
+            {/* Connector Line (Desktop) */}
             <div className="hidden md:block absolute top-12 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-gray-600 to-transparent z-0"></div>
 
           {steps.map((step, i) => (

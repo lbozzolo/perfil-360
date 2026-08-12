@@ -90,11 +90,6 @@ export default function HeroCentros() {
                     <VideoWithPlaceholderCentros />
                 </div>
 
-                 {/* <div className="w-[110%] -mt-8 relative z-10 bg-white p-6 rounded-xl border border-gray-200 shadow-xl">
-                    <p className="text-xs md:text-sm text-deep-blue/90 border-l-4 border-360-yellow pl-3 leading-relaxed font-medium">
-                    “Cada centro registra únicamente sus propios cursos, evaluaciones y certificaciones. Eso protege la validez del sistema y evita información autodeclarada o cruzada entre instituciones.”
-                    </p>
-                </div> */}
             </div>
 
         </div>

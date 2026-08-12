@@ -12,7 +12,7 @@ export default function BenefitsPersonas() {
     {
       icon: <ShieldCheck size={32} className="text-perfil-blue" />,
       title: "Consultable por empresas",
-      text: "Lo que figura en tu perfil no es “autodeclarado”: está cargado por el centro o la empresa correspondiente.",
+      text: "Tus certificaciones quedan registradas dentro de CertiRed, para que cualquier empresa pueda consultarlas.",
     },
     {
       icon: <Clock size={32} className="text-perfil-blue" />,

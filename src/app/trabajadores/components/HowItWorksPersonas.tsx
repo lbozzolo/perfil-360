@@ -31,15 +31,10 @@ Podés dejar una solicitud de contacto para que Certired se comunique con la emp
             <div className="w-14 h-14 bg-deep-blue text-white rounded-full flex items-center justify-center font-bold text-xl mb-6 shadow-lg shadow-deep-blue/20">
               2
             </div>
-            <h3 className="text-xl font-bold text-deep-blue mb-4">Validación y carga por instituciones</h3>
-            <p className="text-text-gray max-w-sm mb-4">
-              Para que la información sea confiable y fácil de consultar:
+            <h3 className="text-xl font-bold text-deep-blue mb-4">Tus capacitaciones quedan registradas</h3>
+            <p className="text-text-gray max-w-sm">
+              Tus cursos y certificaciones se registran y validan dentro de CertiRed, con sus fechas y vigencias, para que la información sea confiable y fácil de consultar.
             </p>
-            <ul className="text-text-gray text-sm text-left max-w-sm space-y-2 list-disc pl-5">
-                <li>Las capacitaciones y certificaciones las cargan los centros que las emitieron.</li>
-                <li>Los vínculos laborales los cargan las empresas donde trabajás.</li>
-                <li>Cada institución carga únicamente sus propios registros.</li>
-            </ul>
           </div>
 
           {/* Step 3 */}
