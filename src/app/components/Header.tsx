@@ -30,11 +30,11 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 md:px-8 h-24 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3 group">
           <Image
-            src="/images/logo_certired_r.webp"
+            src="/images/logo-nuevo-certired.webp"
             alt="CertiRed"
-            width={240}
-            height={80}
-            className="h-20 w-auto object-contain"
+            width={1200}
+            height={279}
+            className="h-16 w-auto object-contain"
             priority
             unoptimized
           />

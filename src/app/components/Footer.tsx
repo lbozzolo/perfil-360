@@ -15,11 +15,13 @@ export default function Footer() {
 
           {/* Marca */}
           <div className="col-span-1 md:col-span-2 max-w-xs md:max-w-sm">
-            <Link href="/" className="flex items-center gap-3 mb-6">
+            {/* El logo es azul sobre fondo transparente, así que sobre el
+                footer oscuro va montado en una placa blanca para que se lea. */}
+            <Link href="/" className="inline-block mb-6 bg-white rounded-xl px-5 py-4">
               <img
-                src="/images/logo_certired_amarillo.webp"
+                src="/images/logo-nuevo-certired.webp"
                 alt="CertiRed"
-                className="w-40 h-auto object-contain rounded-lg"
+                className="w-44 h-auto object-contain"
               />
             </Link>
 
