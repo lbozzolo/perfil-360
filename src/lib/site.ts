@@ -11,11 +11,6 @@ export const URLS = {
   login: process.env.NEXT_PUBLIC_LOGIN_URL || 'https://app.certired.com.ar/',
 };
 
-/** Cantidad de trabajadores con certificaciones registradas (prueba de adopción). */
-export const TRABAJADORES_REGISTRADOS = Number(
-  process.env.NEXT_PUBLIC_TRABAJADORES_COUNT || 970
-);
-
 export const BRAND = {
   tagline: 'Registro digital de certificaciones laborales.',
   claimCorto:

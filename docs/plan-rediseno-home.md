@@ -80,10 +80,10 @@ Consecuencias prácticas para el sitio:
 
 | Pendiente | Estado |
 |---|---|
-| **Contador: ¿348 o 970?** | ✅ **Cerrado el 2026-08-12: va 970**, el número de la propuesta. El de la plataforma (348) mide las capacitaciones validadas, no el total de trabajadores registrados. |
+| **Contador de trabajadores** | ✅ **Eliminado el 2026-08-12.** El cliente prefirió sacarlo: es un número que cambia todo el tiempo y mantenerlo al día tenía más costo que valor. La prueba de adopción del bloque queda solo en el mapa. |
 | **Lista de provincias del mapa** | ✅ **Cerrada el 2026-08-12.** El cliente dio por buena la lista tomada del mapa de la plataforma: las 24 jurisdicciones. Se edita en `src/lib/presencia.ts`. |
 | **Terminología del contador dentro de Glide** | ⚠️ **Abierto, fuera de este repo.** El cartel de la plataforma dice "capacitaciones **validadas**" y el Directorio se describe como "Identidad Laboral Verificable": dos términos que el punto 6 pide reemplazar. Lo tiene que cambiar el cliente en Glide. |
-| `NEXT_PUBLIC_TRABAJADORES_COUNT` en Vercel | ⚠️ **Abierto.** Cargar la env var en Preview y Production. Mientras tanto usa el fallback 970, que es el valor correcto, así que no es bloqueante. |
+| `NEXT_PUBLIC_TRABAJADORES_COUNT` en Vercel | ✅ **Ya no hace falta.** Se eliminó junto con el contador. Si quedó cargada en Vercel, se puede borrar. |
 | **"Consultar" vs "verificar"** | ⚠️ **Avisado.** En sus definiciones el cliente escribió "consultar y verificar", pero su propio documento pide evitar "verificar". El sitio quedó con "consultar". |
 
 ---

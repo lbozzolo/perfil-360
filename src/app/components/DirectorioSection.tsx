@@ -1,7 +1,6 @@
 import { Search } from 'lucide-react';
 import { URLS } from '@/lib/site';
 import CtaLink from './CtaLink';
-import ContadorRegistros from './ContadorRegistros';
 import MapaPresencia from './MapaPresencia';
 
 /**
@@ -49,10 +48,6 @@ export default function DirectorioSection() {
             <p className="mt-4 text-sm text-white/80">
               La consulta es gratuita y no requiere crear una cuenta.
             </p>
-          </div>
-
-          <div className="pt-8 mt-8 border-t border-white/20">
-            <ContadorRegistros />
           </div>
         </div>
 
