@@ -23,6 +23,21 @@ Consecuencias prácticas para el sitio:
 
 **Estimación total: ~5 a 7 jornadas de trabajo**, repartidas en 7 fases.
 
+### Estado de ejecución (rama `rediseno/home-v2`)
+
+| Fase | Estado |
+|---|---|
+| 0 · Preparación | ✅ (faltan los screenshots antes/después) |
+| 1 · Hero | ✅ |
+| 2 · Directorio | ✅ con contador y mapa |
+| 3 · Cómo funciona | ✅ |
+| 4 · Bloques y limpieza del Home | ✅ |
+| 5 · Navegación y footer | ✅ |
+| 6 · Terminología | ✅ en las páginas visibles (`/empresas` quedó oculta, no se tocó) |
+| 7 · Páginas internas | ✅ salvo el QA final |
+| KPIs (sección 4) | ✅ 11 puntos instrumentados |
+| **QA final (sección 3, Fase 7)** | ⬜ **lo único que queda** |
+
 ---
 
 ## 1. Estado actual del código (diagnóstico)
@@ -61,29 +76,29 @@ Consecuencias prácticas para el sitio:
 
 ---
 
-## 1 bis. ⏳ Pendientes bloqueados (esperando al cliente)
+## 1 bis. Estado de los pendientes
 
-| Pendiente | Bloqueado por | Estado | Dónde va cuando llegue |
-|---|---|---|---|
-| **Contador: ¿348 o 970?** | La plataforma muestra hoy **+348 trabajadores** "con capacitaciones validadas por centros registrados", pero la propuesta dice **+970** "con certificaciones laborales registradas". Pueden medir cosas distintas. | ❗ **Publicado con 970 por decisión del 2026-08-11. Confirmar con el cliente antes de pasar a producción.** | `NEXT_PUBLIC_TRABAJADORES_COUNT`. |
-| **Lista de provincias con presencia** | El mapa ya está construido, pero la lista de provincias está tomada de la lectura del mapa de la plataforma, no de la tabla de datos. | ❗ **Contrastar contra la tabla de Glide antes de publicar.** | `src/lib/presencia.ts`, campo `presencia` de cada provincia. |
-| **Terminología del contador dentro de Glide** | El cartel de la plataforma dice "capacitaciones **validadas**", uno de los términos que el punto 6 pide reemplazar por "certificaciones **registradas**". Está fuera de este repo. | Avisar al cliente: la unificación de terminología también alcanza a la app de Glide. | Plataforma Glide, no este repo. |
-| `NEXT_PUBLIC_TRABAJADORES_COUNT` en Vercel | Cargar la env var en los entornos Preview y Production. | Pendiente (mientras tanto usa el fallback 970). | Panel de Vercel. |
+| Pendiente | Estado |
+|---|---|
+| **Contador: ¿348 o 970?** | ✅ **Cerrado el 2026-08-12: va 970**, el número de la propuesta. El de la plataforma (348) mide las capacitaciones validadas, no el total de trabajadores registrados. |
+| **Lista de provincias del mapa** | ✅ **Cerrada el 2026-08-12.** El cliente dio por buena la lista tomada del mapa de la plataforma: las 24 jurisdicciones. Se edita en `src/lib/presencia.ts`. |
+| **Terminología del contador dentro de Glide** | ⚠️ **Abierto, fuera de este repo.** El cartel de la plataforma dice "capacitaciones **validadas**" y el Directorio se describe como "Identidad Laboral Verificable": dos términos que el punto 6 pide reemplazar. Lo tiene que cambiar el cliente en Glide. |
+| `NEXT_PUBLIC_TRABAJADORES_COUNT` en Vercel | ⚠️ **Abierto.** Cargar la env var en Preview y Production. Mientras tanto usa el fallback 970, que es el valor correcto, así que no es bloqueante. |
+| **"Consultar" vs "verificar"** | ⚠️ **Avisado.** En sus definiciones el cliente escribió "consultar y verificar", pero su propio documento pide evitar "verificar". El sitio quedó con "consultar". |
 
 ---
 
-## 2. Decisiones a confirmar con el cliente (bloquean parte de la Fase 3 y 5)
+## 2. Decisiones del cliente (todas cerradas)
 
-Resolver **antes de empezar la Fase 3**. El resto de las fases avanza igual.
-
-| # | Pregunta | Recomendación |
+| # | Pregunta | Resolución |
 |---|---|---|
-| D1 | ¿La página `/empresas` se elimina, se oculta del menú o se reescribe como "cómo consulta una empresa"? | **Reescribirla corta** (1 hero + 3 pasos + CTA al Directorio) y **sacarla del menú principal**. No se borra: queda accesible por URL. |
-| D2 | ~~El buscador por DNI del Home, ¿hace submit al Directorio externo con querystring?~~ | ✅ **Resuelto.** El Directorio es una app **Glide**, y Glide no soporta precargar valores por querystring (sus deep links funcionan solo por Row ID). El buscador copia el documento al portapapeles y abre el Directorio para pegarlo. `buildDirectorioUrl()` en `src/lib/site.ts` queda listo por si eso cambia. |
-| D3 | El contador "+970", ¿es un número fijo por ahora o hay endpoint/API que lo devuelva? | Arrancar con **número por ENV** (`NEXT_PUBLIC_TRABAJADORES_COUNT`) y cablear API después. |
-| D4 | ~~El mapa de presencia territorial: ¿SVG estático o interactivo?~~ | ✅ **Resuelto: SVG propio por provincia.** Implementado en `components/MapaPresencia.tsx`, con los puntos ubicados por las coordenadas reales de cada capital provincial. Sin dependencias ni API keys. El mapa de la plataforma es un Mapbox dentro de Glide y no es reutilizable desde acá. |
-| D5 | Planes: ¿se ocultan también en `/centros` y `/empresas`, o solo en el Home? | Ocultar en **todos lados** durante esta etapa (el PDF dice "registro gratuito" para centros). |
-| D6 | `/red-institucional` y `/centro-de-recursos`, ¿siguen en línea? | Dejarlas publicadas pero fuera del menú. |
+| D1 | ¿Qué pasa con `/empresas`? | ✅ **2026-08-12: ocultarla, no eliminarla.** Las empresas dejan de tener página propia como perfil operativo; su mensaje queda concentrado en el Home (consultan el Directorio). La carpeta pasó a `src/app/_empresas`, fuera del árbol de rutas. |
+| D2 | ¿El buscador puede precargar el DNI en el Directorio? | ✅ **No.** El Directorio es una app **Glide** y Glide no soporta precargar por querystring (deep links solo por Row ID). El buscador copia el documento al portapapeles y abre el Directorio. `buildDirectorioUrl()` queda listo por si eso cambia. |
+| D3 | ¿El contador es fijo o sale de una API? | ✅ **Fijo por ENV** (`NEXT_PUBLIC_TRABAJADORES_COUNT`), en 970. Cablear una API queda para más adelante. |
+| D4 | ¿Mapa estático o interactivo? | ✅ **SVG propio.** Contorno de Natural Earth 1:50m y puntos por coordenadas reales de capitales, con la misma proyección. Sin dependencias ni API keys en runtime. |
+| D5 | ¿Los planes se ocultan solo en el Home? | ✅ **2026-08-12: en todo el sitio.** En `/centros` queda únicamente el cargo por certificación registrada ($7.500 por persona). |
+| D6 | ¿`/red-institucional` y `/centro-de-recursos` siguen en línea? | Publicadas y fuera del menú. El cliente no las mencionó; no se tocaron. |
+| D7 | ¿Se comunican los cursos autodeclarados? | ✅ **2026-08-12: no, en ningún lugar público.** Tampoco se dice que solo los centros pueden cargar. La web no debe condicionar la definición interna, que sigue pendiente. |
 
 ---
 

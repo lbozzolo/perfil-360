@@ -1,10 +1,10 @@
 /**
  * Presencia territorial mostrada en el bloque del Directorio.
  *
- * ⚠️ PENDIENTE DE CONFIRMACIÓN: esta lista está tomada de la lectura del mapa
- * de la plataforma (Glide/Mapbox), no de la tabla de datos. Antes de publicar
- * hay que contrastarla contra la tabla real y dar de baja las provincias que
- * todavía no tengan trabajadores registrados.
+ * La lista se tomó del mapa de la plataforma (Glide/Mapbox) y el cliente la dio
+ * por buena el 2026-08-12. Si en algún momento cambia la cobertura real, se
+ * edita el campo `presencia` de cada provincia: el texto al pie del mapa
+ * ("Presencia en N provincias") se recalcula solo.
  *
  * Las coordenadas son las de la capital de cada provincia.
  */
