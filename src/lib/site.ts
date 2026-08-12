@@ -11,18 +11,6 @@ export const URLS = {
   login: process.env.NEXT_PUBLIC_LOGIN_URL || 'https://app.certired.com.ar/',
 };
 
-/**
- * El Directorio es una app Glide, y Glide no soporta precargar un valor por
- * querystring (sus deep links funcionan solo por Row ID, que no tenemos a
- * partir de un DNI). Por eso el buscador del Home copia el documento al
- * portapapeles y abre el Directorio para pegarlo.
- *
- * Si algún día el Directorio acepta un parámetro, alcanza con devolverlo acá.
- */
-export function buildDirectorioUrl(_documento?: string) {
-  return URLS.directorio;
-}
-
 /** Cantidad de trabajadores con certificaciones registradas (prueba de adopción). */
 export const TRABAJADORES_REGISTRADOS = Number(
   process.env.NEXT_PUBLIC_TRABAJADORES_COUNT || 970

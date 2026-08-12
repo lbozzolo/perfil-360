@@ -1,36 +1,17 @@
-'use client';
-
-import { useState } from 'react';
-import { Search, CheckCircle2, ExternalLink } from 'lucide-react';
-import { buildDirectorioUrl } from '@/lib/site';
-import { registrarCta } from '@/lib/analytics';
+import { Search, ExternalLink } from 'lucide-react';
+import { URLS } from '@/lib/site';
+import CtaLink from './CtaLink';
 import ContadorRegistros from './ContadorRegistros';
 import MapaPresencia from './MapaPresencia';
 
+/**
+ * El bloque tenía un campo de documento que copiaba el número al portapapeles
+ * antes de abrir el Directorio, porque Glide no acepta precargarlo por
+ * querystring. En la prueba con el cliente el recorrido se leyó como roto: la
+ * persona escribía el documento y tenía que volver a escribirlo del otro lado.
+ * Queda solo el botón, que es honesto sobre lo que hace.
+ */
 export default function DirectorioSection() {
-  const [documento, setDocumento] = useState('');
-  const [copiado, setCopiado] = useState(false);
-
-  async function handleSubmit(e: React.FormEvent) {
-    e.preventDefault();
-    const limpio = documento.replace(/\D/g, '');
-
-    registrarCta('directorio_consulta', limpio ? 'buscador' : 'buscador_vacio');
-
-    // El Directorio (Glide) no acepta el documento por querystring, así que lo
-    // dejamos en el portapapeles para que se pegue de una en su buscador.
-    if (limpio) {
-      try {
-        await navigator.clipboard.writeText(limpio);
-        setCopiado(true);
-      } catch {
-        // Sin permiso de portapapeles: seguimos igual, solo abrimos el Directorio.
-      }
-    }
-
-    window.open(buildDirectorioUrl(limpio), '_blank', 'noopener,noreferrer');
-  }
-
   return (
     <section
       id="directorio"
@@ -50,53 +31,27 @@ export default function DirectorioSection() {
           </h2>
 
           <p className="text-gray-100 text-lg mb-8 leading-relaxed">
-            Ingresá el número de documento de un trabajador y consultá las
-            certificaciones laborales registradas en CertiRed.
+            Buscá a un trabajador por su número de documento y consultá las
+            certificaciones laborales que tiene registradas en CertiRed.
           </p>
 
-          <form onSubmit={handleSubmit} className="mb-4">
-            <div className="flex flex-col sm:flex-row gap-3">
-              <label htmlFor="documento" className="sr-only">
-                Número de documento
-              </label>
-              <input
-                id="documento"
-                name="documento"
-                type="text"
-                inputMode="numeric"
-                autoComplete="off"
-                placeholder="Número de documento"
-                value={documento}
-                onChange={(e) => {
-                  setDocumento(e.target.value);
-                  setCopiado(false);
-                }}
-                className="flex-1 px-6 py-4 rounded-full bg-white text-deep-blue placeholder:text-gray-400 font-medium outline-none ring-2 ring-transparent focus:ring-360-yellow transition-all"
-              />
-              <button
-                type="submit"
-                className="px-8 py-4 bg-360-yellow text-perfil-blue font-bold rounded-full hover:bg-yellow-400 transition-all shadow-lg shadow-yellow-500/20 hover:-translate-y-1 flex items-center justify-center gap-2 shrink-0"
-              >
-                <Search size={20} />
-                Consultar en el Directorio
-              </button>
-            </div>
+          <div className="mb-4">
+            <CtaLink
+              href={URLS.directorio}
+              evento="directorio_consulta"
+              origen="bloque_directorio"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-360-yellow text-perfil-blue font-bold rounded-full hover:bg-yellow-400 transition-all shadow-lg shadow-yellow-500/20 hover:-translate-y-1"
+            >
+              <Search size={20} />
+              Consultar en el Directorio
+            </CtaLink>
 
-            <p className="mt-3 text-sm text-white/80 flex items-center justify-center lg:justify-start gap-1.5">
-              {copiado ? (
-                <>
-                  <CheckCircle2 size={15} className="text-360-yellow shrink-0" />
-                  Copiamos el documento: pegalo en el buscador del Directorio.
-                </>
-              ) : (
-                <>
-                  <ExternalLink size={15} className="shrink-0" />
-                  El Directorio se abre en una pestaña nueva. La consulta es
-                  gratuita y no requiere crear una cuenta.
-                </>
-              )}
+            <p className="mt-4 text-sm text-white/80 flex items-center justify-center lg:justify-start gap-1.5">
+              <ExternalLink size={15} className="shrink-0" />
+              Se abre en una pestaña nueva. La consulta es gratuita y no
+              requiere crear una cuenta.
             </p>
-          </form>
+          </div>
 
           <div className="pt-8 mt-8 border-t border-white/20">
             <ContadorRegistros />

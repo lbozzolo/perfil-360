@@ -93,7 +93,7 @@ Consecuencias prácticas para el sitio:
 | # | Pregunta | Resolución |
 |---|---|---|
 | D1 | ¿Qué pasa con `/empresas`? | ✅ **2026-08-12: ocultarla, no eliminarla.** Las empresas dejan de tener página propia como perfil operativo; su mensaje queda concentrado en el Home (consultan el Directorio). La carpeta pasó a `src/app/_empresas`, fuera del árbol de rutas. |
-| D2 | ¿El buscador puede precargar el DNI en el Directorio? | ✅ **No.** El Directorio es una app **Glide** y Glide no soporta precargar por querystring (deep links solo por Row ID). El buscador copia el documento al portapapeles y abre el Directorio. `buildDirectorioUrl()` queda listo por si eso cambia. |
+| D2 | ¿El buscador puede precargar el DNI en el Directorio? | ✅ **No.** El Directorio es una app **Glide** y Glide no soporta precargar por querystring (deep links solo por Row ID). Se probó copiando el documento al portapapeles, pero en la revisión del cliente (2026-08-12) el recorrido se leyó como roto: había que escribir el número dos veces. **El campo se eliminó: queda solo el botón**, que abre el Directorio en una pestaña nueva. |
 | D3 | ¿El contador es fijo o sale de una API? | ✅ **Fijo por ENV** (`NEXT_PUBLIC_TRABAJADORES_COUNT`), en 970. Cablear una API queda para más adelante. |
 | D4 | ¿Mapa estático o interactivo? | ✅ **SVG propio.** Contorno de Natural Earth 1:50m y puntos por coordenadas reales de capitales, con la misma proyección. Sin dependencias ni API keys en runtime. |
 | D5 | ¿Los planes se ocultan solo en el Home? | ✅ **2026-08-12: en todo el sitio.** En `/centros` queda únicamente el cargo por certificación registrada ($7.500 por persona). |
