@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 export const metadata: Metadata = {
   title: "Contacto – Comunicate con Certired",
   description:
-    "¿Tenés consultas o querés sumar tu organización a Certired? Contactanos por email, teléfono o redes sociales. Estamos en Av. Hipólito Yrigoyen 146, Córdoba, Argentina.",
+    "¿Tenés consultas o querés sumar tu organización a CertiRed? Contactanos por email, teléfono o redes sociales.",
   openGraph: {
     title: "Contacto – Comunicate con Certired",
     description:

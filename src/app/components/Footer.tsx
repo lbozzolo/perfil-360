@@ -7,8 +7,6 @@ const linkedinUrl = process.env.NEXT_PUBLIC_LINKEDIN_URL || 'https://www.linkedi
 const instagramUrl = process.env.NEXT_PUBLIC_INSTAGRAM_URL || 'https://www.instagram.com/certired.oficial/';
 const youtubeUrl = process.env.NEXT_PUBLIC_YOUTUBE_URL || 'https://www.youtube.com/@CertiRed';
 
-const address = process.env.NEXT_PUBLIC_ADDRESS || 'Av. Hipólito Yrigoyen 146, Piso 15. Ciudad de Córdoba (CP 5000), Argentina';
-
 export default function Footer() {
   return (
     <footer className="bg-[#101012] text-white pt-20 pb-10 border-t border-white/10">
@@ -28,7 +26,6 @@ export default function Footer() {
             <p className="text-sm text-gray-400 leading-relaxed mb-6">
               {BRAND.tagline}
             </p>
-            <p className="text-xs text-gray-400 mb-6 hidden md:block">{address}</p>
 
             <div className="flex gap-4">
               <a href={linkedinUrl} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-gray-400 hover:text-white transition-colors">
