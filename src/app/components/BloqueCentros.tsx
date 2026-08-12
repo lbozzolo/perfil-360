@@ -73,10 +73,10 @@ export default function BloqueCentros() {
           </div>
 
           <div className="flex-1 w-full max-w-lg">
-            <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-white/10 aspect-[4/3]">
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-white/10 aspect-[16/9]">
               <img
-                src="/images/interfaz-centro-de-capacitacion.webp"
-                alt="Panel de un centro de capacitación cargando cursos y certificaciones en CertiRed"
+                src="/images/certired-dashboard.webp"
+                alt="Panel de CertiRed con los cursos y certificaciones registradas por un centro de capacitación"
                 className="absolute inset-0 w-full h-full object-cover"
               />
             </div>
