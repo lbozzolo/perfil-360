@@ -10,7 +10,7 @@ export default function HowItWorksCentros() {
     {
       num: "02",
       title: "Gestionás",
-      desc: "Gestionás alumnos, cursos y certificaciones con trazabilidad."
+      desc: "Gestionás trabajadores, cursos y certificaciones con trazabilidad."
     },
     {
       num: "03",

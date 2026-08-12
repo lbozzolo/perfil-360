@@ -14,11 +14,11 @@ export default function ProblemPromiseCentros() {
         </div>
 
         <h2 className="text-3xl lg:text-5xl font-bold text-deep-blue mb-6 leading-tight">
-          Menos “archivos sueltos”. Más evidencia verificable y trazable.
+          Menos “archivos sueltos”. Más certificaciones registradas y trazables.
         </h2>
         
         <p className="text-xl text-gray-600 leading-relaxed mb-6">
-          En la práctica, los certificados se mueven por correo, WhatsApp y carpetas: se duplican, se pierden, se vencen y nadie lo ve a tiempo. <strong>Certired</strong> ordena el ciclo completo: tu centro deja constancia institucional, el alumno conserva su perfil personal y las empresas verifican vigencias y evidencia sin perseguir documentos.
+          En la práctica, los certificados se mueven por correo, WhatsApp y carpetas: se duplican, se pierden, se vencen y nadie lo ve a tiempo. <strong>Certired</strong> ordena el ciclo completo: tu centro deja constancia institucional, el trabajador conserva su perfil personal y las empresas consultan vigencias y evidencia sin perseguir documentos.
         </p>
 
         <p className="text-xl text-deep-blue font-semibold leading-relaxed">

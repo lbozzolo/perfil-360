@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import Header from "../components/Header";
 
 export const metadata: Metadata = {
-  title: "Centros de Capacitación – Conectá tus cursos con el mundo del trabajo",
+  title: "Centros de capacitación – Dale respaldo digital a las certificaciones que emitís",
   description:
-    "Transformá tus capacitaciones en registros verificables dentro del perfil laboral de cada trabajador. Las empresas validan vigencias sin perseguir archivos. Registrá tu centro gratis en Certired.",
+    "Registrá tus cursos y las certificaciones de tus trabajadores en CertiRed. Cada persona las conserva en su perfil y las empresas pueden consultar la información registrada por tu centro. Registro gratuito.",
   openGraph: {
-    title: "Centros de Capacitación – Conectá tus cursos con el mundo del trabajo",
+    title: "Centros de capacitación – Dale respaldo digital a las certificaciones que emitís",
     description:
-      "Transformá tus capacitaciones en registros verificables. Las empresas validan vigencias sin perseguir archivos.",
+      "Registrá tus cursos y las certificaciones de tus trabajadores en CertiRed. Las empresas pueden consultar la información registrada por tu centro.",
     url: "https://www.certired.com.ar/centros",
   },
 };

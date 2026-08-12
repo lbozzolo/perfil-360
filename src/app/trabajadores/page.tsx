@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import Header from "../components/Header";
 
 export const metadata: Metadata = {
-  title: "Trabajadores – Tu perfil laboral digital, gratis",
+  title: "Trabajadores – Llevá tus certificaciones con vos",
   description:
-    "Digitalizá tus capacitaciones y certificaciones en un perfil laboral verificable. Gratis para trabajadores. Tus cursos y competencias en un solo lugar, validados por empresas y centros de capacitación.",
+    "Tus cursos y certificaciones laborales reunidos en un único perfil, gratis. Los centros las registran y vos las mostrás desde CertiRed.",
   openGraph: {
-    title: "Trabajadores – Tu perfil laboral digital, gratis",
+    title: "Trabajadores – Llevá tus certificaciones con vos",
     description:
-      "Digitalizá tus capacitaciones y certificaciones en un perfil laboral verificable. Gratis para trabajadores.",
+      "Tus cursos y certificaciones laborales reunidos en un único perfil, gratis. Los centros las registran y vos las mostrás desde CertiRed.",
     url: "https://www.certired.com.ar/trabajadores",
   },
 };

@@ -59,7 +59,7 @@ export default function DirectoryVisibilityCentros() {
                 (datos concretos, servicios y contacto)
             </p>
             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                En el directorio, empresas y personas ven el perfil del centro (datos institucionales, servicios, contacto y referencias como tu web). No funciona como plataforma pública de venta de cursos; funciona como registro institucional y punto de verificación.
+                En el directorio, empresas y trabajadores ven el perfil del centro (datos institucionales, servicios, contacto y referencias como tu web). No funciona como plataforma pública de venta de cursos; funciona como registro institucional y punto de consulta.
             </p>
           </div>
 

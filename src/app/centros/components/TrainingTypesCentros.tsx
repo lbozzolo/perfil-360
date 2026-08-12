@@ -41,7 +41,7 @@ export default function TrainingTypesCentros() {
                         <ul className="text-gray-300 space-y-2 list-disc pl-5">
                             <li>Se marca el curso como <strong>Reglamentaria</strong>.</li>
                             <li>Se define una vigencia eligiendo un período entre 1 y 12 meses, según la exigencia aplicable.</li>
-                            <li>En el perfil del alumno se ve: fecha de emisión, fecha de vencimiento y estado.</li>
+                            <li>En el perfil del trabajador se ve: fecha de emisión, fecha de vencimiento y estado.</li>
                         </ul>
                     </div>
                      <div>

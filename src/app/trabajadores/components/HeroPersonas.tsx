@@ -29,7 +29,7 @@ export default function HeroPersonas() {
                 </h1>
                 
                 <p className="text-lg md:text-xl text-deep-blue/80 mb-8 max-w-2xl font-medium leading-relaxed">
-                Tu perfil Certired reúne tu información y certificaciones para que no dependas más del papel ni de archivos sueltos o aislados. Todo queda en un solo lugar, es verificable por empresas y se completa con registros cargados por centros de capacitación y empleadores.
+                Tu perfil Certired reúne tu información y certificaciones para que no dependas más del papel ni de archivos sueltos o aislados. Todo queda en un solo lugar, las empresas pueden consultarlo y se completa con registros cargados por centros de capacitación y empleadores.
                 </p>
                 
                 <div className="flex flex-col sm:flex-row items-center gap-4 justify-start">
@@ -57,7 +57,7 @@ export default function HeroPersonas() {
 
                  <div className="w-[110%] -mt-12 relative z-10 bg-white p-6 rounded-xl border border-deep-blue/10 shadow-xl">
                     <p className="text-xs md:text-sm text-deep-blue/90 italic border-l-4 border-deep-blue pl-3 leading-relaxed font-medium">
-                    La información de tu perfil es cargada y validada exclusivamente por empresas y centros de capacitación registrados. Esto garantiza que tus cursos y certificaciones sean confiables y verificables.
+                    La información de tu perfil es cargada y validada exclusivamente por empresas y centros de capacitación registrados. Esto garantiza que tus cursos y certificaciones queden registrados y sean fáciles de consultar.
                     {/* “Podés solicitar la apertura de tu perfil personal por este medio. Para mantener la confiabilidad, los cursos, certificaciones y vínculos laborales se cargan únicamente por instituciones registradas (empresas y centros), y cada una carga lo que le corresponde.” */}
                     </p>
                 </div>

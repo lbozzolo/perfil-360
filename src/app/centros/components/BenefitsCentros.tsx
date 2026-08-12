@@ -6,15 +6,15 @@ export default function BenefitsCentros() {
   const benefits = [
     {
       icon: <FileCheck className="w-8 h-8 text-360-yellow" />,
-      title: "Digitalización verificable",
+      title: "Certificaciones registradas",
       subtitle: "(no solo documentos)",
-      description: "Convertís cada capacitación en evidencia trazable: emitida por tu centro, vinculada al alumno y verificable por terceros."
+      description: "Convertís cada capacitación en evidencia trazable: emitida por tu centro, vinculada al trabajador y consultable por terceros."
     },
     {
       icon: <Users className="w-8 h-8 text-360-yellow" />,
       title: "Instructores integrados al centro",
       subtitle: "(Plan Plus)",
-      description: "Tus instructores se vinculan al centro y operan desde su perfil: buscan alumnos del directorio del centro, seleccionan el curso correspondiente y evalúan con trazabilidad."
+      description: "Tus instructores se vinculan al centro y operan desde su perfil: buscan trabajadores del directorio del centro, seleccionan el curso correspondiente y evalúan con trazabilidad."
     },
     {
       icon: <Clock className="w-8 h-8 text-360-yellow" />,
@@ -25,7 +25,7 @@ export default function BenefitsCentros() {
       icon: <RefreshCw className="w-8 h-8 text-360-yellow" />,
       title: "Renovaciones",
       subtitle: "(servicio recurrente, ordenado)",
-      description: "Cuando corresponde, renovás la capacitación y el perfil del alumno se actualiza con nueva vigencia y nueva evidencia."
+      description: "Cuando corresponde, renovás la capacitación y el perfil del trabajador se actualiza con nueva vigencia y nueva evidencia."
     },
     {
       icon: <AlertOctagon className="w-8 h-8 text-360-yellow" />,

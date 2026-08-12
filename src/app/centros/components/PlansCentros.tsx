@@ -16,7 +16,7 @@ export default function PlansCentros() {
             <p className="text-gray-500 mb-8 font-bold">(IVA incluido) por certificación vinculada</p>
             <p className="text-gray-600 leading-relaxed">
               Aplica tanto para nuevas certificaciones como para carga de antecedentes.<br />
-              Cuando tu centro registra una certificación y esta impacta en el perfil laboral del alumno dentro de Certired, se genera un cargo al centro de capacitación.            </p>
+              Cuando tu centro registra una certificación y esta impacta en el perfil laboral del trabajador dentro de Certired, se genera un cargo al centro de capacitación.            </p>
           </div>
 
           {/* Plan Pro */}
@@ -36,7 +36,7 @@ export default function PlansCentros() {
                 "Descarga de base de datos de certificaciones.",
                 "Vinculación de instructores para evaluaciones de campo.",
                 "Acceso a licitaciones.",
-                "Acceso a certificaciones vencidas de los alumnos."
+                "Acceso a certificaciones vencidas de los trabajadores."
               ].map((feature, i) => (
                 <li key={i} className="flex items-start gap-3">
                   <div className="bg-white/10 p-0.5 rounded-full">

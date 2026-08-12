@@ -14,14 +14,14 @@ export default function IntegrationCentros() {
                     <ShieldCheck className="w-8 h-8 text-green-400" />
                 </div>
                 <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                    Tu certificación deja de ser un archivo. Se vuelve verificable.
+                    Tu certificación deja de ser un archivo. Queda registrada.
                 </h2>
                 <p className="text-gray-400 text-lg mb-8 leading-relaxed">
-                    Cuando una empresa opera con Certired, puede consultar perfiles, verificar vigencias y acceder a evidencia sin depender de reenvíos. Para tu centro eso significa menos reemisiones, menos discusiones y más reputación como emisor confiable.
+                    Cuando una empresa opera con Certired, puede consultar perfiles, vigencias y evidencia sin depender de reenvíos. Para tu centro eso significa menos reemisiones, menos discusiones y más reputación como emisor confiable.
                 </p>
             </div>
 
-            {/* Visual Abstract: Verification Flow */}
+            {/* Visual Abstract: Registration Flow */}
             <div className="w-full lg:w-1/2 relative">
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[140%] h-[140%] bg-green-500/5 rounded-full blur-3xl pointer-events-none"></div>
                 
@@ -49,7 +49,7 @@ export default function IntegrationCentros() {
                      <div className="flex items-center gap-4 p-4 rounded-xl bg-green-900/20 border border-green-500/30">
                         <div className="w-10 h-10 rounded-full bg-green-500 flex items-center justify-center text-deep-blue"><ShieldCheck size={20}/></div>
                         <div>
-                            <div className="text-green-400 font-bold text-sm">Verificado</div>
+                            <div className="text-green-400 font-bold text-sm">Registrada</div>
                             <div className="text-gray-400 text-xs">Empresa Cliente</div>
                         </div>
                      </div>

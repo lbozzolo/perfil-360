@@ -59,11 +59,11 @@ export default function HeroCentros() {
                 </div>
 
                 <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold mb-6 leading-[1.1] tracking-tight text-white">
-                Digitalizá las competencias laborales de tus alumnos y <span className="text-360-yellow drop-shadow-sm">conectalas con el mundo del trabajo.</span>
+                Registrá las certificaciones laborales de tus trabajadores y <span className="text-360-yellow drop-shadow-sm">conectalas con el mundo del trabajo.</span>
                 </h1>
                 
                 <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl font-medium leading-relaxed">
-                En Certired, tu capacitación no termina en un PDF: se transforma en un registro verificable dentro del perfil personal del trabajador. Las empresas pueden validar vigencias y evidencias sin perseguir archivos, y tu centro mantiene el control institucional de lo que realmente dictó y certificó.
+                En Certired, tu capacitación no termina en un PDF: se transforma en un registro dentro del perfil del trabajador. Las empresas pueden consultar vigencias y evidencias sin perseguir archivos, y tu centro mantiene el control institucional de lo que realmente dictó y certificó.
                 </p>
                 
                 <div className="flex flex-col sm:flex-row items-center gap-4 justify-start">

@@ -7,11 +7,11 @@ export default function FAQPersonas() {
   const faqs = [
     {
       question: "¿Puedo abrir mi perfil si mi empresa o centro todavía no está?",
-      answer: "Sí. Podés solicitar el alta de tu perfil personal. Luego, para que tus cursos y certificaciones figuren como verificables, deberán ser cargados por el centro o la empresa correspondiente."
+      answer: "Sí. Podés solicitar el alta de tu perfil personal. Luego, para que tus cursos y certificaciones queden registrados, deberán ser cargados por el centro o la empresa correspondiente."
     },
     {
       question: "¿Puedo cargar mis certificados yo mismo?",
-      answer: "No. Para que sea verificable, la carga la realizan empresas o centros registrados, y cada uno carga únicamente lo propio."
+      answer: "No. Para que quede registrada, la carga la realizan empresas o centros registrados, y cada uno carga únicamente lo propio."
     },
     {
       question: "Tengo una capacitación/carnet vencido, ¿qué pasa?",

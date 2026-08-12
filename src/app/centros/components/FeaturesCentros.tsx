@@ -25,9 +25,9 @@ export default function FeaturesCentros() {
                 <ul className="space-y-4">
                     {[
                         "Registro del centro y configuración del perfil institucional.",
-                        "Gestión del directorio de alumnos.",
+                        "Gestión del directorio de trabajadores.",
                         "Gestión interna de cursos (reglamentarios o complementarios).",
-                        "Alta/vinculación de certificaciones al perfil del alumno (genera cargo por certificación; ver precios).",
+                        "Alta/vinculación de certificaciones al perfil del trabajador (genera cargo por certificación; ver precios).",
                         "Panel operativo de seguimiento de certificaciones y vencimientos."
                     ].map((item, i) => (
                         <li key={i} className="flex items-start gap-3">
@@ -53,7 +53,7 @@ export default function FeaturesCentros() {
                         "Vincular instructores para evaluaciones de campo.",
                         "Descarga de base de datos de certificaciones.",
                         "Acceso a licitaciones / participación en oportunidades y contratos.",
-                        "Acceso a certificaciones vencidas de los alumnos."
+                        "Acceso a certificaciones vencidas de los trabajadores."
                     ].map((item, i) => (
                         <li key={i} className="flex items-start gap-3">
                             <span className="w-1.5 h-1.5 rounded-full bg-360-yellow mt-2.5 flex-shrink-0"></span>
