@@ -202,7 +202,7 @@ export default function TestimonialsSection() {
                       <div className="relative">
                         <Quote className="absolute -top-2 -left-2 text-gray-200 w-8 h-8 -z-10" />
                         <p className="text-text-gray text-sm leading-relaxed italic relative z-10">
-                          "{item.quote}"
+                          &ldquo;{item.quote}&rdquo;
                         </p>
                       </div>
                     </div>

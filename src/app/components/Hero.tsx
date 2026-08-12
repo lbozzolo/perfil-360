@@ -1,6 +1,6 @@
-import Link from 'next/link';
 import { ArrowRight, Search } from 'lucide-react';
 import { URLS, BRAND } from '@/lib/site';
+import CtaLink from './CtaLink';
 
 export default function Hero() {
   return (
@@ -32,33 +32,36 @@ export default function Hero() {
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
-              <Link
+              <CtaLink
                 href={URLS.directorio}
-                target="_blank"
+                evento="directorio_consulta"
+                origen="hero"
                 className="w-full sm:w-auto px-8 py-4 bg-360-yellow text-deep-blue font-bold rounded-full hover:bg-white transition-all flex items-center justify-center gap-2 shadow-lg shadow-360-yellow/20 hover:-translate-y-1"
               >
                 <Search size={20} />
                 Consultar certificaciones
-              </Link>
+              </CtaLink>
 
-              <Link
+              <CtaLink
                 href={URLS.registro}
-                target="_blank"
+                evento="registro_trabajador"
+                origen="hero"
                 className="w-full sm:w-auto px-8 py-4 border-2 border-white/20 text-white font-bold rounded-full hover:border-white hover:bg-white/10 transition-all text-center hover:-translate-y-1"
               >
                 Crear mi perfil
-              </Link>
+              </CtaLink>
             </div>
 
             <p className="mt-8 text-sm text-gray-300 font-medium">
               ¿Sos un centro de capacitación?{' '}
-              <Link
+              <CtaLink
                 href={URLS.registro}
-                target="_blank"
+                evento="registro_centro"
+                origen="hero"
                 className="inline-flex items-center gap-1 text-360-yellow font-bold hover:gap-2 transition-all"
               >
                 Registrar mi centro <ArrowRight size={16} />
-              </Link>
+              </CtaLink>
             </p>
           </div>
 

@@ -6,6 +6,7 @@ import { Menu, Search, X } from "lucide-react";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 import { URLS } from "@/lib/site";
+import { registrarCta } from "@/lib/analytics";
 
 /**
  * Navegación simplificada (punto 10.3 de la propuesta): Trabajadores, Centros,
@@ -73,6 +74,7 @@ export default function Header() {
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-2.5 text-sm font-bold text-white bg-perfil-blue rounded-full hover:bg-deep-blue transition-all shadow-lg shadow-perfil-blue/20 flex items-center gap-2"
+            onClick={() => registrarCta("directorio_consulta", "header")}
           >
             <Search size={18} />
             Consultar certificaciones
@@ -117,6 +119,7 @@ export default function Header() {
               target="_blank"
               rel="noopener noreferrer"
               className="w-full text-center px-6 py-3 text-sm font-bold text-perfil-blue border-2 border-border-gray rounded-full hover:border-perfil-blue hover:bg-perfil-blue hover:text-white transition-all"
+              onClick={() => registrarCta("registro_trabajador", "header_mobile")}
             >
               Crear mi perfil
             </a>
@@ -133,7 +136,10 @@ export default function Header() {
               target="_blank"
               rel="noopener noreferrer"
               className="w-full text-center px-6 py-3 text-sm font-bold text-white bg-perfil-blue rounded-full shadow-lg shadow-perfil-blue/20 flex items-center justify-center gap-2"
-              onClick={() => setIsMenuOpen(false)}
+              onClick={() => {
+                registrarCta("directorio_consulta", "header_mobile");
+                setIsMenuOpen(false);
+              }}
             >
               <Search size={18} />
               Consultar certificaciones

@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { Search, CheckCircle2, ExternalLink } from 'lucide-react';
 import { buildDirectorioUrl } from '@/lib/site';
+import { registrarCta } from '@/lib/analytics';
 import ContadorRegistros from './ContadorRegistros';
 import MapaPresencia from './MapaPresencia';
 
@@ -13,6 +14,8 @@ export default function DirectorioSection() {
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     const limpio = documento.replace(/\D/g, '');
+
+    registrarCta('directorio_consulta', limpio ? 'buscador' : 'buscador_vacio');
 
     // El Directorio (Glide) no acepta el documento por querystring, así que lo
     // dejamos en el portapapeles para que se pegue de una en su buscador.

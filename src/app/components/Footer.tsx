@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { Linkedin, Youtube, Instagram, Search } from 'lucide-react';
 import { URLS, BRAND } from '@/lib/site';
+import CtaLink from './CtaLink';
 
 const linkedinUrl = process.env.NEXT_PUBLIC_LINKEDIN_URL || 'https://www.linkedin.com/company/identidadlaboral/?viewAsMember=true';
 const instagramUrl = process.env.NEXT_PUBLIC_INSTAGRAM_URL || 'https://www.instagram.com/certired.oficial/';
@@ -54,9 +55,9 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href={URLS.registro} target="_blank" rel="noopener noreferrer" className="hover:text-360-yellow transition-colors">
+                <CtaLink href={URLS.registro} evento="registro_trabajador" origen="footer" className="hover:text-360-yellow transition-colors">
                   Crear perfil
-                </a>
+                </CtaLink>
               </li>
               <li>
                 <a href={URLS.login} target="_blank" rel="noopener noreferrer" className="hover:text-360-yellow transition-colors">
@@ -76,15 +77,15 @@ export default function Footer() {
             </ul>
 
             <div className="mt-6">
-              <Link
+              <CtaLink
                 href={URLS.directorio}
-                target="_blank"
-                rel="noopener noreferrer"
+                evento="directorio_consulta"
+                origen="footer"
                 className="inline-flex items-center justify-center px-6 py-2 text-base font-bold text-white bg-perfil-blue rounded-full hover:bg-deep-blue transition-all shadow-lg shadow-perfil-blue/20 gap-2"
               >
                 <Search size={18} className="-mt-0.5" />
                 Consultar certificaciones
-              </Link>
+              </CtaLink>
             </div>
           </div>
         </div>

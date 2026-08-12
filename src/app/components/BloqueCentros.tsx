@@ -1,6 +1,6 @@
-import Link from 'next/link';
 import { Check, ArrowRight } from 'lucide-react';
 import { URLS } from '@/lib/site';
+import CtaLink from './CtaLink';
 
 const capacidades = [
   'Registrar trabajadores.',
@@ -57,14 +57,15 @@ export default function BloqueCentros() {
             </ul>
 
             <div className="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
-              <Link
+              <CtaLink
                 href={URLS.registro}
-                target="_blank"
+                evento="registro_centro"
+                origen="bloque_centros"
                 className="inline-flex items-center gap-2 px-8 py-4 bg-360-yellow text-deep-blue font-bold rounded-full hover:bg-white transition-all shadow-lg shadow-360-yellow/20 hover:-translate-y-1"
               >
                 Registrar centro de capacitación
                 <ArrowRight size={20} />
-              </Link>
+              </CtaLink>
               <span className="text-sm font-bold text-360-yellow">
                 Registro gratuito.
               </span>

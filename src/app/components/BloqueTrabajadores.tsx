@@ -1,6 +1,6 @@
-import Link from 'next/link';
 import { CheckCircle2, ArrowRight } from 'lucide-react';
 import { URLS } from '@/lib/site';
+import CtaLink from './CtaLink';
 
 const beneficios = [
   'Perfil gratuito.',
@@ -46,14 +46,15 @@ export default function BloqueTrabajadores() {
             </ul>
 
             <div>
-              <Link
+              <CtaLink
                 href={URLS.registro}
-                target="_blank"
+                evento="registro_trabajador"
+                origen="bloque_trabajadores"
                 className="inline-flex items-center gap-2 px-8 py-4 bg-perfil-blue text-white font-bold rounded-full hover:bg-deep-blue transition-all shadow-lg shadow-perfil-blue/20 hover:-translate-y-1"
               >
                 Crear mi perfil gratis
                 <ArrowRight size={20} />
-              </Link>
+              </CtaLink>
             </div>
           </div>
 
