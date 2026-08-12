@@ -1,4 +1,4 @@
-import { Search, ExternalLink } from 'lucide-react';
+import { Search } from 'lucide-react';
 import { URLS } from '@/lib/site';
 import CtaLink from './CtaLink';
 import ContadorRegistros from './ContadorRegistros';
@@ -46,10 +46,8 @@ export default function DirectorioSection() {
               Consultar en el Directorio
             </CtaLink>
 
-            <p className="mt-4 text-sm text-white/80 flex items-center justify-center lg:justify-start gap-1.5">
-              <ExternalLink size={15} className="shrink-0" />
-              Se abre en una pestaña nueva. La consulta es gratuita y no
-              requiere crear una cuenta.
+            <p className="mt-4 text-sm text-white/80">
+              La consulta es gratuita y no requiere crear una cuenta.
             </p>
           </div>
 
