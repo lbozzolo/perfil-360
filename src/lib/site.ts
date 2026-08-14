@@ -17,5 +17,5 @@ export const BRAND = {
     'Certificaciones laborales registradas. Simples de mostrar. Fáciles de consultar.',
   claimLargo:
     'CertiRed conecta las certificaciones emitidas por centros de capacitación con los trabajadores que las reciben y las empresas que necesitan consultarlas.',
-  recorrido: 'El centro registra · El trabajador muestra · La empresa consulta',
+  etiquetaHero: 'Transformación digital · Industria 4.0',
 };

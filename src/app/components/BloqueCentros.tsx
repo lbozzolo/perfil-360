@@ -1,6 +1,7 @@
 import { Check, ArrowRight } from 'lucide-react';
 import { URLS } from '@/lib/site';
 import CtaLink from './CtaLink';
+import SliderCentros from './SliderCentros';
 
 const capacidades = [
   'Registrar trabajadores.',
@@ -72,14 +73,10 @@ export default function BloqueCentros() {
             </div>
           </div>
 
-          <div className="flex-1 w-full max-w-lg">
-            <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-white/10 aspect-[16/9]">
-              <img
-                src="/images/certired-dashboard.webp"
-                alt="Panel de CertiRed con los cursos y certificaciones registradas por un centro de capacitación"
-                className="absolute inset-0 w-full h-full object-cover"
-              />
-            </div>
+          {/* Pesa más que la columna de texto para que el slider se lleve la
+              parte ancha del reparto en desktop. */}
+          <div className="flex-1 lg:flex-[1.25] w-full max-w-2xl">
+            <SliderCentros />
           </div>
 
         </div>
