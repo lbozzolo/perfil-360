@@ -17,7 +17,6 @@ import HeroCentros from "./components/HeroCentros";
 import ProblemPromiseCentros from "./components/ProblemPromiseCentros";
 import BenefitsCentros from "./components/BenefitsCentros";
 import TrainingTypesCentros from "./components/TrainingTypesCentros";
-import DirectoryVisibilityCentros from "./components/DirectoryVisibilityCentros";
 import FeaturesCentros from "./components/FeaturesCentros";
 import HowItWorksCentros from "./components/HowItWorksCentros";
 import ExpiredCertificationsCentros from "./components/ExpiredCertificationsCentros";
@@ -35,7 +34,6 @@ export default function CentrosPage() {
         <ProblemPromiseCentros />
         <BenefitsCentros />
         <TrainingTypesCentros />
-        <DirectoryVisibilityCentros />
         <FeaturesCentros />
         <HowItWorksCentros />
         <ExpiredCertificationsCentros />

@@ -59,7 +59,7 @@ export default function HeroCentros() {
                 </div>
 
                 <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold mb-6 leading-[1.1] tracking-tight text-white">
-                Registrá las certificaciones laborales de tus trabajadores y <span className="text-360-yellow drop-shadow-sm">conectalas con el mundo del trabajo.</span>
+                Registrá las certificaciones laborales de tus alumnos y <span className="text-360-yellow drop-shadow-sm">conectalas con el mundo del trabajo.</span>
                 </h1>
                 
                 <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl font-medium leading-relaxed">
@@ -72,13 +72,6 @@ export default function HeroCentros() {
                   className="w-full sm:w-auto px-8 py-3 bg-360-yellow text-deep-blue font-bold rounded-full hover:bg-white hover:text-deep-blue transition-all shadow-md hover:shadow-lg flex items-center justify-center gap-2 transform hover:-translate-y-0.5 text-base"
                 >
                   Registrar mi Centro en Certired (Gratis) <ArrowRight size={20} />
-                </Link>
-                <Link 
-                  href={process.env.NEXT_PUBLIC_CONTACTO_EMPRESAS_CENTROS_URL || 'https://wkf.ms/4rpQ3Ml'}
-                  className="w-full sm:w-auto px-8 py-3 border-2 border-white text-white font-bold rounded-full hover:bg-white hover:text-deep-blue transition-all flex items-center justify-center transform hover:-translate-y-0.5 text-base"
-                  target="_blank" rel="noopener noreferrer"
-                >
-                  Quiero que me contacten
                 </Link>
                 </div>
             </div>
