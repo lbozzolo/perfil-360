@@ -66,12 +66,10 @@ export default function CarnetCertiRed() {
         {/* Encabezado */}
         <div className="text-center max-w-2xl mx-auto mb-14">
           <h2 className="text-3xl md:text-5xl font-bold text-deep-blue tracking-tight mb-4">
-            Tu Carnet <span className="text-perfil-blue">Certi</span>
-            <span className="text-360-yellow">Red</span>
+            ¿Sos trabajador capacitado?
           </h2>
           <p className="text-lg text-text-gray leading-relaxed">
-            Elegí la opción que mejor se adapte a vos y llevá tus certificaciones
-            siempre con vos.
+            Registrate en CertiRed y mostrá tus capacitaciones en tiempo real.
           </p>
         </div>
 
