@@ -17,6 +17,7 @@ import DirectorioSection from "./components/DirectorioSection";
 import ComoFunciona from "./components/ComoFunciona";
 import BloqueTrabajadores from "./components/BloqueTrabajadores";
 import BloqueCentros from "./components/BloqueCentros";
+import CarnetCertiRed from "./components/CarnetCertiRed";
 import QueSignificaRegistrada from "./components/QueSignificaRegistrada";
 import VideoIntro from "./components/VideoIntro";
 import Footer from "./components/Footer";
@@ -41,6 +42,7 @@ export default function Home() {
         <ComoFunciona />
         <BloqueTrabajadores />
         <BloqueCentros />
+        <CarnetCertiRed />
         <QueSignificaRegistrada />
       </main>
 
