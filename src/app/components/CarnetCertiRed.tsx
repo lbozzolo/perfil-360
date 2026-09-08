@@ -1,4 +1,5 @@
 import { Check, Nfc, QrCode, Smartphone } from 'lucide-react';
+import CarnetFlip from './CarnetFlip';
 
 /**
  * Punto 8 de la propuesta. Presenta las dos versiones del carnet físico.
@@ -7,25 +8,22 @@ import { Check, Nfc, QrCode, Smartphone } from 'lucide-react';
  *
  * Las tres credenciales son los renders de diseño recortados de la pieza
  * original (public/images/carnet-*.webp), con las esquinas ya redondeadas
- * en el propio archivo.
+ * en el propio archivo. El carnet plástico se muestra en una sola pieza que
+ * gira para revelar el dorso (ver CarnetFlip).
  */
 
-const carnets = [
-  {
+const carnetPlastico = {
+  frente: {
     src: '/images/carnet-frente.webp',
     alt: 'Frente del carnet plástico de CertiRed con foto, nombre e ID',
-    epigrafe: 'Frente',
-    ancho: 272,
-    alto: 361,
   },
-  {
+  dorso: {
     src: '/images/carnet-dorso.webp',
     alt: 'Dorso del carnet plástico de CertiRed con el QR de verificación',
-    epigrafe: 'Dorso',
-    ancho: 269,
-    alto: 361,
   },
-];
+  ancho: 272,
+  alto: 361,
+};
 
 const beneficiosPlastico = [
   'QR de verificación',
@@ -91,22 +89,8 @@ export default function CarnetCertiRed() {
             </h3>
             <p className="text-base text-text-gray mb-8">Con QR de verificación</p>
 
-            <div className="flex justify-center gap-4 sm:gap-6 mb-8">
-              {carnets.map(({ src, alt, epigrafe, ancho, alto }) => (
-                <figure key={epigrafe} className="w-full max-w-[200px] m-0">
-                  <img
-                    src={src}
-                    alt={alt}
-                    width={ancho}
-                    height={alto}
-                    loading="lazy"
-                    className="w-full h-auto block rounded-2xl shadow-card"
-                  />
-                  <figcaption className="mt-3 text-center text-[10px] font-bold tracking-[0.14em] text-text-gray/70 uppercase">
-                    {epigrafe}
-                  </figcaption>
-                </figure>
-              ))}
+            <div className="mb-8">
+              <CarnetFlip {...carnetPlastico} />
             </div>
 
             {/* En sm+ se leen por columna, como en el diseño de referencia. */}
