@@ -14,6 +14,7 @@ export const metadata: Metadata = {
 
 import Hero from "./components/Hero";
 import DirectorioSection from "./components/DirectorioSection";
+import PrestadorIntegralSRT from "./components/PrestadorIntegralSRT";
 import ComoFunciona from "./components/ComoFunciona";
 import BloqueTrabajadores from "./components/BloqueTrabajadores";
 import BloqueCentros from "./components/BloqueCentros";
@@ -39,6 +40,7 @@ export default function Home() {
         {/* Montado a caballo entre las dos secciones. */}
         <VideoIntro />
         <DirectorioSection />
+        <PrestadorIntegralSRT />
         <ComoFunciona />
         <BloqueTrabajadores />
         <BloqueCentros />
